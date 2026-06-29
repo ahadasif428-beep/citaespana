@@ -101,7 +101,7 @@ text-3xl
 font-bold
 ">
 
-Citapro
+CitaEs
 
 </h2>
 
@@ -320,7 +320,7 @@ WhatsApp: +34 672 373 900
 
 
 <p className="text-blue-200 text-sm">
-info@citaex.com
+info@citaes.com
 </p>
 
 
@@ -373,7 +373,7 @@ mx-auto
 <br/><br/>
 
 
-CitaEx is a private and independent service. We are not affiliated with the Spanish Government, the Ministry of the Interior, the National Police, or any other public administration. Appointments are always obtained through official government platforms. Our service is optional and consists of helping you locate available appointments.
+CitaEs is a private and independent service. We are not affiliated with the Spanish Government, the Ministry of the Interior, the National Police, or any other public administration. Appointments are always obtained through official government platforms. Our service is optional and consists of helping you locate available appointments.
 
 
 </p>
@@ -389,7 +389,7 @@ text-sm
 ">
 
 
-© 2026 CitaEx. All rights reserved.
+© 2026 CitaEs. All rights reserved.
 
 
 </p>

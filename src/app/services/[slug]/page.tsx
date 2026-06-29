@@ -36,7 +36,7 @@ export default async function Page({
     },
     {
       q: "Are you connected with Spanish Government?",
-      a: "No. CitaPro is an independent private appointment assistance service."
+      a: "No. Citaes is an independent private appointment assistance service."
     }
   ];
 

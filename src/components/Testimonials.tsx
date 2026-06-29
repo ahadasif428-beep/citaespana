@@ -7,7 +7,7 @@ const reviews=[
 letter:"M",
 name:"María González",
 location:"Venezuela - Madrid",
-text:"I hadn't known what to do for months. CitaEx got me an appointment for the regularization process in 4 days. No upfront payment, just as they promised. Essential."
+text:"I hadn't known what to do for months. CitaEs got me an appointment for the regularization process in 4 days. No upfront payment, just as they promised. Essential."
 },
 
 
@@ -15,7 +15,7 @@ text:"I hadn't known what to do for months. CitaEx got me an appointment for the
 letter:"A",
 name:"Ahmed Hassan",
 location:"Morocco - Barcelona",
-text:"I thought it would be impossible to get an appointment before June 30th. CitaEx did it in less than a week. Highly recommended."
+text:"I thought it would be impossible to get an appointment before June 30th. CitaEs did it in less than a week. Highly recommended."
 },
 
 
@@ -23,7 +23,7 @@ text:"I thought it would be impossible to get an appointment before June 30th. C
 letter:"F",
 name:"Farida Boukhari",
 location:"Algeria - Valencia",
-text:"I was afraid of missing the deadline. The CitaEx team guided me through everything: documents, Cl@ve, everything. My appointment was confirmed."
+text:"I was afraid of missing the deadline. The CitaEs team guided me through everything: documents, Cl@ve, everything. My appointment was confirmed."
 },
 
 

@@ -40,7 +40,7 @@ className="bg-gray-50 py-24 scroll-mt-24"
 
 <h2 className="text-5xl font-bold text-gray-900">
 
-How does CitaPro work?
+How does CitaEs work?
 
 </h2>
 

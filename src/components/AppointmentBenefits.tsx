@@ -47,7 +47,7 @@ font-bold
 text-[#101c34]
 ">
 
-Why choose CitaPro?
+Why choose CitaEs?
 
 </h2>
 

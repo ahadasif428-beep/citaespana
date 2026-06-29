@@ -60,7 +60,7 @@ COMPARE BEFORE YOU DECIDE
 
 
 <h2 className="text-4xl font-bold text-center mt-3">
-CitaPro vs. Gestoría vs. Going alone
+CitaEs vs. Gestoría vs. Going alone
 </h2>
 
 
@@ -88,7 +88,7 @@ FEATURE
 
 <th className="w-[245px] bg-red-600 text-white text-center">
 <div className="font-bold">
-CitaPro
+CitaEs
 </div>
 <span className="text-xs">
 From €69
@@ -196,7 +196,7 @@ className="h-[72px] border-t border-gray-100"
 
 <button className="mt-10 mx-auto block bg-red-600 text-white px-8 py-4 rounded-xl font-bold">
 
-💬 Get started with CitaPro — Free until appointment confirmed
+💬 Get started with CitaEs — Free until appointment confirmed
 
 </button>
 

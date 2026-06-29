@@ -1,6 +1,7 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
+
 import { useEffect, useState } from "react";
 
 
@@ -68,20 +69,44 @@ gap-4
 
 {/* Logo */}
 
+{/* Logo */}
+
 <Link
 
 href="/"
 
 className="
-text-3xl
-font-bold
-text-[#063d73]
+flex
+items-center
+gap-3
 whitespace-nowrap
 "
 
 >
 
-CitaPro
+<Image
+
+src="/logo.jpeg"
+
+alt="CitaEs logo"
+
+width={55}
+
+height={55}
+
+/>
+
+
+<span className="
+text-3xl
+font-bold
+text-[#063d73]
+">
+
+CitaEs
+
+</span>
+
 
 </Link>
 

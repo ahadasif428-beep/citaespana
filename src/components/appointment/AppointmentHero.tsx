@@ -55,7 +55,7 @@ function sendWhatsapp(){
 
 const message=`
 
-Hello CitaPro
+Hello CitaEs
 
 Province:
 ${province}

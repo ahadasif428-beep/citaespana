@@ -72,7 +72,7 @@ font-semibold
 text-sm
 ">
 
-⭐ WHY CHOOSE CITAPRO?
+⭐ WHY CHOOSE CITAES?
 
 </div>
 
@@ -87,7 +87,7 @@ font-bold
 text-[#111827]
 ">
 
-Why choose Citapro?
+Why choose CitaEs?
 
 </h2>
 

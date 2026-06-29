@@ -90,7 +90,7 @@ tracking-wider
 text-sm
 ">
 
-CITAEX GUARANTEE
+CITAES GUARANTEE
 
 </p>
 

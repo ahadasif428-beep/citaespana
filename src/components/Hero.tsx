@@ -67,7 +67,7 @@ return;
 
 const message =
 `
-New CitaPro Request
+New CitaEs Request
 
 Province: ${province}
 

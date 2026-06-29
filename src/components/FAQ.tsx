@@ -10,7 +10,7 @@ const faqs = [
 
 {
 q:"Is this service legal?",
-a:"Yes. CitaEx is a private and independent service that helps users find and manage immigration appointments. It is not a government organization."
+a:"Yes. CitaEs is a private and independent service that helps users find and manage immigration appointments. It is not a government organization."
 },
 
 {
@@ -30,7 +30,7 @@ a:"You do not pay anything. There is no upfront payment."
 
 {
 q:"Are you affiliated with the government?",
-a:"No. CitaEx is an independent private service and is not affiliated with any government institution."
+a:"No. CitaEs is an independent private service and is not affiliated with any government institution."
 },
 
 {

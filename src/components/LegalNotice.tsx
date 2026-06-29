@@ -78,7 +78,7 @@ text-[16px]
 <p>
 
 <strong className="text-[#101c34]">
-Citapro
+CitaEs
 </strong>
   is a professional and independent service specializing in the search and management of immigration appointments throughout Spain.
 
@@ -91,7 +91,7 @@ Citapro
 
 <p>
 
-CitaEx is not a law firm or a registered agency. We do not provide legal advice; for any matter requiring legal counsel, we recommend contacting an immigration lawyer.
+CitaEs is not a law firm or a registered agency. We do not provide legal advice; for any matter requiring legal counsel, we recommend contacting an immigration lawyer.
 
 </p>
 

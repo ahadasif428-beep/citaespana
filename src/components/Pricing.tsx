@@ -6,7 +6,7 @@ export default function Pricing() {
 function whatsapp(plan:string){
 
 const message = `
-Hello CitaPro,
+Hello CitaEs,
 
 I want to request the ${plan} package.
 
@@ -460,7 +460,7 @@ More information →
 
 <p className="text-center mt-10 text-gray-400">
 
-CitaEx is not a law firm.
+CitaEs is not a law firm.
 
 </p>
 

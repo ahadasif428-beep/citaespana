@@ -11,14 +11,14 @@ return(
 
 <h2 className="text-5xl font-bold text-center">
 
-CitaPro vs Traditional Management Services
+CitaEs vs Traditional Management Services
 
 </h2>
 
 
 <p className="text-center text-gray-500 mt-4">
 
-Why more people choose CitaPro
+Why more people choose CitaEs
 
 </p>
 
@@ -50,7 +50,7 @@ Feature
 
 
 <th className="p-5">
-CitaPro
+CitaEs
 </th>
 
 
@@ -134,7 +134,7 @@ className="border-b"
 
 <p className="text-gray-500 text-sm mt-5">
 
-CitaPro is not a law firm. Prices are indicative of administrative services.
+CitaEs is not a law firm. Prices are indicative of administrative services.
 
 </p>
 
