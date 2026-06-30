@@ -50,17 +50,20 @@ location:"Senegal - Murcia",
 text:"They helped me when I had already lost hope. Clear process with no surprises. I recommend it to all my fellow countrymen."
 }
 
+];
 
-]
 
 
 
 return(
 
-<section className="py-24 bg-gray-50">
+<section className="py-16 md:py-24 bg-gray-50">
 
 
-<div className="max-w-[1200px] mx-auto px-6">
+<div className="max-w-6xl mx-auto px-4 md:px-6">
+
+
+
 
 
 
@@ -84,8 +87,10 @@ font-semibold
 
 
 
+
 <h2 className="
-text-5xl
+text-3xl
+md:text-5xl
 font-bold
 mt-6
 text-gray-900
@@ -97,13 +102,15 @@ What our customers say
 
 
 
-<p className="text-gray-600 mt-5 text-lg">
+
+<p className="text-gray-600 mt-5 text-base md:text-lg">
 
 More than 15,000 appointments managed in 52 provinces since 2024.
 
 </p>
 
 
+
 </div>
 
 
@@ -111,40 +118,61 @@ More than 15,000 appointments managed in 52 provinces since 2024.
 
 
 
+
+
+
+{/* STATS */}
+
+
 <div className="
-flex
-justify-center
-gap-16
+grid
+grid-cols-1
+sm:grid-cols-3
+gap-8
 mt-12
 text-center
 ">
 
 
+
 <div>
 
 <h3 className="text-4xl font-bold text-red-600">
+
 15,000+
+
 </h3>
 
 <p className="text-gray-600">
+
 Appointments obtained
+
 </p>
 
+
 </div>
+
+
 
 
 
 <div>
 
 <h3 className="text-4xl font-bold text-red-600">
+
 5.0 /5
+
 </h3>
 
 <p className="text-gray-600">
+
 Average rating
+
 </p>
 
+
 </div>
+
 
 
 
@@ -152,30 +180,46 @@ Average rating
 <div>
 
 <h3 className="text-4xl font-bold text-red-600">
+
 52
+
 </h3>
 
 <p className="text-gray-600">
+
 Provinces
+
 </p>
 
-</div>
-
 
 </div>
 
 
 
+</div>
 
+
+
+
+
+
+
+
+
+{/* REVIEWS */}
 
 
 
 <div className="
 grid
+grid-cols-1
 md:grid-cols-3
 gap-6
-mt-16
+mt-14
 ">
+
+
+
 
 
 {
@@ -192,19 +236,26 @@ bg-white
 rounded-2xl
 border
 border-gray-200
-p-7
+p-6
 shadow-sm
-min-h-[290px]
 "
 
 
 >
 
 
-<div className="flex justify-between">
+
+
+
+
+<div className="flex justify-between items-start">
+
+
+
 
 
 <div className="flex gap-4">
+
 
 
 <div className="
@@ -217,13 +268,13 @@ flex
 items-center
 justify-center
 font-bold
+shrink-0
 ">
-
 
 {review.letter}
 
-
 </div>
+
 
 
 
@@ -238,6 +289,7 @@ font-bold
 </h4>
 
 
+
 <p className="text-sm text-gray-500">
 
 {review.location}
@@ -245,21 +297,31 @@ font-bold
 </p>
 
 
-</div>
-
 
 </div>
 
 
 
-<div className="text-yellow-500">
+
+</div>
+
+
+
+
+
+<div className="text-yellow-500 text-sm">
 
 ★★★★★
 
 </div>
 
 
+
+
 </div>
+
+
+
 
 
 
@@ -270,6 +332,8 @@ font-bold
 mt-6
 text-gray-600
 leading-7
+text-sm
+md:text-base
 ">
 
 “{review.text}”
@@ -281,7 +345,19 @@ leading-7
 
 
 
-<div className="flex justify-between mt-8">
+
+
+<div className="
+flex
+flex-col
+sm:flex-row
+justify-between
+gap-3
+mt-8
+">
+
+
+
 
 
 <span className="
@@ -292,6 +368,7 @@ py-2
 rounded-full
 text-sm
 font-medium
+text-center
 ">
 
 Regularization 2026
@@ -300,7 +377,12 @@ Regularization 2026
 
 
 
-<span className="text-gray-400 text-sm">
+
+<span className="
+text-gray-400
+text-sm
+text-center
+">
 
 April 2026
 
@@ -312,15 +394,21 @@ April 2026
 
 
 
+
+
 </div>
 
 
+
 ))
+
 
 }
 
 
 
+
+
 </div>
 
 
@@ -329,10 +417,9 @@ April 2026
 
 
 
-<div className="
-mt-14
-text-center
-">
+
+
+<div className="mt-12 text-center">
 
 
 <button
@@ -340,7 +427,8 @@ text-center
 className="
 bg-red-600
 text-white
-px-10
+px-8
+md:px-10
 py-4
 rounded-xl
 font-bold
@@ -354,7 +442,9 @@ Leave your feedback
 </button>
 
 
+
 </div>
+
 
 
 
@@ -365,6 +455,7 @@ Leave your feedback
 
 
 </section>
+
 
 )
 

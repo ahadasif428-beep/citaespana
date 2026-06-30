@@ -26,26 +26,26 @@ text:"When we find an appointment that fits your case, we'll send the details fo
 
 return(
 
-<section 
+<section
 id="como-funciona"
-className="bg-gray-50 py-24 scroll-mt-24"
+className="bg-gray-50 py-16 md:py-24 scroll-mt-24"
 >
 
 
-<div className="max-w-[1350px] h-[786px] mx-auto px-10">
+<div className="max-w-7xl mx-auto px-4 md:px-10">
 
 
 <div className="text-center">
 
 
-<h2 className="text-5xl font-bold text-gray-900">
+<h2 className="text-3xl md:text-5xl font-bold text-gray-900">
 
 How does CitaEs work?
 
 </h2>
 
 
-<p className="mt-5 text-xl text-gray-600">
+<p className="mt-5 text-base md:text-xl text-gray-600">
 
 No registration. No endless forms. Just WhatsApp.
 
@@ -57,7 +57,16 @@ No registration. No endless forms. Just WhatsApp.
 
 
 
-<div className="grid grid-cols-3 gap-8 justify-center mt-14">
+
+<div className="
+grid
+grid-cols-1
+md:grid-cols-3
+gap-6
+md:gap-8
+mt-12
+">
+
 
 
 {
@@ -73,12 +82,9 @@ className="
 bg-white
 rounded-3xl
 shadow-md
-w-[320px]
-h-[492px]
 p-8
-mx-auto
+min-h-[420px]
 "
-
 
 >
 
@@ -104,19 +110,38 @@ font-bold
 
 
 
-<h3 className="text-2xl font-bold mt-10 text-gray-900">
+
+<h3 className="
+text-xl
+md:text-2xl
+font-bold
+mt-8
+text-gray-900
+">
+
 
 {step.title}
+
 
 </h3>
 
 
 
-<p className="mt-6 text-gray-600 leading-8">
+
+
+<p className="
+mt-5
+text-gray-600
+leading-7
+">
+
 
 {step.text}
 
+
 </p>
+
+
 
 
 

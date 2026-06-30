@@ -1,7 +1,7 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
-
 import { useEffect, useState } from "react";
 
 
@@ -52,24 +52,27 @@ z-50
 ">
 
 
+
 <div className="
 w-full
-px-4
-lg:px-6
-py-4
+px-3
+md:px-6
+py-3
+md:py-4
 flex
 items-center
 justify-between
-gap-4
+gap-3
 ">
 
 
 
 
 
-{/* Logo */}
+
 
 {/* Logo */}
+
 
 <Link
 
@@ -78,11 +81,12 @@ href="/"
 className="
 flex
 items-center
-gap-3
+gap-2
 whitespace-nowrap
 "
 
 >
+
 
 <Image
 
@@ -90,15 +94,16 @@ src="/logo.jpeg"
 
 alt="CitaEs logo"
 
-width={55}
+width={50}
 
-height={55}
+height={50}
 
 />
 
 
 <span className="
-text-3xl
+text-2xl
+md:text-3xl
 font-bold
 text-[#063d73]
 ">
@@ -118,7 +123,8 @@ CitaEs
 
 
 
-{/* Menu */}
+{/* Desktop Menu */}
+
 
 <nav className="
 hidden
@@ -139,10 +145,10 @@ whitespace-nowrap
 flex
 items-center
 gap-1
-whitespace-nowrap
 ">
 
 Regularization 2026
+
 
 <span className="
 bg-green-100
@@ -157,6 +163,7 @@ New
 
 </span>
 
+
 </span>
 
 </Link>
@@ -164,60 +171,62 @@ New
 
 
 
-<a 
-href="#como-funciona"
-className="whitespace-nowrap"
->
+
+<a href="#como-funciona">
+
 How it works
+
 </a>
 
 
-<Link 
-href="/services"
-className="whitespace-nowrap"
->
+
+<Link href="/services">
+
 Services
+
 </Link>
 
 
-<Link 
-href="/prices"
-className="whitespace-nowrap"
->
+
+<Link href="/prices">
+
 Prices
+
 </Link>
 
 
-<Link 
-href="/provinces"
-className="whitespace-nowrap"
->
+
+<Link href="/provinces">
+
 Provinces
+
 </Link>
 
 
-<Link 
-href="/formalities"
-className="whitespace-nowrap"
->
+
+<Link href="/formalities">
+
 Formalities
+
 </Link>
 
 
-<Link 
-href="/guides"
-className="whitespace-nowrap"
->
+
+<Link href="/guides">
+
 Guides
+
 </Link>
 
 
-<Link 
-href="/contact"
-className="whitespace-nowrap"
->
+
+<Link href="/contact">
+
 Contact
+
 </Link>
+
+
 
 
 </nav>
@@ -227,14 +236,24 @@ Contact
 
 
 
-{/* right buttons */}
+
+
+
+{/* Right section */}
+
 
 <div className="
 flex
 items-center
-gap-3
-whitespace-nowrap
+gap-2
 ">
+
+
+
+
+
+
+{/* Time desktop only */}
 
 
 <div className="
@@ -245,10 +264,14 @@ gap-2
 text-sm
 ">
 
+
 🇪🇸 Madrid
 
+
 <span className="text-gray-500">
+
 {time}
+
 </span>
 
 
@@ -258,7 +281,14 @@ text-sm
 
 
 
+
+
+
+{/* WhatsApp desktop only */}
+
+
 <a
+
 className="
 hidden
 lg:block
@@ -271,6 +301,7 @@ rounded-lg
 font-semibold
 text-sm
 "
+
 >
 
 WhatsApp
@@ -281,6 +312,12 @@ WhatsApp
 
 
 
+
+
+
+
+{/* Appointment */}
+
 <Link
 
 href="/appointment"
@@ -288,21 +325,32 @@ href="/appointment"
 className="
 bg-[#d90429]
 text-white
-px-5
-py-3
+px-3
+md:px-5
+py-2
+md:py-3
 rounded-lg
 font-bold
-text-xs
+text-[10px]
+md:text-xs
+whitespace-nowrap
 "
 
 >
 
-REQUEST AN APPOINTMENT
+REQUEST APPOINTMENT
 
 </Link>
 
 
+
+
+
+
+
 </div>
+
+
 
 
 
@@ -310,7 +358,6 @@ REQUEST AN APPOINTMENT
 
 
 </header>
-
 
 
 )
