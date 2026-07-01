@@ -3,45 +3,45 @@ export default function Procedures(){
 const services=[
 
 {
-title:"NIE (Foreigner's Identity Number)",
-text:"We help you get an appointment to obtain your NIE for the first time or to update it.",
-benefit:"You avoid delays and mistakes when starting your life in Spain."
+title:"NIE (Número de Identidad de Extranjero)",
+text:"Te ayudamos a conseguir una cita para obtener tu NIE por primera vez o actualizarlo.",
+benefit:"Evita retrasos y errores al comenzar tu vida en España."
 },
 
 {
-title:"TIE (Foreigner Identity Card)",
-text:"We are looking for an appointment to apply for or renew your TIE at the police station in your province.",
-benefit:"You protect your legal status by preventing your card from expiring."
+title:"TIE (Tarjeta de Identidad de Extranjero)",
+text:"Buscamos una cita para solicitar o renovar tu TIE en la comisaría de tu provincia.",
+benefit:"Proteges tu situación legal evitando que tu tarjeta caduque."
 },
 
 {
-title:"Fingerprinting",
-text:"We located an appointment for fingerprinting linked to your TIE or approved procedures.",
-benefit:"You close the process without missing deadlines due to lack of appointment."
+title:"Toma de huellas",
+text:"Localizamos una cita para la toma de huellas relacionada con tu TIE o trámites aprobados.",
+benefit:"Finalizas el proceso sin perder plazos por falta de cita."
 },
 
 {
-title:"Asylum and International Protection",
-text:"We support you in finding appointments related to asylum applications.",
-benefit:"You gain time in a very sensitive and stressful process."
+title:"Asilo y Protección Internacional",
+text:"Te ayudamos a encontrar citas relacionadas con solicitudes de asilo.",
+benefit:"Ganas tiempo en un proceso delicado y estresante."
 },
 
 {
-title:"Roots (Social, Labor, Family)",
-text:"We found an appointment for your residency procedures according to your type and province.",
-benefit:"You increase your chances of regularizing your situation."
+title:"Arraigo (Social, Laboral, Familiar)",
+text:"Encontramos una cita para tus trámites de residencia según tu situación y provincia.",
+benefit:"Aumentas tus posibilidades de regularizar tu situación."
 },
 
 {
-title:"Spanish Nationality",
-text:"We help you with appointments for fingerprints and in-person steps related to nationality.",
-benefit:"You move forward in the process without the appointment being a roadblock."
+title:"Nacionalidad Española",
+text:"Te ayudamos con citas para huellas y pasos presenciales relacionados con nacionalidad.",
+benefit:"Avanzas en el proceso sin que la cita sea un obstáculo."
 },
 
 {
-title:"Foreign Students",
-text:"We are looking for appointments for authorizations, renewals, and changes of stay for studies.",
-benefit:"You can focus on your studies while we find your appointment."
+title:"Estudiantes Extranjeros",
+text:"Buscamos citas para autorizaciones, renovaciones y cambios de estancia por estudios.",
+benefit:"Puedes concentrarte en tus estudios mientras buscamos tu cita."
 }
 
 ];
@@ -61,14 +61,14 @@ return(
 
 <h2 className="text-5xl font-bold text-gray-900">
 
-Immigration procedures we can help you with
+Trámites de extranjería en los que podemos ayudarte
 
 </h2>
 
 
 <p className="mt-5 text-xl text-gray-600">
 
-NIE, TIE, arraigo, asilo, huellas, nacionalidad — throughout Spain.
+NIE, TIE, arraigo, asilo, huellas, nacionalidad — en toda España.
 
 </p>
 
@@ -169,7 +169,7 @@ text-xl
 
 <button className="text-blue-600 font-bold text-lg">
 
-View all services →
+Ver todos los servicios →
 
 </button>
 

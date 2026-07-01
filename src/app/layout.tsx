@@ -1,16 +1,17 @@
 import "./globals.css";
+
 import { LanguageProvider } from "@/context/LanguageContext";
+
 import type { Metadata } from "next";
+
 
 
 export const metadata: Metadata = {
 
-  title: "CitaEs - Spain Immigration Appointment Assistance",
+title:"CitaEs - Spain Immigration Appointment Assistance",
 
-  description:
-    "CitaEs helps you find Spanish immigration appointments faster.",
-
-
+description:
+"CitaEs helps you find Spanish immigration appointments faster.",
 
 };
 
@@ -18,31 +19,39 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
 
-  children,
+children,
 
-}: {
+}:{
 
-  children: React.ReactNode;
+children:React.ReactNode;
 
-}) {
+}){
 
 
-  return (
+return(
 
-    <html lang="en">
 
-      <body>
+<html lang="es" suppressHydrationWarning>
 
-        <LanguageProvider>
 
-          {children}
+<body suppressHydrationWarning>
 
-        </LanguageProvider>
 
-      </body>
+<LanguageProvider>
 
-    </html>
 
-  );
+{children}
+
+
+</LanguageProvider>
+
+
+</body>
+
+
+</html>
+
+
+)
 
 }

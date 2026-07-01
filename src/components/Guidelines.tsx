@@ -3,41 +3,53 @@ export default function Guidelines(){
 
 const cards=[
 
+
 {
-title:"Complete Guide to Regularization 2026",
-text:"Requirements, documents, deadlines and how to apply.",
+title:"Guía completa de Regularización 2026",
+text:"Requisitos, documentos, plazos y cómo solicitarla.",
 color:"bg-[#c90022]",
 link:"text-red-600"
 },
 
 
+
 {
-title:"Required Documents",
-text:"Complete list of valid documents and where to obtain them.",
+title:"Documentos necesarios",
+text:"Lista completa de documentos válidos y dónde obtenerlos.",
 color:"bg-[#064580]",
 link:"text-blue-700"
 },
 
 
+
 {
-title:"How to Obtain Registration",
-text:"Step by step, even without a rental agreement.",
+title:"Cómo obtener el empadronamiento",
+text:"Paso a paso, incluso sin contrato de alquiler.",
 color:"bg-[#20bd5a]",
 link:"text-green-600"
 }
+
 
 
 ]
 
 
 
+
+
+
 return(
+
 
 
 <section className="
 bg-white
 py-24
 ">
+
+
+
+
 
 
 
@@ -52,11 +64,19 @@ px-6
 
 
 
+
 {/* heading */}
+
+
 
 <div className="
 text-center
 ">
+
+
+
+
+
 
 
 <h2 className="
@@ -66,9 +86,18 @@ text-[#101827]
 font-serif
 ">
 
-Regularization Guidelines 2026
+
+
+Guías de Regularización 2026
+
+
 
 </h2>
+
+
+
+
+
 
 
 
@@ -80,9 +109,19 @@ text-gray-600
 font-serif
 ">
 
-The deadline is now open — you have until June 30th.
+
+
+El plazo ya está abierto — tienes hasta el 30 de junio.
+
+
 
 </p>
+
+
+
+
+
+
 
 
 </div>
@@ -95,7 +134,13 @@ The deadline is now open — you have until June 30th.
 
 
 
+
+
+
+
+
 {/* cards */}
+
 
 
 <div className="
@@ -110,14 +155,22 @@ mt-12
 
 
 
+
 {
 
 cards.map((card,index)=>(
 
 
+
+
+
+
+
 <div
 
+
 key={index}
+
 
 className="
 rounded-2xl
@@ -128,25 +181,50 @@ shadow-sm
 h-[198px]
 "
 
+
+
 >
 
 
 
+
+
+
+
 <div className={`
+
 ${card.color}
+
 text-white
+
 h-[76px]
+
 flex
+
 items-center
+
 px-6
+
 font-bold
+
 text-lg
+
 font-serif
+
 `}>
+
+
 
 {card.title}
 
+
+
 </div>
+
+
+
+
+
 
 
 
@@ -160,12 +238,21 @@ font-serif
 ">
 
 
+
+
+
+
+
 <p className="
 text-gray-700
 leading-6
 ">
 
+
+
 {card.text}
+
+
 
 </p>
 
@@ -173,18 +260,35 @@ leading-6
 
 
 
+
+
+
+
 <a
 
+
+
 className={`
+
 inline-block
+
 mt-5
+
 font-bold
+
 ${card.link}
+
 `}
+
+
 
 >
 
-Read more →
+
+
+Leer más →
+
+
 
 </a>
 
@@ -192,24 +296,49 @@ Read more →
 
 
 
-</div>
-
-
-
 
 
 
 </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
 
 
 ))
+
+
+
+
 
 }
 
 
 
 
+
+
+
+
+
 </div>
+
+
+
+
+
+
+
 
 
 
@@ -222,6 +351,8 @@ Read more →
 {/* button */}
 
 
+
+
 <div className="
 flex
 justify-center
@@ -229,7 +360,14 @@ mt-10
 ">
 
 
+
+
+
+
+
 <button
+
+
 
 className="
 bg-[#d00020]
@@ -243,24 +381,46 @@ hover:opacity-90
 font-serif
 "
 
+
+
 >
 
-See full information on Regularization 2026 →
+
+
+Ver toda la información sobre Regularización 2026 →
+
+
 
 </button>
 
 
 
+
+
+
+
 </div>
 
 
 
 
 
+
+
+
+
 </div>
+
+
+
+
+
 
 
 </section>
+
+
+
 
 
 )

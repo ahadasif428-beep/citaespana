@@ -5,16 +5,16 @@ const provinces = [
 "Madrid",
 "Barcelona",
 "Valencia",
-"Seville",
-"Malaga",
+"Sevilla",
+"Málaga",
 "Alicante",
 
 "Murcia",
-"Saragossa",
+"Zaragoza",
 "Bizkaia (Bilbao)",
-"Balearic Islands",
-"Grenade",
-"Cadiz",
+"Islas Baleares",
+"Granada",
+"Cádiz",
 
 "A Coruña",
 "Pontevedra",
@@ -24,7 +24,7 @@ const provinces = [
 "Girona",
 
 "Huelva",
-"Cordova",
+"Córdoba",
 "Jaén",
 "Toledo",
 "Valladolid",
@@ -34,14 +34,14 @@ const provinces = [
 "Cáceres",
 "Asturias (Oviedo)",
 "Cantabria",
-"Rioja",
-"Navarre",
+"La Rioja",
+"Navarra",
 
 "Álava (Vitoria)",
 "Gipuzkoa",
 "Lugo",
 "Ourense",
-"Lion",
+"León",
 "Burgos",
 
 "Palencia",
@@ -51,7 +51,7 @@ const provinces = [
 "Zamora",
 "Guadalajara",
 
-"Basin",
+"Cuenca",
 "Albacete",
 "Ciudad Real",
 "Castellón",
@@ -74,12 +74,16 @@ return (
 
 
 <h2 className="text-center text-4xl font-bold text-[#0b1b36]">
-We work in all 52 provinces of Spain
+
+Trabajamos en las 52 provincias de España
+
 </h2>
 
 
 <p className="text-center mt-5 text-gray-600">
-Click on your province to see availability and local guides.
+
+Haz clic en tu provincia para ver disponibilidad y guías locales.
+
 </p>
 
 
@@ -140,7 +144,7 @@ cursor-pointer
 
 >
 
-View all provinces →
+Ver todas las provincias →
 
 </a>
 

@@ -8,25 +8,34 @@ import { provinces, procedures } from "@/data/options";
 
 export default function Hero() {
 
+
 const [province,setProvince]=useState("");
 const [procedure,setProcedure]=useState("");
 const [phone,setPhone]=useState("");
 
+
 const [time,setTime]=useState({
+
 days:6,
 hours:9,
 minutes:1,
 seconds:14
+
 });
+
 
 
 useEffect(()=>{
 
+
 const timer=setInterval(()=>{
+
 
 setTime((prev)=>{
 
+
 let {days,hours,minutes,seconds}=prev;
+
 
 
 if(seconds > 0){
@@ -34,6 +43,7 @@ if(seconds > 0){
 seconds--;
 
 }
+
 else{
 
 seconds=59;
@@ -44,6 +54,7 @@ if(minutes > 0){
 minutes--;
 
 }
+
 else{
 
 minutes=59;
@@ -54,6 +65,7 @@ if(hours > 0){
 hours--;
 
 }
+
 else{
 
 hours=23;
@@ -65,18 +77,23 @@ days--;
 
 }
 
-}
 
 }
 
 }
 
 
-return {
+}
+
+
+
+return{
+
 days,
 hours,
 minutes,
 seconds
+
 };
 
 
@@ -86,7 +103,8 @@ seconds
 },1000);
 
 
-return ()=>clearInterval(timer);
+
+return()=>clearInterval(timer);
 
 
 },[]);
@@ -95,22 +113,32 @@ return ()=>clearInterval(timer);
 
 
 
-const whatsappNumber="923001234567";
+const whatsappNumber="34672399181";
+
 
 
 const whatsappLink=createWhatsAppLink(
+
 whatsappNumber,
+
 "",
+
 "",
+
 province,
+
 procedure
+
 );
 
 
 
 
 
+
+
 async function submit(){
+
 
 
 if(!province || !procedure || !phone){
@@ -121,8 +149,11 @@ return;
 
 
 
+
 const {error}=await supabase
+
 .from("leads")
+
 .insert({
 
 name:"Website Lead",
@@ -133,9 +164,11 @@ province,
 
 procedure,
 
-status:"New"
+status:"Nuevo"
 
 });
+
+
 
 
 
@@ -143,7 +176,7 @@ if(error){
 
 console.log(error);
 
-alert("Error saving request");
+alert("Error guardando solicitud");
 
 return;
 
@@ -151,16 +184,29 @@ return;
 
 
 
+
+
+
+
 const message =
+
 `
-New CitaEs Request
 
-Province: ${province}
+Nueva solicitud CitaEs
 
-Procedure: ${procedure}
+
+Provincia: ${province}
+
+
+Trámite: ${procedure}
+
 
 WhatsApp: ${phone}
+
 `;
+
+
+
 
 
 
@@ -173,7 +219,12 @@ window.open(
 );
 
 
+
 }
+
+
+
+
 
 
 
@@ -181,14 +232,20 @@ window.open(
 
 return(
 
+
 <>
 
 
 <div className="bg-yellow-400 text-center py-3 text-black font-semibold text-sm md:text-base">
 
-🔴 REGULARIZATION 2026 — Deadline: Check eligibility →
+
+🔴 REGULARIZACIÓN 2026 — Fecha límite: Comprueba tu elegibilidad →
+
 
 </div>
+
+
+
 
 
 
@@ -197,7 +254,11 @@ return(
 <section className="bg-blue-700 text-white flex items-center py-10 md:min-h-[900px]">
 
 
+
 <div className="max-w-7xl w-full mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
+
+
+
 
 
 
@@ -205,14 +266,21 @@ return(
 
 {/* LEFT */}
 
+
+
 <div>
+
 
 
 <div className="inline-block bg-blue-500 px-5 py-2 rounded-full">
 
-🟢 ACTIVE MONITORING 24/7
+
+🟢 MONITOREO ACTIVO 24/7
+
 
 </div>
+
+
 
 
 
@@ -221,17 +289,23 @@ return(
 <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mt-7">
 
 
-Schedule your Spanish Immigration Appointment in 2026
+Solicita tu cita de extranjería en España en 2026
+
 
 
 <br/>
 
 
+
+
 <span className="text-yellow-300">
 
-without spending hours searching
+
+sin perder horas buscando
+
 
 </span>
+
 
 
 </h1>
@@ -240,13 +314,22 @@ without spending hours searching
 
 
 
+
+
+
 <p className="mt-8 text-base md:text-xl text-blue-100">
 
-We monitor appointments for you 24/7 throughout Spain.
 
-You only pay if we secure your appointment.
+Monitorizamos citas por ti 24/7 en toda España.
+
+
+Solo pagas si conseguimos tu cita.
+
+
 
 </p>
+
+
 
 
 
@@ -257,28 +340,45 @@ You only pay if we secure your appointment.
 <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-8">
 
 
-<div className="bg-blue-600 px-5 py-3 rounded-full">
-
-⭐ 15,000+ requests
-
-</div>
-
 
 <div className="bg-blue-600 px-5 py-3 rounded-full">
 
-🌍 52 provinces
+
+⭐ 15.000+ solicitudes
+
 
 </div>
+
+
+
 
 
 <div className="bg-blue-600 px-5 py-3 rounded-full">
 
-✅ No upfront payment
+
+🌍 52 provincias
+
 
 </div>
 
 
+
+
+
+<div className="bg-blue-600 px-5 py-3 rounded-full">
+
+
+✅ Sin pago inicial
+
+
 </div>
+
+
+
+</div>
+
+
+
 
 
 </div>
@@ -294,7 +394,10 @@ You only pay if we secure your appointment.
 {/* RIGHT */}
 
 
+
 <div>
+
+
 
 
 
@@ -302,9 +405,15 @@ You only pay if we secure your appointment.
 
 
 
+
+
+
 <h2 className="text-center text-xl font-bold mb-6">
 
-Request your appointment now — it's free
+
+Solicita tu cita ahora — es gratis
+
+
 
 </h2>
 
@@ -316,32 +425,52 @@ Request your appointment now — it's free
 
 <select
 
+
 className="w-full bg-white text-black p-4 rounded-xl mb-4"
+
 
 onChange={(e)=>setProvince(e.target.value)}
 
+
 >
 
+
 <option value="">
-Province
+
+
+Provincia
+
+
 </option>
+
 
 
 {
 
 provinces.map((item)=>(
 
+
 <option key={item} value={item}>
+
 
 {item}
 
+
 </option>
+
+
 
 ))
 
+
 }
 
+
+
 </select>
+
+
+
 
 
 
@@ -351,30 +480,51 @@ provinces.map((item)=>(
 
 <select
 
+
 className="w-full bg-white text-black p-4 rounded-xl mb-4"
+
 
 onChange={(e)=>setProcedure(e.target.value)}
 
+
 >
 
+
+
 <option value="">
-Procedure
+
+
+Trámite
+
+
 </option>
+
+
 
 
 {
 
 procedures.map((item)=>(
 
+
 <option key={item} value={item}>
+
 
 {item}
 
+
 </option>
+
+
 
 ))
 
+
 }
+
+
+
+
 
 </select>
 
@@ -384,15 +534,22 @@ procedures.map((item)=>(
 
 
 
+
+
 <input
+
 
 className="w-full bg-white text-black p-4 rounded-xl mb-4"
 
-placeholder="📱 Your WhatsApp number (+34...)"
+
+placeholder="📱 Tu número de WhatsApp (+34...)"
+
 
 value={phone}
 
+
 onChange={(e)=>setPhone(e.target.value)}
+
 
 />
 
@@ -402,33 +559,50 @@ onChange={(e)=>setPhone(e.target.value)}
 
 
 
+
+
 <button
 
+
 disabled={!province || !procedure || !phone}
+
 
 onClick={submit}
 
 
+
+
 className={`w-full p-4 rounded-xl font-bold
 
+
 ${
+
+
 !province || !procedure || !phone
+
 
 ?
 
+
 "bg-gray-400"
+
 
 :
 
+
 "bg-yellow-400 text-black"
 
+
 }`}
+
+
 
 
 >
 
 
-⚡ Request free appointment
+⚡ Solicitar cita gratis
+
 
 
 </button>
@@ -437,11 +611,20 @@ ${
 
 
 
+
+
+
 <p className="text-center text-sm mt-4">
 
-No upfront payment · You only pay if we get your appointment
+
+Sin pago inicial · Solo pagas si conseguimos tu cita
+
+
 
 </p>
+
+
+
 
 
 
@@ -454,22 +637,32 @@ No upfront payment · You only pay if we get your appointment
 
 
 
+
 <a
+
 
 href={whatsappLink}
 
+
 target="_blank"
+
 
 className="mt-5 bg-[#25D366] text-white flex items-center justify-center gap-3 p-4 rounded-xl font-bold"
 
+
 >
+
+
 
 <FaWhatsapp className="text-3xl"/>
 
-Talk on WhatsApp
+
+Hablar por WhatsApp
+
 
 
 </a>
+
 
 
 
@@ -481,11 +674,16 @@ Talk on WhatsApp
 <div className="text-center mt-6">
 
 
+
 <h3 className="font-bold mb-4">
 
-TIME REMAINING TO APPLY
+
+TIEMPO RESTANTE PARA SOLICITAR
+
+
 
 </h3>
+
 
 
 
@@ -494,41 +692,62 @@ TIME REMAINING TO APPLY
 <div className="grid grid-cols-4 gap-2">
 
 
+
 {
 
 [
 
 time.days,
+
 time.hours,
+
 time.minutes,
+
 time.seconds
+
 
 ].map((n,i)=>(
 
 
+
 <div
+
 
 key={i}
 
+
 className="bg-white/20 p-3 md:p-5 rounded-xl text-xl md:text-3xl font-bold"
 
+
+
 >
+
 
 {String(n).padStart(2,"0")}
 
 
+
 </div>
+
 
 
 ))
 
+
 }
 
 
+
+
+
 </div>
 
 
+
 </div>
+
+
+
 
 
 
@@ -537,9 +756,14 @@ className="bg-white/20 p-3 md:p-5 rounded-xl text-xl md:text-3xl font-bold"
 
 <div className="mt-6 bg-white/20 rounded-full text-center py-3">
 
-316+ eligibility checks performed
+
+316+ comprobaciones de elegibilidad realizadas
+
 
 </div>
+
+
+
 
 
 
@@ -549,22 +773,34 @@ className="bg-white/20 p-3 md:p-5 rounded-xl text-xl md:text-3xl font-bold"
 <div className="mt-8 text-center">
 
 
+
 <div className="bg-white text-blue-700 inline-block px-6 py-3 rounded-xl">
 
-★★★★★ Check our reviews on Trustpilot
 
-</div>
-
-
-</div>
-
+★★★★★ Mira nuestras reseñas en Trustpilot
 
 
 
 </div>
 
 
+
 </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
 
 
 
@@ -574,22 +810,37 @@ className="bg-white/20 p-3 md:p-5 rounded-xl text-xl md:text-3xl font-bold"
 
 {/* MOBILE STICKY BUTTON */}
 
+
+
 <div className="fixed bottom-0 left-0 right-0 md:hidden bg-white p-4 flex gap-3 z-50 shadow-xl">
+
+
+
+
 
 
 <a
 
+
 href={whatsappLink}
+
 
 target="_blank"
 
+
 className="flex-1 h-14 bg-[#25D366] text-white flex items-center justify-center gap-2 rounded-xl font-bold"
+
+
 
 >
 
+
+
 <FaWhatsapp className="text-3xl"/>
 
+
 WhatsApp
+
 
 
 </a>
@@ -598,17 +849,31 @@ WhatsApp
 
 
 
+
+
+
+
 <button
+
 
 onClick={submit}
 
+
 className="flex-1 h-14 bg-yellow-400 text-black rounded-xl font-bold"
+
+
 
 >
 
-⚡ Apply
+
+⚡ Solicitar
+
+
 
 </button>
+
+
+
 
 
 
@@ -619,11 +884,16 @@ className="flex-1 h-14 bg-yellow-400 text-black rounded-xl font-bold"
 
 
 
+
 </section>
+
+
+
 
 
 </>
 
 )
+
 
 }

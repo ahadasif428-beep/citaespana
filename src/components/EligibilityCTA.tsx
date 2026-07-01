@@ -3,10 +3,14 @@ export default function EligibilityCTA(){
 
 return (
 
+
 <section className="py-24 bg-[#f8fafc]">
 
 
+
 <div className="max-w-5xl mx-auto px-6">
+
+
 
 
 
@@ -14,24 +18,49 @@ return (
 
 
 
+
+
+
 <p className="text-red-600 font-bold uppercase text-sm tracking-wider">
-Eligibility Check
+
+Comprobación de elegibilidad
+
 </p>
 
 
 
+
+
+
+
 <h2 className="text-4xl font-bold text-[#101c34] mt-4">
-Do you qualify for Regularization 2026?
+
+
+¿Puedes acceder a la Regularización 2026?
+
+
 </h2>
+
+
+
+
 
 
 
 <p className="text-gray-600 mt-5 text-lg max-w-2xl mx-auto">
 
-More than 500,000 people may qualify.
-Check your eligibility for free in less than 2 minutes.
+
+Más de 500.000 personas podrían cumplir los requisitos.
+
+Comprueba tu elegibilidad gratis en menos de 2 minutos.
+
+
 
 </p>
+
+
+
+
 
 
 
@@ -40,12 +69,19 @@ Check your eligibility for free in less than 2 minutes.
 <div className="grid md:grid-cols-2 gap-5 mt-10">
 
 
+
+
+
 <div>
+
 
 
 <input
 
-placeholder="Your WhatsApp number (+34...)"
+
+
+placeholder="Tu número de WhatsApp (+34...)"
+
 
 className="
 w-full
@@ -58,17 +94,29 @@ outline-none
 focus:border-red-500
 "
 
+
+
 />
+
 
 
 </div>
 
 
 
+
+
+
+
+
+
 <div>
 
 
+
+
 <select
+
 
 className="
 w-full
@@ -80,33 +128,61 @@ px-5
 text-gray-500
 "
 
+
+
 >
 
-<option>
-Select your province
-</option>
+
 
 <option>
+
+
+Selecciona tu provincia
+
+
+</option>
+
+
+<option>
+
 Madrid
+
 </option>
 
+
 <option>
+
 Barcelona
+
 </option>
 
+
 <option>
+
 Valencia
+
 </option>
+
+
 
 
 </select>
 
 
+
+
 </div>
 
 
 
+
+
+
+
 </div>
+
+
+
 
 
 
@@ -114,6 +190,8 @@ Valencia
 
 
 <button
+
+
 
 className="
 mt-8
@@ -127,9 +205,15 @@ hover:bg-red-700
 transition
 "
 
+
+
 >
 
-Check my eligibility FREE →
+
+
+Comprobar mi elegibilidad GRATIS →
+
+
 
 </button>
 
@@ -137,24 +221,43 @@ Check my eligibility FREE →
 
 
 
+
+
+
+
 <p className="text-sm text-gray-500 mt-6">
 
-✓ No registration &nbsp; ✓ No upfront payment &nbsp; ✓ WhatsApp response
+
+✓ Sin registro &nbsp; ✓ Sin pago inicial &nbsp; ✓ Respuesta por WhatsApp
+
+
 
 </p>
 
 
 
-</div>
 
 
 
 
 
 </div>
+
+
+
+
+
+
+
+</div>
+
+
+
 
 
 </section>
+
+
 
 )
 

@@ -15,7 +15,7 @@ Please provide more details.
 `;
 
 window.open(
-`https://wa.me/923001234567?text=${encodeURIComponent(message)}`,
+`https://api.whatsapp.com/send?phone=34672399181&text=${encodeURIComponent(message)}`,
 "_blank"
 );
 

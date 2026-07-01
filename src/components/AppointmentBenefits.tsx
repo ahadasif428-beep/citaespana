@@ -5,40 +5,53 @@ const items=[
 
 {
 icon:"🔎",
-title:"We search 24/7",
-text:"We monitor available immigration appointments so you don't have to refresh pages all day."
+title:"Buscamos 24/7",
+text:"Monitorizamos citas de extranjería disponibles para que no tengas que actualizar páginas todo el día."
 },
+
 
 {
 icon:"💬",
-title:"WhatsApp support",
-text:"Our team keeps you updated and guides you through the process."
+title:"Soporte por WhatsApp",
+text:"Nuestro equipo te mantiene informado y te guía durante todo el proceso."
 },
+
 
 {
 icon:"💳",
-title:"No upfront payment",
-text:"You only pay when we confirm a valid appointment that you accept."
+title:"Sin pago inicial",
+text:"Solo pagas cuando confirmamos una cita válida que aceptas."
 },
+
 
 {
 icon:"🇪🇸",
-title:"All Spain provinces",
-text:"We help with immigration procedures across all 52 provinces."
+title:"Todas las provincias de España",
+text:"Ayudamos con trámites de extranjería en las 52 provincias."
 }
+
 
 ];
 
 
+
 return(
 
+
 <section className="py-24 bg-white">
+
 
 
 <div className="max-w-7xl mx-auto px-6">
 
 
+
+
+
 <div className="text-center">
+
+
+
 
 
 <h2 className="
@@ -47,9 +60,14 @@ font-bold
 text-[#101c34]
 ">
 
-Why choose CitaEs?
+
+¿Por qué elegir CitaEs?
+
 
 </h2>
+
+
+
 
 
 <p className="
@@ -58,12 +76,20 @@ text-gray-600
 text-lg
 ">
 
-Your appointment, managed simply and safely.
+
+Tu cita gestionada de forma sencilla y segura.
+
 
 </p>
 
 
+
+
+
 </div>
+
+
+
 
 
 
@@ -76,14 +102,21 @@ mt-14
 ">
 
 
+
+
+
 {
 
 items.map((item)=>(
 
 
+
+
 <div
 
+
 key={item.title}
+
 
 className="
 bg-gray-50
@@ -95,16 +128,26 @@ transition
 "
 
 
+
 >
+
+
+
 
 
 <div className="
 text-4xl
 ">
 
+
 {item.icon}
 
+
 </div>
+
+
+
+
 
 
 <h3 className="
@@ -113,9 +156,18 @@ font-bold
 text-xl
 ">
 
+
+
 {item.title}
 
+
+
 </h3>
+
+
+
+
+
 
 
 <p className="
@@ -124,27 +176,50 @@ text-gray-600
 leading-7
 ">
 
+
+
 {item.text}
+
+
 
 </p>
 
 
+
+
+
+
 </div>
+
+
 
 
 ))
 
+
 }
 
 
-</div>
+
+
 
 
 </div>
+
+
+
+
+
+</div>
+
+
+
 
 
 </section>
 
+
 )
+
 
 }

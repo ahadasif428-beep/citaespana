@@ -8,90 +8,128 @@ export default function Compare(){
 
 const rows=[
 
-{
-feature:"Price",
-cita:"From €69\nOnly if we get your appointment",
-gestoria:"€150–€499\nThey get paid even if they fail",
-alone:"Free\nHours spent searching with no guarantee"
-},
 
 {
-feature:"Prepayment",
+feature:"Precio",
+cita:"Desde 69€\nSolo si conseguimos tu cita",
+gestoria:"150€–499€\nCobran aunque no consigan nada",
+alone:"Gratis\nHoras buscando sin garantía"
+},
+
+
+
+{
+feature:"Pago por adelantado",
 cita:"No",
-gestoria:"Yeah\nYou pay before you have an appointment",
+gestoria:"Sí\nPagas antes de tener cita",
 alone:"—"
 },
 
-{
-feature:"Guarantee of success",
-cita:"100%\nIf there is no appointment, there is no charge",
-gestoria:"Seldom\nWithholding of fees",
-alone:"No\nNo support if there are no appointments"
-},
+
 
 {
-feature:"24/7 Monitoring",
-cita:"Yeah\nAutomatic alerts instantly",
-gestoria:"No\nOffice Hours",
-alone:"No\nYou check manually"
+feature:"Garantía de éxito",
+cita:"100%\nSi no hay cita, no pagas",
+gestoria:"Pocas veces\nRetienen los pagos",
+alone:"No\nSin ayuda si no hay citas"
 },
 
+
+
 {
-feature:"WhatsApp Support",
-cita:"Yeah\nResponse in <10 min",
-gestoria:"Phone / email\nLong waiting times",
+feature:"Monitoreo 24/7",
+cita:"Sí\nAlertas automáticas al instante",
+gestoria:"No\nSolo horario de oficina",
+alone:"No\nTú buscas manualmente"
+},
+
+
+
+{
+feature:"Soporte WhatsApp",
+cita:"Sí\nRespuesta en menos de 10 min",
+gestoria:"Teléfono / email\nLargos tiempos de espera",
 alone:"No"
 },
 
+
+
 {
-feature:"International payment",
-cita:"Yeah\nWestern Union, Remitly, Wise...",
-gestoria:"Not always\nSpanish bank required",
+feature:"Pago internacional",
+cita:"Sí\nWestern Union, Remitly, Wise...",
+gestoria:"No siempre\nNecesitas banco español",
 alone:"—"
 },
 
+
+
 {
-feature:"Response time",
-cita:"1–15 days\nAccording to province and procedure",
-gestoria:"2–6 weeks\nHigh workload",
-alone:"Indefinite\nIt depends on availability"
+feature:"Tiempo de respuesta",
+cita:"1–15 días\nSegún provincia y trámite",
+gestoria:"2–6 semanas\nAlta carga de trabajo",
+alone:"Indefinido\nDepende de disponibilidad"
 }
 
+
+
 ];
+
+
+
 
 
 
 return(
 
 
+
 <section className="py-16 md:py-24 bg-white">
+
 
 
 <div className="max-w-6xl mx-auto px-4 md:px-6">
 
 
 
+
+
+
 <p className="text-red-600 text-center font-bold tracking-wide text-sm">
 
-COMPARE BEFORE YOU DECIDE
+
+COMPARA ANTES DE DECIDIR
+
 
 </p>
+
+
+
 
 
 
 <h2 className="text-3xl md:text-4xl font-bold text-center mt-3">
 
-CitaEs vs. Gestoría vs. Going alone
+
+CitaEs vs. Gestoría vs. Hacerlo solo
+
 
 </h2>
 
 
 
+
+
+
 <p className="text-center text-gray-600 mt-4">
 
-The same appointment, three very different experiences.
+
+La misma cita, tres experiencias completamente diferentes.
+
 
 </p>
+
+
+
 
 
 
@@ -102,52 +140,90 @@ The same appointment, three very different experiences.
 {/* DESKTOP TABLE */}
 
 
+
 <div className="hidden md:block mt-12 rounded-2xl overflow-hidden border shadow-sm">
+
+
+
 
 
 <table className="w-full table-fixed">
 
 
+
+
+
 <thead>
+
 
 
 <tr className="h-[72px]">
 
 
+
+
+
 <th className="bg-gray-50 text-left px-6 text-sm text-gray-500">
 
-FEATURE
+
+CARACTERÍSTICA
+
 
 </th>
+
+
+
 
 
 
 <th className="bg-red-600 text-white">
 
+
 <div className="font-bold">
+
 CitaEs
+
 </div>
 
+
 <span className="text-xs">
-From €69
+
+Desde 69€
+
 </span>
 
+
 </th>
+
+
+
+
 
 
 
 
 <th className="bg-gray-700 text-white">
 
+
 <div className="font-bold">
-Management services
+
+Servicios de gestoría
+
 </div>
 
+
 <span className="text-xs">
-€150–€499
+
+150€–499€
+
 </span>
 
+
 </th>
+
+
+
+
 
 
 
@@ -155,18 +231,30 @@ Management services
 
 <th className="bg-gray-500 text-white">
 
+
 <div className="font-bold">
-Going alone
+
+Hacerlo solo
+
 </div>
 
+
 <span className="text-xs">
+
 DIY
+
 </span>
+
 
 </th>
 
 
+
+
+
 </tr>
+
+
 
 
 </thead>
@@ -175,72 +263,129 @@ DIY
 
 
 
+
+
+
+
 <tbody>
+
 
 
 {
 
+
 rows.map((row)=>(
+
+
 
 
 <tr
 
+
 key={row.feature}
 
+
 className="border-t h-[90px]"
+
+
 
 >
 
 
+
+
+
 <td className="px-6 text-sm text-gray-700 font-medium">
+
 
 {row.feature}
 
+
 </td>
+
+
+
+
 
 
 
 <td className="px-5 text-center text-sm whitespace-pre-line text-red-600">
 
+
 {row.cita}
+
 
 </td>
 
 
 
+
+
+
+
 <td className="px-5 text-center text-sm whitespace-pre-line text-gray-700">
+
 
 {row.gestoria}
 
+
 </td>
+
+
+
+
 
 
 
 
 <td className="px-5 text-center text-sm whitespace-pre-line text-gray-700">
 
+
 {row.alone}
 
+
 </td>
+
+
+
+
 
 
 
 </tr>
 
 
+
+
+
 ))
+
 
 
 }
 
 
+
+
+
+
 </tbody>
+
+
+
 
 
 </table>
 
 
+
+
+
 </div>
+
+
+
+
 
 
 
@@ -253,83 +398,156 @@ className="border-t h-[90px]"
 {/* MOBILE CARDS */}
 
 
+
+
+
 <div className="md:hidden mt-10 space-y-5">
+
+
+
+
 
 
 {
 
+
 rows.map((row)=>(
+
+
 
 
 <div
 
+
+
 key={row.feature}
 
+
+
 className="border rounded-2xl p-5 shadow-sm"
+
+
 
 >
 
 
+
+
+
+
 <h3 className="font-bold text-gray-900 mb-4">
+
 
 {row.feature}
 
+
 </h3>
+
+
+
+
 
 
 
 <div className="space-y-3 text-sm">
 
 
+
+
+
+
+
 <div className="bg-red-50 text-red-600 p-3 rounded-xl whitespace-pre-line">
+
 
 <b>CitaEs</b>
 
+
 {"\n"}
+
 
 {row.cita}
 
+
 </div>
+
+
+
+
+
 
 
 
 <div className="bg-gray-100 p-3 rounded-xl whitespace-pre-line">
 
+
 <b>Gestoría</b>
+
 
 {"\n"}
 
+
 {row.gestoria}
 
+
 </div>
+
+
+
+
+
 
 
 
 <div className="bg-gray-50 p-3 rounded-xl whitespace-pre-line">
 
+
 <b>DIY</b>
+
 
 {"\n"}
 
+
 {row.alone}
 
-</div>
-
-
 
 </div>
 
 
+
+
+
+
+
+
 </div>
+
+
+
+
+
+
+</div>
+
+
+
+
 
 
 ))
 
 
+
 }
 
 
+
+
+
+
 </div>
+
+
 
 
 
@@ -339,34 +557,63 @@ className="border rounded-2xl p-5 shadow-sm"
 
 <a
 
+
 href="#"
 
+
 className="
+
 mt-10
+
 mx-auto
+
 bg-red-600
+
 text-white
+
 px-6
+
 md:px-8
+
 py-4
+
 rounded-xl
+
 font-bold
+
 flex
+
 items-center
+
 justify-center
+
 gap-3
+
 w-full
+
 md:w-fit
+
 "
+
+
+
 
 
 >
 
 
+
+
 <FaWhatsapp className="text-2xl"/>
 
 
-Get started with CitaEs — Free until appointment confirmed
+
+
+
+Empezar con CitaEs — Gratis hasta confirmar la cita
+
+
+
 
 
 </a>
@@ -376,12 +623,20 @@ Get started with CitaEs — Free until appointment confirmed
 
 
 
+
+
+
 </div>
+
+
+
 
 
 </section>
 
 
+
 )
+
 
 }

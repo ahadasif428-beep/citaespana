@@ -70,7 +70,6 @@ gap-3
 
 
 
-
 {/* Logo */}
 
 
@@ -122,7 +121,6 @@ CitaEs
 
 
 
-
 {/* Desktop Menu */}
 
 
@@ -147,7 +145,7 @@ items-center
 gap-1
 ">
 
-Regularization 2026
+Regularización 2026
 
 
 <span className="
@@ -159,7 +157,7 @@ py-[2px]
 rounded-full
 ">
 
-New
+Nuevo
 
 </span>
 
@@ -174,7 +172,7 @@ New
 
 <a href="#como-funciona">
 
-How it works
+Cómo funciona
 
 </a>
 
@@ -182,7 +180,7 @@ How it works
 
 <Link href="/services">
 
-Services
+Servicios
 
 </Link>
 
@@ -190,7 +188,7 @@ Services
 
 <Link href="/prices">
 
-Prices
+Precios
 
 </Link>
 
@@ -198,7 +196,7 @@ Prices
 
 <Link href="/provinces">
 
-Provinces
+Provincias
 
 </Link>
 
@@ -206,7 +204,7 @@ Provinces
 
 <Link href="/formalities">
 
-Formalities
+Trámites
 
 </Link>
 
@@ -214,7 +212,7 @@ Formalities
 
 <Link href="/guides">
 
-Guides
+Guías
 
 </Link>
 
@@ -222,7 +220,7 @@ Guides
 
 <Link href="/contact">
 
-Contact
+Contacto
 
 </Link>
 
@@ -247,6 +245,7 @@ flex
 items-center
 gap-2
 ">
+
 
 
 
@@ -289,6 +288,10 @@ text-sm
 
 <a
 
+href="https://wa.me/34672399181"
+
+target="_blank"
+
 className="
 hidden
 lg:block
@@ -318,6 +321,7 @@ WhatsApp
 
 {/* Appointment */}
 
+
 <Link
 
 href="/appointment"
@@ -338,7 +342,7 @@ whitespace-nowrap
 
 >
 
-REQUEST APPOINTMENT
+SOLICITAR CITA
 
 </Link>
 
@@ -348,7 +352,9 @@ REQUEST APPOINTMENT
 
 
 
+
 </div>
+
 
 
 

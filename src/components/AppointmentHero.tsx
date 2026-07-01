@@ -1,14 +1,26 @@
 export default function AppointmentHero(){
 
+
 return(
 
+
 <section className="bg-[#fff7db] py-20">
+
+
+
 
 
 <div className="max-w-7xl mx-auto px-6">
 
 
+
+
+
 <div className="text-center max-w-3xl mx-auto">
+
+
+
+
 
 
 <h1 className="
@@ -18,9 +30,18 @@ text-[#101c34]
 leading-tight
 ">
 
-Get your immigration appointment without waiting
+
+
+Consigue tu cita de extranjería sin esperar
+
+
 
 </h1>
+
+
+
+
+
 
 
 <p className="
@@ -29,9 +50,18 @@ text-lg
 text-gray-600
 ">
 
-We search available appointments in Spain and notify you through WhatsApp.
+
+
+Buscamos citas disponibles en España y te avisamos a través de WhatsApp.
+
+
 
 </p>
+
+
+
+
+
 
 
 <div className="
@@ -43,17 +73,9 @@ flex-wrap
 ">
 
 
-<div className="
-bg-white
-px-6
-py-3
-rounded-xl
-shadow
-">
 
-✓ No upfront payment
 
-</div>
+
 
 
 <div className="
@@ -64,9 +86,19 @@ rounded-xl
 shadow
 ">
 
-✓ 52 provinces
+
+
+✓ Sin pago inicial
+
+
 
 </div>
+
+
+
+
+
+
 
 
 <div className="
@@ -77,22 +109,68 @@ rounded-xl
 shadow
 ">
 
-✓ WhatsApp support
+
+
+✓ 52 provincias
+
+
 
 </div>
 
 
+
+
+
+
+
+
+<div className="
+bg-white
+px-6
+py-3
+rounded-xl
+shadow
+">
+
+
+
+✓ Soporte por WhatsApp
+
+
+
 </div>
 
 
-</div>
+
+
 
 
 </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
 
 
 </section>
 
+
+
 )
+
 
 }

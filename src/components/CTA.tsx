@@ -3,10 +3,14 @@ export default function FinalCTA(){
 
 return (
 
+
 <section className="py-24 bg-white">
 
 
+
 <div className="max-w-6xl mx-auto px-6">
+
+
 
 
 
@@ -25,7 +29,10 @@ overflow-hidden
 
 
 
+
 <div className="max-w-3xl mx-auto">
+
+
 
 
 
@@ -39,9 +46,13 @@ tracking-widest
 text-sm
 ">
 
-Need help?
+
+¿Necesitas ayuda?
+
 
 </p>
+
+
 
 
 
@@ -57,9 +68,15 @@ font-bold
 leading-tight
 ">
 
-Do you need your immigration appointment?
+
+
+¿Necesitas tu cita de extranjería?
+
+
 
 </h2>
+
+
 
 
 
@@ -73,9 +90,17 @@ text-blue-100
 text-lg
 ">
 
-Talk to us now. You only pay if we succeed.
+
+
+Habla con nosotros ahora. Solo pagas si tenemos éxito.
+
+
 
 </p>
+
+
+
+
 
 
 
@@ -98,6 +123,10 @@ mt-10
 
 
 
+
+
+
+
 <a
 
 className="
@@ -113,9 +142,13 @@ transition
 
 >
 
-💬 Request via WhatsApp
+
+💬 Solicitar por WhatsApp
+
 
 </a>
+
+
 
 
 
@@ -138,7 +171,9 @@ transition
 
 >
 
-📝 Apply Online
+
+📝 Solicitar online
+
 
 </a>
 
@@ -146,7 +181,15 @@ transition
 
 
 
+
+
+
+
 </div>
+
+
+
+
 
 
 
@@ -166,23 +209,34 @@ text-blue-100
 ">
 
 
-<span>
-✓ Over 15,000 appointments secured
-</span>
+
 
 
 <span>
-✓ No upfront payment
-</span>
 
+✓ Más de 15.000 citas conseguidas
 
-<span>
-✓ All 52 provinces
 </span>
 
 
 
-</div>
+
+
+<span>
+
+✓ Sin pago inicial
+
+</span>
+
+
+
+
+
+<span>
+
+✓ Todas las 52 provincias
+
+</span>
 
 
 
@@ -195,16 +249,36 @@ text-blue-100
 
 
 
+
+
+
+
 </div>
 
 
 
+
+
+
+
 </div>
+
+
+
+
+
+
+</div>
+
+
+
 
 
 </section>
 
 
+
 )
+
 
 }

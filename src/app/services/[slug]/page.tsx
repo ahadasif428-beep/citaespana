@@ -93,7 +93,7 @@ export default async function Page({
 
 
               <a
-                href="https://wa.me/923001234567"
+                href="https://wa.me/34672399181"
                 className="
                 bg-green-500
                 px-10
@@ -409,7 +409,7 @@ export default async function Page({
 
 
           <a
-            href="https://wa.me/923001234567"
+            href="https://wa.me/34672399181"
             className="
             inline-block
             mt-8

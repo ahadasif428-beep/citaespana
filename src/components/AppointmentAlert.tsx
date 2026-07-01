@@ -3,10 +3,13 @@ export default function AppointmentAlert(){
 
 return (
 
+
 <section className="py-24 bg-white">
 
 
 <div className="max-w-5xl mx-auto px-6">
+
+
 
 
 
@@ -24,6 +27,7 @@ text-center
 
 
 
+
 <p className="
 text-red-600
 font-bold
@@ -32,9 +36,12 @@ text-sm
 tracking-wider
 ">
 
-Appointment alerts
+Alertas de citas
 
 </p>
+
+
+
 
 
 
@@ -47,9 +54,12 @@ text-[#101c34]
 mt-4
 ">
 
-Are there no appointments available right now?
+¿No hay citas disponibles ahora mismo?
 
 </h2>
+
+
+
 
 
 
@@ -64,10 +74,11 @@ text-lg
 ">
 
 
-Leave us your number and we'll notify you when an appointment becomes available for your procedure. No obligation, no upfront payment.
+Déjanos tu número y te avisaremos cuando haya una cita disponible para tu trámite. Sin compromiso y sin pago inicial.
 
 
 </p>
+
 
 
 
@@ -87,7 +98,11 @@ space-y-5
 
 
 
+
+
+
 <div className="text-left">
+
 
 
 <label className="
@@ -96,16 +111,24 @@ font-semibold
 text-gray-700
 ">
 
-Your WhatsApp number
+
+Tu número de WhatsApp
+
 
 </label>
 
 
+
+
+
 <input
+
 
 type="text"
 
-placeholder="Your WhatsApp number (+34...)"
+
+placeholder="Tu número de WhatsApp (+34...)"
+
 
 className="
 mt-2
@@ -119,10 +142,15 @@ outline-none
 focus:border-red-500
 "
 
+
 />
 
 
+
+
 </div>
+
+
 
 
 
@@ -133,22 +161,32 @@ focus:border-red-500
 <div className="text-left">
 
 
+
 <label className="
 text-sm
 font-semibold
 text-gray-700
 ">
 
-Your email (optional)
+
+Tu correo electrónico (opcional)
+
 
 </label>
 
 
+
+
+
+
 <input
+
 
 type="email"
 
-placeholder="Your email (optional)"
+
+placeholder="Tu correo electrónico (opcional)"
+
 
 className="
 mt-2
@@ -162,10 +200,16 @@ outline-none
 focus:border-red-500
 "
 
+
 />
 
 
+
+
+
 </div>
+
+
 
 
 
@@ -174,6 +218,7 @@ focus:border-red-500
 
 
 <button
+
 
 className="
 w-full
@@ -187,9 +232,12 @@ hover:bg-red-700
 transition
 "
 
+
 >
 
-💬 Notify me via WhatsApp
+
+💬 Avísame por WhatsApp
+
 
 </button>
 
@@ -198,7 +246,12 @@ transition
 
 
 
+
+
+
+
 <button
+
 
 className="
 w-full
@@ -212,9 +265,12 @@ hover:bg-gray-50
 transition
 "
 
+
 >
 
-✈️ Or receive alerts via Telegram
+
+✈️ O recibir alertas por Telegram
+
 
 </button>
 
@@ -223,7 +279,11 @@ transition
 
 
 
+
+
+
 </div>
+
 
 
 
@@ -243,19 +303,35 @@ text-gray-500
 ">
 
 
+
 <span>
-✓ No commitment
+
+✓ Sin compromiso
+
 </span>
 
 
-<span>
-✓ No upfront payment
-</span>
+
 
 
 <span>
-✓ Cancel anytime
+
+✓ Sin pago inicial
+
 </span>
+
+
+
+
+
+<span>
+
+✓ Cancela cuando quieras
+
+</span>
+
+
+
 
 
 </div>
@@ -265,14 +341,24 @@ text-gray-500
 
 
 
-</div>
 
 
 
 </div>
+
+
+
+
+
+</div>
+
+
+
 
 
 </section>
+
+
 
 )
 

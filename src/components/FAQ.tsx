@@ -8,78 +8,130 @@ export default function FAQ(){
 
 const faqs = [
 
-{
-q:"Is this service legal?",
-a:"Yes. CitaEs is a private and independent service that helps users find and manage immigration appointments. It is not a government organization."
-},
 
 {
-q:"How exactly does it work?",
-a:"We monitor appointment availability in the 52 provinces of Spain 24/7. When an appointment appears, we notify you and you decide whether to confirm it."
+q:"¿Este servicio es legal?",
+a:"Sí. CitaEs es un servicio privado e independiente que ayuda a los usuarios a encontrar y gestionar citas de extranjería. No es una organización gubernamental."
 },
 
-{
-q:"How much does it cost?",
-a:"Prices start from €69 depending on the procedure. You only pay when your appointment is confirmed."
-},
 
 {
-q:"What happens if you cannot get my appointment?",
-a:"You do not pay anything. There is no upfront payment."
+q:"¿Cómo funciona exactamente?",
+a:"Monitorizamos la disponibilidad de citas en las 52 provincias de España 24/7. Cuando aparece una cita, te avisamos y tú decides si confirmarla."
 },
 
-{
-q:"Are you affiliated with the government?",
-a:"No. CitaEs is an independent private service and is not affiliated with any government institution."
-},
 
 {
-q:"In which provinces do you work?",
-a:"We work throughout Spain, covering all 52 provinces."
+q:"¿Cuánto cuesta?",
+a:"Los precios empiezan desde 69€ dependiendo del trámite. Solo pagas cuando tu cita está confirmada."
 },
 
-{
-q:"How long does it take to get an appointment?",
-a:"It depends on the province and procedure. We continuously monitor availability to find suitable appointments."
-},
 
 {
-q:"What payment methods do you accept?",
-a:"We accept Bizum, PayPal, bank transfer, Western Union, MoneyGram and other international payment methods."
+q:"¿Qué pasa si no conseguís mi cita?",
+a:"No pagas nada. No hay ningún pago por adelantado."
+},
+
+
+{
+q:"¿Estáis afiliados al gobierno?",
+a:"No. CitaEs es un servicio privado independiente y no está afiliado a ninguna institución gubernamental."
+},
+
+
+{
+q:"¿En qué provincias trabajáis?",
+a:"Trabajamos en toda España, cubriendo las 52 provincias."
+},
+
+
+{
+q:"¿Cuánto tarda conseguir una cita?",
+a:"Depende de la provincia y del trámite. Monitorizamos continuamente la disponibilidad para encontrar citas adecuadas."
+},
+
+
+{
+q:"¿Qué métodos de pago aceptáis?",
+a:"Aceptamos Bizum, PayPal, transferencia bancaria, Western Union, MoneyGram y otros métodos de pago internacionales."
 }
 
+
 ];
+
 
 
 const [open,setOpen] = useState<number | null>(null);
 
 
 
+
+
 return (
 
+
+
 <section className="py-24 bg-white">
+
+
+
 
 
 <div className="max-w-4xl mx-auto px-6">
 
 
 
+
+
+
+
 <div className="text-center mb-14">
 
 
+
+
+
+
 <p className="text-red-600 font-semibold uppercase text-sm tracking-wide">
-Frequently Asked Questions
+
+
+Preguntas frecuentes
+
+
 </p>
+
+
+
+
 
 
 <h2 className="text-4xl font-bold text-[#101c34] mt-4">
+
+
 Preguntas frecuentes
+
+
 </h2>
 
 
+
+
+
+
+
 <p className="text-gray-600 mt-4">
-Clear answers about our immigration appointment service
+
+
+Respuestas claras sobre nuestro servicio de citas de extranjería
+
+
 </p>
+
+
+
+
+
+
 
 
 </div>
@@ -88,16 +140,30 @@ Clear answers about our immigration appointment service
 
 
 
+
+
+
+
 <div className="space-y-4">
 
 
+
+
+
 {
+
+
 faqs.map((item,index)=>(
+
+
+
 
 
 <div
 
+
 key={index}
+
 
 className="
 border
@@ -109,12 +175,23 @@ shadow-sm
 "
 
 
+
 >
+
+
+
+
+
+
 
 
 <button
 
+
+
 onClick={()=>setOpen(open===index ? null:index)}
+
+
 
 className="
 w-full
@@ -129,17 +206,34 @@ text-[#13223c]
 "
 
 
+
 >
+
+
+
+
 
 
 <span>{item.q}</span>
 
 
+
+
+
+
 <span className="text-xl text-red-600">
+
 
 {open===index ? "−":"+"}
 
+
+
 </span>
+
+
+
+
+
 
 
 </button>
@@ -148,10 +242,18 @@ text-[#13223c]
 
 
 
+
+
+
+
 {
+
 open===index && (
 
+
+
 <div
+
 
 className="
 px-6
@@ -160,38 +262,78 @@ text-gray-600
 leading-7
 "
 
+
+
 >
+
 
 {item.a}
 
+
 </div>
 
+
+
 )
+
+
 
 }
 
 
 
+
+
+
+
+
 </div>
+
+
+
+
+
 
 
 ))
 
+
+
+
+
 }
 
 
 
-</div>
 
 
 
 
 
 </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
 
 
 </section>
 
+
+
+
+
 )
+
 
 }

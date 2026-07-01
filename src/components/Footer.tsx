@@ -7,10 +7,14 @@ export default function Footer(){
 
 return(
 
+
 <footer className="bg-[#063d73] text-white py-14">
 
 
+
 <div className="max-w-7xl mx-auto px-6">
+
+
 
 
 
@@ -28,22 +32,36 @@ gap-10
 
 
 
+
 {/* BRAND */}
+
+
 
 <div>
 
 
+
+
+
 <h2 className="text-3xl font-bold">
 
+
 CitaEs
+
 
 </h2>
 
 
 
+
+
+
+
 <p className="mt-4 text-blue-100 leading-7">
 
-Your trusted immigration appointment monitoring service in Spain.
+
+Tu servicio de confianza para gestionar citas de extranjería en España.
+
 
 </p>
 
@@ -51,11 +69,17 @@ Your trusted immigration appointment monitoring service in Spain.
 
 
 
+
+
 <a
 
-href="https://wa.me/923001234567"
+
+href="https://wa.me/34672399181"
+
+
 
 target="_blank"
+
 
 className="
 mt-5
@@ -71,18 +95,31 @@ font-bold
 w-fit
 "
 
+
+
 >
+
+
 
 <FaWhatsapp className="text-2xl"/>
 
+
 WhatsApp
+
 
 
 </a>
 
 
 
+
+
+
 </div>
+
+
+
+
 
 
 
@@ -96,62 +133,116 @@ WhatsApp
 {/* LINKS */}
 
 
+
 <div>
+
+
+
 
 
 <h3 className="font-bold text-lg mb-4">
 
-Services
+
+Servicios
+
 
 </h3>
+
+
+
+
 
 
 
 <div className="space-y-3 text-blue-100">
 
 
+
+
+
+
 <Link href="/services">
 
-Immigration Services
+
+Servicios de extranjería
+
 
 </Link>
 
 
+
+
 <br/>
+
+
+
 
 
 <Link href="/regularization">
 
-Regularization 2026
+
+Regularización 2026
+
 
 </Link>
 
 
+
+
+
+
 <br/>
+
+
+
 
 
 <Link href="/provinces">
 
-Provinces
+
+Provincias
+
 
 </Link>
+
+
+
+
 
 
 <br/>
 
 
+
+
+
 <Link href="/guides">
 
-Guides
+
+Guías
+
 
 </Link>
 
 
 
-</div>
+
+
 
 
 </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
 
 
 
@@ -164,61 +255,116 @@ Guides
 {/* COMPANY */}
 
 
+
 <div>
+
+
+
 
 
 <h3 className="font-bold text-lg mb-4">
 
-Company
+
+Empresa
+
 
 </h3>
+
+
+
+
 
 
 
 <div className="space-y-3 text-blue-100">
 
 
+
+
+
+
 <Link href="/about">
 
-About us
+
+Sobre nosotros
+
 
 </Link>
 
 
+
+
+
+
 <br/>
+
+
+
 
 
 <Link href="/contact">
 
-Contact
+
+Contacto
+
 
 </Link>
 
 
+
+
+
+
 <br/>
+
+
+
 
 
 <Link href="/faq">
 
-FAQ
+
+Preguntas frecuentes
+
 
 </Link>
+
+
+
+
 
 
 <br/>
 
 
+
+
+
 <Link href="/privacy">
 
-Privacy Policy
+
+Política de privacidad
+
 
 </Link>
 
 
+
+
+
+
+
 </div>
 
 
+
+
+
+
 </div>
+
+
+
 
 
 
@@ -232,29 +378,48 @@ Privacy Policy
 {/* CTA */}
 
 
+
 <div>
+
+
+
 
 
 <h3 className="font-bold text-lg mb-4">
 
-Need an appointment?
+
+¿Necesitas una cita?
+
 
 </h3>
 
 
 
+
+
+
+
 <p className="text-blue-100 mb-5">
 
-Get your immigration appointment without wasting hours searching.
+
+Consigue tu cita de extranjería sin perder horas buscando.
+
 
 </p>
 
 
 
 
+
+
+
 <Link
 
+
+
 href="/appointment"
+
+
 
 className="
 block
@@ -267,15 +432,25 @@ rounded-xl
 font-bold
 "
 
+
+
 >
 
-Request Appointment
+
+
+Solicitar cita
+
+
 
 </Link>
 
 
 
 
+
+
+
+
 </div>
 
 
@@ -283,7 +458,13 @@ Request Appointment
 
 
 
+
+
+
 </div>
+
+
+
 
 
 
@@ -305,7 +486,13 @@ text-blue-200
 ">
 
 
-© {new Date().getFullYear()} CitaEs. All rights reserved.
+
+
+
+© {new Date().getFullYear()} CitaEs. Todos los derechos reservados.
+
+
+
 
 
 </div>
@@ -315,12 +502,20 @@ text-blue-200
 
 
 
+
+
+
 </div>
+
+
+
 
 
 </footer>
 
 
+
 )
+
 
 }

@@ -3,28 +3,40 @@ export default function HowItWorks(){
 
 const steps=[
 
+
 {
 number:"01",
-title:"Tell us about your procedure and your province",
-text:"Tell us what procedure you need (NIE, TIE, residency permit, asylum, nationality, student visa, etc.), which province you're in, and your availability."
+title:"Cuéntanos tu trámite y tu provincia",
+text:"Dinos qué trámite necesitas (NIE, TIE, permiso de residencia, asilo, nacionalidad, visado de estudiante, etc.), en qué provincia estás y tu disponibilidad."
 },
+
+
 
 {
 number:"02",
-title:"We'll find your available appointment 24 hours a day",
-text:"We continuously monitor appointments at immigration offices and police stations in your area, so you don't have to keep watching the screen."
+title:"Encontramos tu cita disponible las 24 horas",
+text:"Monitorizamos continuamente las citas disponibles en oficinas de extranjería y comisarías de tu zona, para que no tengas que estar revisando la pantalla."
 },
+
+
 
 {
 number:"03",
-title:"We'll confirm your appointment, and you'll only pay then.",
-text:"When we find an appointment that fits your case, we'll send the details for your review. You only pay after confirmation."
+title:"Confirmamos tu cita y solo pagas entonces",
+text:"Cuando encontramos una cita adecuada para tu caso, te enviamos los detalles para que los revises. Solo pagas después de la confirmación."
 }
+
+
 
 ];
 
 
+
+
+
 return(
+
+
 
 <section
 id="como-funciona"
@@ -32,27 +44,58 @@ className="bg-gray-50 py-16 md:py-24 scroll-mt-24"
 >
 
 
+
+
 <div className="max-w-7xl mx-auto px-4 md:px-10">
+
+
+
 
 
 <div className="text-center">
 
 
+
+
+
 <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
 
-How does CitaEs work?
+
+
+¿Cómo funciona CitaEs?
+
+
 
 </h2>
 
 
+
+
+
+
 <p className="mt-5 text-base md:text-xl text-gray-600">
 
-No registration. No endless forms. Just WhatsApp.
+
+
+Sin registro. Sin formularios interminables. Solo WhatsApp.
+
+
 
 </p>
 
 
+
+
+
+
+
 </div>
+
+
+
+
+
+
 
 
 
@@ -69,14 +112,24 @@ mt-12
 
 
 
+
+
+
 {
 
 steps.map((step)=>(
 
 
+
+
+
 <div
 
+
+
 key={step.number}
+
+
 
 className="
 bg-white
@@ -86,7 +139,16 @@ p-8
 min-h-[420px]
 "
 
+
+
 >
+
+
+
+
+
+
+
 
 
 <div className="
@@ -103,10 +165,22 @@ font-bold
 ">
 
 
+
+
+
 {step.number}
 
 
+
+
+
+
 </div>
+
+
+
+
+
 
 
 
@@ -120,10 +194,21 @@ text-gray-900
 ">
 
 
+
+
+
 {step.title}
 
 
+
+
+
+
 </h3>
+
+
+
+
 
 
 
@@ -136,7 +221,14 @@ leading-7
 ">
 
 
+
+
+
 {step.text}
+
+
+
+
 
 
 </p>
@@ -145,23 +237,50 @@ leading-7
 
 
 
+
+
+
 </div>
+
+
+
 
 
 ))
 
 
+
+
+
 }
 
 
+
+
+
+
+
 </div>
 
 
 
+
+
+
+
+
 </div>
+
+
+
+
+
 
 
 </section>
+
+
+
 
 
 )

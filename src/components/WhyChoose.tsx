@@ -5,36 +5,36 @@ const features = [
 
 {
 icon:"🎧",
-title:"Real human support",
-text:"We'll assist you via WhatsApp, answer your questions, and explain the process step by step."
+title:"Soporte humano real",
+text:"Te ayudamos por WhatsApp, respondemos tus preguntas y te explicamos el proceso paso a paso."
 },
 
 
 {
 icon:"24/7",
-title:"We search 24/7, you rest",
-text:"You don't have to check anything. We'll notify you when a real appointment is available."
+title:"Buscamos 24/7, tú descansas",
+text:"No tienes que revisar nada. Te avisamos cuando haya una cita real disponible."
 },
 
 
 {
 icon:"€",
-title:"Fixed and transparent price",
-text:"From €69. We don't sell unnecessary packages if you only need one appointment."
+title:"Precio fijo y transparente",
+text:"Desde 69€. No vendemos paquetes innecesarios si solo necesitas una cita."
 },
 
 
 {
 icon:"👛",
-title:"No upfront payment",
-text:"You only pay when we confirm a valid appointment that you accept."
+title:"Sin pago por adelantado",
+text:"Solo pagas cuando confirmamos una cita válida que aceptas."
 },
 
 
 {
 icon:"✓",
-title:"100% Guarantee",
-text:"If we can't find a suitable appointment for you, you don't pay anything at all."
+title:"Garantía del 100%",
+text:"Si no encontramos una cita adecuada para ti, no pagas nada."
 }
 
 
@@ -72,9 +72,11 @@ font-semibold
 text-sm
 ">
 
-⭐ WHY CHOOSE CITAES?
+⭐ ¿POR QUÉ ELEGIR CITAES?
 
 </div>
+
+
 
 
 
@@ -87,9 +89,11 @@ font-bold
 text-[#111827]
 ">
 
-Why choose CitaEs?
+¿Por qué elegir CitaEs?
 
 </h2>
+
+
 
 
 
@@ -101,9 +105,10 @@ text-xl
 text-gray-500
 ">
 
-No upfront payment. No fine print. No expensive management fees.
+Sin pago inicial. Sin letra pequeña. Sin costes de gestoría elevados.
 
 </p>
+
 
 
 
@@ -134,6 +139,7 @@ justify-center
 
 
 
+
 {features.map((item,index)=>(
 
 
@@ -142,6 +148,7 @@ justify-center
 key={index}
 
 className={`
+
 bg-white
 border
 border-gray-100
@@ -160,6 +167,8 @@ ${index < 3 ? "md:col-span-2" : "md:col-span-2 md:mx-12"}
 `}
 
 >
+
+
 
 
 
@@ -189,6 +198,9 @@ font-bold
 
 
 
+
+
+
 <h3 className="
 mt-7
 text-2xl
@@ -199,6 +211,9 @@ text-[#111827]
 {item.title}
 
 </h3>
+
+
+
 
 
 
@@ -223,6 +238,8 @@ text-lg
 
 
 
+
+
 </div>
 
 
@@ -235,7 +252,11 @@ text-lg
 
 
 
+
 </div>
+
+
+
 
 
 

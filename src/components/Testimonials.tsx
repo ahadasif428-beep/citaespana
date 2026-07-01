@@ -7,50 +7,51 @@ const reviews=[
 letter:"M",
 name:"María González",
 location:"Venezuela - Madrid",
-text:"I hadn't known what to do for months. CitaEs got me an appointment for the regularization process in 4 days. No upfront payment, just as they promised. Essential."
+text:"No sabía qué hacer durante meses. CitaEs consiguió mi cita para el proceso de regularización en 4 días. Sin pago por adelantado, tal como prometieron. Imprescindible."
 },
 
 
 {
 letter:"A",
 name:"Ahmed Hassan",
-location:"Morocco - Barcelona",
-text:"I thought it would be impossible to get an appointment before June 30th. CitaEs did it in less than a week. Highly recommended."
+location:"Marruecos - Barcelona",
+text:"Pensé que sería imposible conseguir una cita antes del 30 de junio. CitaEs lo consiguió en menos de una semana. Muy recomendable."
 },
 
 
 {
 letter:"F",
 name:"Farida Boukhari",
-location:"Algeria - Valencia",
-text:"I was afraid of missing the deadline. The CitaEs team guided me through everything: documents, Cl@ve, everything. My appointment was confirmed."
+location:"Argelia - Valencia",
+text:"Tenía miedo de perder el plazo. El equipo de CitaEs me guió con todo: documentos, Cl@ve y todo el proceso. Mi cita quedó confirmada."
 },
 
 
 {
 letter:"C",
 name:"Carlos Rodríguez",
-location:"Colombia - Seville",
-text:"Incredible service. They guided me through all the paperwork and I got the appointment in record time. Worth every penny."
+location:"Colombia - Sevilla",
+text:"Servicio increíble. Me ayudaron con todos los trámites y conseguí la cita en tiempo récord. Vale cada euro."
 },
 
 
 {
 letter:"J",
 name:"João Ferreira",
-location:"Portugal - Malaga",
-text:"Excellent. WhatsApp responds very quickly, in minutes. They explained everything I needed and the appointment came sooner than expected."
+location:"Portugal - Málaga",
+text:"Excelente. WhatsApp responde muy rápido, en minutos. Me explicaron todo lo necesario y la cita llegó antes de lo esperado."
 },
 
 
 {
-letter:"Yo",
+letter:"I",
 name:"Ibrahim Diallo",
 location:"Senegal - Murcia",
-text:"They helped me when I had already lost hope. Clear process with no surprises. I recommend it to all my fellow countrymen."
+text:"Me ayudaron cuando ya había perdido la esperanza. Proceso claro y sin sorpresas. Lo recomiendo a todos mis compatriotas."
 }
 
 ];
+
 
 
 
@@ -61,6 +62,7 @@ return(
 
 
 <div className="max-w-6xl mx-auto px-4 md:px-6">
+
 
 
 
@@ -81,9 +83,10 @@ text-sm
 font-semibold
 ">
 
-⭐ Verified reviews
+⭐ Opiniones verificadas
 
 </span>
+
 
 
 
@@ -96,16 +99,17 @@ mt-6
 text-gray-900
 ">
 
-What our customers say
+Lo que dicen nuestros clientes
 
 </h2>
 
 
 
 
+
 <p className="text-gray-600 mt-5 text-base md:text-lg">
 
-More than 15,000 appointments managed in 52 provinces since 2024.
+Más de 15.000 citas gestionadas en las 52 provincias desde 2024.
 
 </p>
 
@@ -119,9 +123,6 @@ More than 15,000 appointments managed in 52 provinces since 2024.
 
 
 
-
-
-{/* STATS */}
 
 
 <div className="
@@ -139,18 +140,20 @@ text-center
 
 <h3 className="text-4xl font-bold text-red-600">
 
-15,000+
+15.000+
 
 </h3>
 
 <p className="text-gray-600">
 
-Appointments obtained
+Citas conseguidas
 
 </p>
 
 
 </div>
+
+
 
 
 
@@ -166,12 +169,14 @@ Appointments obtained
 
 <p className="text-gray-600">
 
-Average rating
+Valoración media
 
 </p>
 
 
 </div>
+
+
 
 
 
@@ -187,7 +192,7 @@ Average rating
 
 <p className="text-gray-600">
 
-Provinces
+Provincias
 
 </p>
 
@@ -206,10 +211,6 @@ Provinces
 
 
 
-{/* REVIEWS */}
-
-
-
 <div className="
 grid
 grid-cols-1
@@ -217,6 +218,8 @@ md:grid-cols-3
 gap-6
 mt-14
 ">
+
+
 
 
 
@@ -240,7 +243,6 @@ p-6
 shadow-sm
 "
 
-
 >
 
 
@@ -248,7 +250,10 @@ shadow-sm
 
 
 
+
+
 <div className="flex justify-between items-start">
+
 
 
 
@@ -279,6 +284,9 @@ shrink-0
 
 
 
+
+
+
 <div>
 
 
@@ -303,7 +311,10 @@ shrink-0
 
 
 
+
 </div>
+
+
 
 
 
@@ -314,6 +325,7 @@ shrink-0
 ★★★★★
 
 </div>
+
 
 
 
@@ -347,6 +359,9 @@ md:text-base
 
 
 
+
+
+
 <div className="
 flex
 flex-col
@@ -355,6 +370,7 @@ justify-between
 gap-3
 mt-8
 ">
+
 
 
 
@@ -371,9 +387,12 @@ font-medium
 text-center
 ">
 
-Regularization 2026
+Regularización 2026
 
 </span>
+
+
+
 
 
 
@@ -384,13 +403,17 @@ text-sm
 text-center
 ">
 
-April 2026
+Abril 2026
 
 </span>
 
 
 
+
+
 </div>
+
+
 
 
 
@@ -404,6 +427,9 @@ April 2026
 
 
 }
+
+
+
 
 
 
@@ -437,7 +463,7 @@ hover:bg-red-700
 
 >
 
-Leave your feedback
+Dejar tu opinión
 
 </button>
 

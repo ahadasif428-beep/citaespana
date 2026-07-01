@@ -5,19 +5,26 @@ export default function Pricing() {
 
 function whatsapp(plan:string){
 
-const message = `
-Hello CitaEs,
 
-I want to request the ${plan} package.
+const whatsappNumber = "34672399181";
 
-Please provide more details.
 
-`;
+const message = 
+`Hola CitaEs,
+
+Quiero información sobre el plan ${plan}.
+
+Gracias.`;
+
 
 window.open(
-`https://wa.me/923001234567?text=${encodeURIComponent(message)}`,
+
+`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`,
+
 "_blank"
+
 );
+
 
 }
 
@@ -31,39 +38,88 @@ window.location.href="/eligibility-checker";
 
 
 
+
+
 return (
 
+
+
 <section className="py-24 bg-white">
+
+
+
 
 
 <div className="max-w-7xl mx-auto px-6">
 
 
+
+
+
+
+
 {/* HEADER */}
+
+
+
 
 <div className="text-center mb-16">
 
 
+
+
+
 <p className="text-blue-600 font-bold tracking-widest">
-TRANSPARENT TARIFFS
+
+
+TARIFAS TRANSPARENTES
+
+
 </p>
+
+
+
+
+
 
 
 <h2 className="text-5xl font-bold mt-4 text-[#111827]">
 
-Clear prices, no surprises
+
+
+Precios claros, sin sorpresas
+
+
 
 </h2>
 
 
+
+
+
+
+
 <p className="mt-5 text-gray-500 text-lg">
 
-You only pay if we get you an appointment. No hidden fees.
+
+
+Solo pagas si conseguimos tu cita. Sin costes ocultos.
+
+
 
 </p>
 
 
+
+
+
+
+
 </div>
+
+
+
+
 
 
 
@@ -75,7 +131,13 @@ You only pay if we get you an appointment. No hidden fees.
 
 
 
+
+
 {/* STANDARD */}
+
+
+
+
 
 <div className="
 border
@@ -87,42 +149,98 @@ transition
 ">
 
 
+
+
+
+
 <h3 className="text-blue-900 font-bold tracking-wide">
-STANDARD
+
+
+ESTÁNDAR
+
+
 </h3>
+
+
+
+
+
 
 
 <div className="flex items-end mt-5">
 
+
+
+
+
 <span className="text-5xl font-bold">
+
+
 €69
+
+
 </span>
 
+
+
+
+
 <span className="text-blue-900 ml-2">
-/appointment
+
+
+/cita
+
+
 </span>
+
+
+
+
 
 </div>
 
 
+
+
+
+
+
 <p className="mt-4 text-gray-500">
-No upfront payment
+
+
+Sin pago anticipado
+
+
 </p>
+
+
+
+
 
 
 
 <ul className="mt-8 space-y-5 text-lg">
 
 
+
+
+
 <li>✓ NIE</li>
 
-<li>✓ Fingerprinting</li>
 
-<li>✓ Certificates of Residence</li>
+<li>✓ Huellas digitales</li>
 
-<li>✓ Invitation Letter</li>
 
-<li>✓ Return Authorization</li>
+<li>✓ Certificados de residencia</li>
+
+
+<li>✓ Carta de invitación</li>
+
+
+<li>✓ Autorización de regreso</li>
+
+
+
 
 
 </ul>
@@ -130,9 +248,17 @@ No upfront payment
 
 
 
+
+
+
+
 <button
 
-onClick={()=>whatsapp("Standard")}
+
+
+onClick={()=>whatsapp("Estándar")}
+
+
 
 className="
 mt-10
@@ -148,11 +274,20 @@ hover:text-white
 transition
 "
 
+
+
 >
 
-Request via WhatsApp
+
+
+Solicitar por WhatsApp
+
+
 
 </button>
+
+
+
 
 
 
@@ -164,7 +299,16 @@ Request via WhatsApp
 
 
 
+
+
+
+
+
 {/* PREMIUM */}
+
+
+
+
 
 
 
@@ -178,6 +322,9 @@ border-2
 border-blue-500
 relative
 ">
+
+
+
 
 
 <div className="
@@ -195,34 +342,62 @@ font-bold
 text-sm
 ">
 
-MOST POPULAR
+
+
+MÁS POPULAR
+
+
 
 </div>
+
+
+
 
 
 
 
 <h3 className="font-bold tracking-wide">
 
+
 PREMIUM
 
+
 </h3>
+
+
+
+
 
 
 
 <div className="flex items-end mt-5">
 
 
+
+
+
 <span className="text-5xl font-bold">
+
 
 €149
 
+
 </span>
+
+
+
 
 
 <span className="ml-2">
-/appointment
+
+
+/cita
+
+
 </span>
+
+
+
 
 
 </div>
@@ -230,11 +405,18 @@ PREMIUM
 
 
 
+
+
+
 <p className="mt-4">
 
-No upfront payment
+
+Sin pago anticipado
+
 
 </p>
+
+
 
 
 
@@ -243,13 +425,22 @@ No upfront payment
 <ul className="mt-8 space-y-5 text-lg">
 
 
-<li>✓ TIE (Foreigner's Card)</li>
 
-<li>✓ Permit Renewals</li>
 
-<li>✓ Social / Labor Integration</li>
 
-<li>✓ Family Reunification</li>
+<li>✓ TIE (Tarjeta de extranjero)</li>
+
+
+<li>✓ Renovación de permisos</li>
+
+
+<li>✓ Arraigo social / laboral</li>
+
+
+<li>✓ Reagrupación familiar</li>
+
+
+
 
 
 </ul>
@@ -259,9 +450,15 @@ No upfront payment
 
 
 
+
+
 <button
 
+
+
 onClick={()=>whatsapp("Premium")}
+
+
 
 className="
 mt-10
@@ -274,16 +471,30 @@ hover:bg-green-600
 transition
 "
 
+
+
 >
 
-Request via WhatsApp
+
+
+Solicitar por WhatsApp
+
+
 
 </button>
 
 
 
 
+
+
+
+
 </div>
+
+
+
+
 
 
 
@@ -297,6 +508,10 @@ Request via WhatsApp
 
 
 
+
+
+
+
 <div className="
 border
 border-red-300
@@ -304,6 +519,10 @@ rounded-3xl
 p-10
 relative
 ">
+
+
+
+
 
 
 
@@ -323,11 +542,21 @@ text-sm
 text-center
 ">
 
-Official State Gazette (BOE)
+
+
+Boletín Oficial del Estado (BOE)
+
 <br/>
-15 April 2026
+
+15 Abril 2026
+
+
 
 </div>
+
+
+
+
 
 
 
@@ -339,9 +568,18 @@ font-bold
 tracking-wide
 ">
 
-REGULARIZATION 2026 + ASYLUM
+
+
+REGULARIZACIÓN 2026 + ASILO
+
+
 
 </h3>
+
+
+
+
+
 
 
 
@@ -349,16 +587,31 @@ REGULARIZATION 2026 + ASYLUM
 <div className="flex items-end mt-5">
 
 
+
+
+
 <span className="text-5xl font-bold">
+
 
 €300
 
+
 </span>
+
+
+
 
 
 <span className="ml-2 text-gray-500">
-/package
+
+
+/paquete
+
+
 </span>
+
+
+
 
 
 </div>
@@ -366,11 +619,19 @@ REGULARIZATION 2026 + ASYLUM
 
 
 
+
+
+
 <p className="mt-4 text-gray-500">
 
-All-inclusive complete package
+
+
+Paquete completo incluido
+
+
 
 </p>
+
 
 
 
@@ -380,39 +641,94 @@ All-inclusive complete package
 <ul className="mt-8 space-y-5 text-lg">
 
 
-<li className="text-red-500">
-✓ <span className="text-gray-700">
-Regularization 2026 complete
-</span>
-</li>
+
+
 
 
 <li className="text-red-500">
+
 ✓ <span className="text-gray-700">
-Asylum and International Protection
+
+
+Regularización 2026 completa
+
+
 </span>
+
 </li>
+
+
+
+
 
 
 <li className="text-red-500">
+
 ✓ <span className="text-gray-700">
-Eligibility verification
+
+
+Asilo y Protección Internacional
+
+
 </span>
+
 </li>
+
+
+
+
 
 
 <li className="text-red-500">
+
 ✓ <span className="text-gray-700">
-Document preparation
+
+
+Verificación de elegibilidad
+
+
 </span>
+
 </li>
+
+
+
+
 
 
 <li className="text-red-500">
+
 ✓ <span className="text-gray-700">
-Follow-up until resolution
+
+
+Preparación de documentos
+
+
 </span>
+
 </li>
+
+
+
+
+
+
+<li className="text-red-500">
+
+✓ <span className="text-gray-700">
+
+
+Seguimiento hasta resolución
+
+
+</span>
+
+</li>
+
+
+
+
+
 
 
 </ul>
@@ -422,9 +738,16 @@ Follow-up until resolution
 
 
 
+
+
+
 <button
 
+
+
 onClick={eligibility}
+
+
 
 className="
 mt-10
@@ -438,38 +761,69 @@ hover:bg-red-700
 transition
 "
 
+
+
 >
 
-More information →
+
+
+Más información →
+
 
 </button>
 
 
 
 
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
 </div>
 
 
 
 
 
-
-</div>
 
 
 
 <p className="text-center mt-10 text-gray-400">
 
-CitaEs is not a law firm.
+
+
+CitaEs no es un despacho de abogados.
+
+
 
 </p>
+
+
+
+
 
 
 
 </div>
 
 
+
+
+
+
+
 </section>
+
+
 
 )
 

@@ -3,39 +3,47 @@ export default function Guarantee(){
 
 const cards=[
 
+
 {
 icon:"💰",
-title:"Zero advanced",
-text:"We don't ask for any payment until you have the confirmed appointment in your hands."
+title:"Cero pago anticipado",
+text:"No pedimos ningún pago hasta que tengas la cita confirmada en tus manos."
 },
+
 
 
 {
 icon:"🛡️",
-title:"No appointment necessary, no charge required",
-text:"If we can't find a suitable appointment for you, you don't pay anything at all."
+title:"Sin cita, no pagas",
+text:"Si no podemos encontrar una cita adecuada para ti, no pagas absolutamente nada."
 },
+
 
 
 {
 icon:"‹",
-title:"No commitment",
-text:"Cancel anytime. No contracts, no penalties, no fine print."
+title:"Sin compromiso",
+text:"Cancela cuando quieras. Sin contratos, sin penalizaciones y sin letra pequeña."
 },
+
 
 
 {
 icon:"💬",
-title:"You make the decision",
-text:"We'll send you the quote via WhatsApp. You review it. You only confirm if you're happy with it."
+title:"Tú decides",
+text:"Te enviaremos la propuesta por WhatsApp. La revisas y solo confirmas si estás conforme."
 }
+
 
 
 ]
 
 
 
+
+
 return(
+
 
 
 <section className="
@@ -46,12 +54,16 @@ text-white
 
 
 
+
+
 <div className="
 max-w-[1200px]
 mx-auto
 px-6
 text-center
 ">
+
+
 
 
 
@@ -72,10 +84,14 @@ text-4xl
 ">
 
 
+
 🛡️
 
 
+
 </div>
+
+
 
 
 
@@ -90,9 +106,17 @@ tracking-wider
 text-sm
 ">
 
-CITAES GUARANTEE
+
+
+GARANTÍA CITAES
+
+
 
 </p>
+
+
+
+
 
 
 
@@ -104,9 +128,17 @@ font-bold
 mt-4
 ">
 
-No risk to you — always
+
+
+Sin riesgo para ti — siempre
+
+
 
 </h2>
+
+
+
+
 
 
 
@@ -120,9 +152,16 @@ max-w-2xl
 mx-auto
 ">
 
-More than 15,000 people have already trusted us without paying a penny until they have their appointment.
+
+
+Más de 15.000 personas ya han confiado en nosotros sin pagar nada hasta conseguir su cita.
+
+
 
 </p>
+
+
+
 
 
 
@@ -140,15 +179,24 @@ mt-14
 
 
 
+
+
+
+
 {
 
 cards.map((card,index)=>(
 
 
 
+
+
+
 <div
 
+
 key={index}
+
 
 className="
 bg-white/10
@@ -160,7 +208,11 @@ min-h-[285px]
 "
 
 
+
 >
+
+
+
 
 
 
@@ -177,9 +229,17 @@ text-2xl
 text-yellow-400
 ">
 
+
+
 {card.icon}
 
+
+
 </div>
+
+
+
+
 
 
 
@@ -191,9 +251,17 @@ font-bold
 text-xl
 ">
 
+
+
 {card.title}
 
+
+
 </h3>
+
+
+
+
 
 
 
@@ -206,7 +274,11 @@ text-blue-100
 leading-7
 ">
 
+
+
 {card.text}
+
+
 
 </p>
 
@@ -214,18 +286,36 @@ leading-7
 
 
 
+
+
+
 </div>
+
+
 
 
 
 ))
 
 
+
+
+
 }
 
 
 
+
+
+
+
+
 </div>
+
+
+
+
+
 
 
 
@@ -234,6 +324,8 @@ leading-7
 
 
 <button
+
+
 
 className="
 mt-12
@@ -247,11 +339,19 @@ text-lg
 hover:bg-yellow-300
 "
 
+
+
 >
 
-💬 Get started for free via WhatsApp
+
+
+💬 Empezar gratis por WhatsApp
+
+
 
 </button>
+
+
 
 
 
@@ -265,9 +365,15 @@ text-blue-200
 text-sm
 ">
 
-No registration required · You only pay when you confirm your appointment
+
+
+No necesitas registrarte · Solo pagas cuando confirmas tu cita
+
+
 
 </p>
+
+
 
 
 
@@ -278,7 +384,12 @@ No registration required · You only pay when you confirm your appointment
 
 
 
+
+
+
 </section>
+
+
 
 
 

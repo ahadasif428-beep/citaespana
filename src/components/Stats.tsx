@@ -43,7 +43,7 @@ text-gray-900
 ">
 
 
-⏳ Open deadline · Closes June 30
+⏳ Plazo abierto · Cierra el 30 de junio
 
 
 </div>
@@ -60,7 +60,7 @@ text-[#101827]
 ">
 
 
-Are you eligible for the 2026 Regularization?
+¿Eres elegible para la Regularización 2026?
 
 
 </h2>
@@ -77,7 +77,7 @@ text-lg
 ">
 
 
-Over 500,000 people are eligible to apply. Verification is free and takes 2 minutes.
+Más de 500.000 personas pueden solicitarla. La verificación es gratuita y tarda solo 2 minutos.
 
 
 </p>
@@ -85,6 +85,8 @@ Over 500,000 people are eligible to apply. Verification is free and takes 2 minu
 
 
 </div>
+
+
 
 
 
@@ -110,7 +112,7 @@ shadow-md
 >
 
 
-Check your eligibility for FREE →
+Comprobar mi elegibilidad GRATIS →
 
 
 </button>
