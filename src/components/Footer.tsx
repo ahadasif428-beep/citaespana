@@ -52,11 +52,9 @@ Your trusted immigration appointment monitoring service in Spain.
 
 
 <a
-
-href="https://wa.me/923001234567"
-
+href="https://wa.me/34672399181"
 target="_blank"
-
+rel="noopener noreferrer"
 className="
 mt-5
 bg-[#25D366]
@@ -178,7 +176,7 @@ Company
 <div className="space-y-3 text-blue-100">
 
 
-<Link href="/about">
+<Link href="/services">
 
 About us
 
@@ -198,9 +196,9 @@ Contact
 <br/>
 
 
-<Link href="/faq">
+<Link href="/eligibility">
 
-FAQ
+Eligibility
 
 </Link>
 
@@ -211,6 +209,22 @@ FAQ
 <Link href="/privacy">
 
 Privacy Policy
+
+</Link>
+
+<br/>
+
+<Link href="/terms">
+
+Terms
+
+</Link>
+
+<br/>
+
+<Link href="/legal-notice">
+
+Legal Notice
 
 </Link>
 

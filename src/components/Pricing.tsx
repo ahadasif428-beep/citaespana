@@ -25,7 +25,7 @@ window.open(
 
 function eligibility(){
 
-window.location.href="/eligibility-checker";
+window.location.href="/eligibility";
 
 }
 

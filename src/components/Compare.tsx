@@ -338,9 +338,9 @@ className="border rounded-2xl p-5 shadow-sm"
 
 
 <a
-
-href="#"
-
+href="https://wa.me/34672399181"
+target="_blank"
+rel="noopener noreferrer"
 className="
 mt-10
 mx-auto

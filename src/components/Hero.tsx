@@ -106,6 +106,13 @@ province,
 procedure
 );
 
+function scrollToForm() {
+  document.getElementById("appointment-form")?.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+
 
 
 
@@ -114,8 +121,8 @@ async function submit(){
 
 
 if(!province || !procedure || !phone){
-
-return;
+  alert("Please complete your province, procedure and WhatsApp number.");
+  return;
 
 }
 
@@ -298,7 +305,7 @@ You only pay if we secure your appointment.
 
 
 
-<div className="w-full bg-white/10 border border-white/30 rounded-3xl p-5 md:p-8 backdrop-blur">
+<div id="appointment-form" className="w-full bg-white/10 border border-white/30 rounded-3xl p-5 md:p-8 backdrop-blur">
 
 
 
@@ -600,7 +607,7 @@ WhatsApp
 
 <button
 
-onClick={submit}
+onClick={scrollToForm}
 
 className="flex-1 h-14 bg-yellow-400 text-black rounded-xl font-bold"
 

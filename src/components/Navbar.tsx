@@ -288,7 +288,9 @@ text-sm
 
 
 <a
-
+href="https://wa.me/34672399181"
+target="_blank"
+rel="noopener noreferrer"
 className="
 hidden
 lg:block

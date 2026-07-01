@@ -1,48 +1,38 @@
-import "./globals.css";
-import { LanguageProvider } from "@/context/LanguageContext";
-import type { Metadata } from "next";
+import GoogleTranslate from "@/components/GoogleTranslate";
 
 
-export const metadata: Metadata = {
+export const metadata = {
 
-  title: "CitaEs - Spain Immigration Appointment Assistance",
+title:"CitaEs | Citas de Extranjería en España",
 
-  description:
-    "CitaEs helps you find Spanish immigration appointments faster.",
-
-
+description:
+"Gestionamos citas de extranjería en España."
 
 };
 
 
 
 export default function RootLayout({
-
-  children,
-
-}: {
-
-  children: React.ReactNode;
-
-}) {
+children,
+}:{
+children:React.ReactNode
+}){
 
 
-  return (
+return(
 
-    <html lang="en">
+<html lang="es">
 
-      <body>
+<body>
 
-        <LanguageProvider>
+<GoogleTranslate/>
 
-          {children}
+{children}
 
-        </LanguageProvider>
+</body>
 
-      </body>
+</html>
 
-    </html>
-
-  );
+)
 
 }

@@ -130,7 +130,7 @@ transition
 
 
 <a
-
+href="/provinces"
 className="
 text-red-600
 font-semibold

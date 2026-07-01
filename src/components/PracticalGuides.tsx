@@ -120,13 +120,10 @@ className={`${item.color} p-7 h-[105px] flex items-center`}
 
 
 <a
-
+href="/guides"
 className={`${item.linkColor} font-bold inline-block mt-6`}
-
 >
-
 Read guide →
-
 </a>
 
 
@@ -150,7 +147,7 @@ Read guide →
 
 <div className="text-center mt-12">
 
-<a className="text-red-600 font-bold text-lg">
+<a href="/guides" className="text-red-600 font-bold text-lg">
 
 View all practical guides →
 

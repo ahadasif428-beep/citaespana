@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function FinalCTA(){
 
 
@@ -99,7 +101,9 @@ mt-10
 
 
 <a
-
+href="https://wa.me/34672399181"
+target="_blank"
+rel="noopener noreferrer"
 className="
 bg-[#d90429]
 text-white
@@ -123,8 +127,8 @@ transition
 
 
 
-<a
-
+<Link
+href="/appointment"
 className="
 bg-white
 text-[#063d73]
@@ -140,7 +144,7 @@ transition
 
 📝 Apply Online
 
-</a>
+</Link>
 
 
 
