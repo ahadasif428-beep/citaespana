@@ -14,7 +14,7 @@ Quiero solicitar una cita de extranjería.
 
 Nombre: ${name}
 
-Número de WhatsApp: ${phone}
+
 
 Correo electrónico: ${email || "No proporcionado"}
 

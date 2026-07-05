@@ -105,7 +105,7 @@ text-2xl
 md:text-3xl
 font-bold
 text-[#063d73]
-">
+" translate="no">
 
 CitaEs
 
