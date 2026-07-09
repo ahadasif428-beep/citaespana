@@ -3,9 +3,12 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
+import { GoogleAnalytics } from "@next/third-parties/google";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.citaespana.com"),
-
+verification: {
+  google: "GkYEU7xgWOj6Pa46XjiwoAcPcgm45oHN7n_MahUohwE",
+},
   title: {
     default: "CitaEspaña | Immigration Appointments in Spain",
     template: "%s | CitaEspaña",
@@ -97,23 +100,26 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(organizationSchema),
-  }}
-/>
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
 
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(websiteSchema),
-  }}
-/>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+
         <Navbar />
 
         {children}
 
         <Footer />
+
+        <GoogleAnalytics gaId="G-GPE5YL07K6" />
       </body>
     </html>
   );
