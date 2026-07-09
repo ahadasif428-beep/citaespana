@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.citaespana.com"),
 verification: {
@@ -118,7 +119,15 @@ export default function RootLayout({
         {children}
 
         <Footer />
-
+<Script id="microsoft-clarity" strategy="afterInteractive">
+  {`
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xjpv38dg3z");
+  `}
+</Script>
         <GoogleAnalytics gaId="G-GPE5YL07K6" />
       </body>
     </html>
