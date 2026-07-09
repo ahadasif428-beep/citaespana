@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-
+export default function AboutPage() {
+  return (
+    <main>
+      <h1>Eligibility Checker</h1>
+    </main>
+  );
+}
 export const metadata: Metadata = {
   title: "Eligibility Checker",
 
