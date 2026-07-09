@@ -1,6 +1,18 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Immigration Services",
+
+  description:
+    "Explore our immigration appointment services including NIE, TIE, Residence, Family Reunification, Fingerprints and more.",
+
+  alternates: {
+    canonical: "/services",
+  },
+};
 
 
 const services = [
