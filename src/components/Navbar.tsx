@@ -3,370 +3,185 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
+export default function Navbar() {
+  const [time, setTime] = useState("");
 
-export default function Navbar(){
+  useEffect(() => {
+    const update = () => {
+      setTime(new Date().toLocaleTimeString("en-GB", {
+        hour: "2-digit",
+        minute: "2-digit",
+      }));
+    };
 
+    update();
 
-const [time,setTime]=useState("");
+    const timer = setInterval(update, 1000);
 
+    return () => clearInterval(timer);
+  }, []);
 
-
-useEffect(()=>{
-
-
-const update=()=>{
-
-setTime(
-new Date().toLocaleTimeString("en-GB")
-)
-
-}
-
-
-update();
-
-
-const timer=setInterval(update,1000);
-
-
-return()=>clearInterval(timer);
-
-
-},[]);
-
-
-
-
-
-return(
-
-
-<header className="
-w-full
-bg-white
-shadow-sm
-sticky
-top-0
-z-50
-">
-
-
-
-<div className="
-w-full
-px-3
-md:px-6
-py-3
-md:py-4
-flex
-items-center
-justify-between
-gap-3
-">
-
-
-
-
-
-
-{/* Logo */}
-
-
-<Link
-
-href="/"
-
-className="
-flex
-items-center
-gap-2
-whitespace-nowrap
-"
-
+  return (
+    <header
+  className="
+  fixed
+  top-0
+  left-0
+  right-0
+  z-50
+  bg-white/95
+  backdrop-blur-xl
+  border-b
+  border-gray-100
+  shadow-sm
+  "
 >
-
-
-<Image
-
-src="/logo.jpeg"
-
-alt="CitaEs logo"
-
-width={50}
-
-height={50}
-
-/>
-
-
-<span className="
-text-2xl
-md:text-3xl
-font-bold
-text-[#063d73]
-" translate="no">
-
-CitaEs
-
-</span>
-
-
-</Link>
-
-
-
-
-
-
-
-
-{/* Desktop Menu */}
-
-
-<nav className="
-hidden
-xl:flex
-items-center
-gap-5
-text-[14px]
-font-medium
-text-gray-700
-whitespace-nowrap
-">
-
-
-
-<Link href="/regularization">
-
-<span className="
-flex
-items-center
-gap-1
-">
-
-Regularización 2026
-
-
-<span className="
-bg-green-100
-text-green-700
-text-[10px]
-px-2
-py-[2px]
-rounded-full
-">
-
-Nuevo
-
-</span>
-
-
-</span>
-
-</Link>
-
-
-
-
-
-<a href="#como-funciona">
-
-Cómo funciona
-
-</a>
-
-
-
-<Link href="/services">
-
-Servicios
-
-</Link>
-
-
-
-<Link href="/prices">
-
-Precios
-
-</Link>
-
-
-
-<Link href="/provinces">
-
-Provincias
-
-</Link>
-
-
-
-<Link href="/formalities">
-
-Trámites
-
-</Link>
-
-
-
-<Link href="/guides">
-
-Guías
-
-</Link>
-
-
-
-<Link href="/contact">
-
-Contacto
-
-</Link>
-
-
-
-
-</nav>
-
-
-
-
-
-
-
-
-
-{/* Right section */}
-
-
-<div className="
-flex
-items-center
-gap-2
-">
-
-
-
-
-
-
-
-{/* Time desktop only */}
-
-
-<div className="
-hidden
-2xl:flex
-items-center
-gap-2
-text-sm
-">
-
-
-🇪🇸 Madrid
-
-
-<span className="text-gray-500">
-
-{time}
-
-</span>
-
-
-</div>
-
-
-
-
-
-
-
-
-{/* WhatsApp desktop only */}
-
-
-<a
-
-href="https://wa.me/34672399181"
-
-target="_blank"
-
-className="
-hidden
-lg:block
-border
-border-green-500
-text-green-600
-px-4
-py-2
-rounded-lg
-font-semibold
-text-sm
-"
-
->
-
-WhatsApp
-
-</a>
-
-
-
-
-
-
-
-
-
-{/* Appointment */}
-
-
-<Link
-
-href="/appointment"
-
-className="
-bg-[#d90429]
-text-white
-px-3
-md:px-5
-py-2
-md:py-3
-rounded-lg
-font-bold
-text-[10px]
-md:text-xs
-whitespace-nowrap
-"
-
->
-
-SOLICITAR CITA
-
-</Link>
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-</div>
-
+  <div className="max-w-7xl mx-auto h-[72px] px-6 flex items-center justify-between">
+
+    {/* LOGO */}
+
+    <Link href="/" className="flex items-center gap-3 shrink-0">
+
+      <Image
+        src="/logo.jpeg"
+        alt="CitaEs"
+        width={48}
+        height={48}
+        className="rounded-full"
+      />
+
+      <span
+        translate="no"
+        className="text-3xl font-black text-[#C60B1E] leading-none"
+      >
+        CitaEs
+      </span>
+
+    </Link>
+
+    {/* MENU */}
+
+    <nav className="hidden xl:flex items-center gap-7 text-[15px] font-semibold">
+
+      <Link
+        href="/regularization"
+        className="hover:text-[#C60B1E] transition-colors"
+      >
+        Regularización
+      </Link>
+
+      <Link
+        href="/services"
+        className="hover:text-[#C60B1E] transition-colors"
+      >
+        Servicios
+      </Link>
+
+      <Link
+        href="/provinces"
+        className="hover:text-[#C60B1E] transition-colors"
+      >
+        Provincias
+      </Link>
+
+      <Link
+        href="/guides"
+        className="hover:text-[#C60B1E] transition-colors"
+      >
+        Guías
+      </Link>
+
+      <Link
+        href="/contact"
+        className="hover:text-[#C60B1E] transition-colors"
+      >
+        Contacto
+      </Link>
+
+    </nav>
+        {/* DESKTOP MENU */}
+
+            {/* RIGHT SIDE */}
+
+    <div className="flex items-center gap-4 shrink-0">
+
+      {/* Madrid Time */}
+
+      <div className="hidden 2xl:flex items-center gap-2 text-sm text-gray-500">
+
+        <span>🇪🇸 Madrid</span>
+
+        <span className="font-semibold">
+
+          {time}
+
+        </span>
+
+      </div>
+
+      {/* WhatsApp */}
+
+      <a
+        href="https://wa.me/34672399181"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+        hidden
+        lg:flex
+        items-center
+        gap-2
+        h-10
+        px-5
+        rounded-xl
+        border
+        border-[#25D366]
+        text-[#25D366]
+        font-semibold
+        hover:bg-[#25D366]
+        hover:text-white
+        transition-all
+        duration-300
+        "
+      >
+
+        <FaWhatsapp className="text-lg" />
+
+        WhatsApp
+
+      </a>
+
+      {/* Appointment */}
+
+      <Link
+        href="/appointment"
+        className="
+        flex
+        items-center
+        justify-center
+        h-10
+        px-6
+        rounded-xl
+        bg-[#C60B1E]
+        hover:bg-[#A40818]
+        text-white
+        font-bold
+        shadow-md
+        hover:shadow-xl
+        transition-all
+        duration-300
+        "
+      >
+
+        Solicitar cita →
+
+      </Link>
+
+    </div>
+
+  </div>
 
 </header>
-
-
-)
-
-
+);
 }

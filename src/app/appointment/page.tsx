@@ -28,7 +28,7 @@ return(
 
 <>
 
-<Navbar/>
+
 
 <AppointmentHero/>
 
@@ -44,7 +44,6 @@ return(
 
 <FAQ/>
 
-<Footer/>
 
 
 

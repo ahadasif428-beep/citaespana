@@ -88,74 +88,181 @@ Haz clic en tu provincia para ver disponibilidad y guías locales.
 
 
 
-<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-14">
-
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mt-16">
 
 {
-provinces.map((province)=>(
-
+provinces.map((province,index)=>(
 
 <button
 
 key={province}
 
 className="
-h-[46px]
-rounded-xl
-border
-border-gray-200
+group
+relative
+overflow-hidden
+h-[58px]
+rounded-2xl
 bg-white
-text-[#152744]
-text-sm
-hover:border-red-500
-hover:text-red-600
-transition
+border
+border-gray-100
+shadow-md
+font-semibold
+text-gray-700
+hover:-translate-y-2
+hover:shadow-xl
+hover:border-[#C60B1E]
+transition-all
+duration-300
 "
 
 >
 
-{province}
+<div
+className="
+absolute
+left-0
+top-0
+w-0
+h-full
+bg-gradient-to-r
+from-[#C60B1E]
+to-[#F1BF00]
+group-hover:w-full
+transition-all
+duration-500
+"
+/>
 
+<span
+className="
+relative
+z-10
+group-hover:text-white
+transition-colors
+duration-300
+"
+>
+
+📍 {province}
+
+</span>
 
 </button>
-
 
 ))
 
 }
 
-
 </div>
 
 
 
+{/* Bottom CTA */}
 
-<div className="text-center mt-10">
+<div className="mt-20">
 
+<div
+className="
+rounded-[32px]
+bg-gradient-to-r
+from-[#C60B1E]
+via-[#B10A19]
+to-[#A40818]
+text-white
+text-center
+px-10
+py-12
+shadow-2xl
+relative
+overflow-hidden
+"
+>
 
-<a
+<div
+className="
+absolute
+top-0
+right-0
+w-64
+h-64
+bg-[#F1BF00]/20
+rounded-full
+blur-3xl
+"
+/>
+
+<div
+className="
+absolute
+bottom-0
+left-0
+w-56
+h-56
+bg-white/10
+rounded-full
+blur-3xl
+"
+/>
+
+<h3
+className="
+relative
+z-10
+text-3xl
+font-black
+"
+>
+
+¿No encuentras tu provincia?
+
+</h3>
+
+<p
+className="
+relative
+z-10
+mt-5
+text-red-100
+max-w-2xl
+mx-auto
+leading-8
+"
+>
+
+Trabajamos en las 52 provincias de España y añadimos nuevas oficinas y disponibilidad cada día.
+
+</p>
+
+<button
 
 className="
-text-red-600
-font-semibold
-hover:underline
-cursor-pointer
+relative
+z-10
+mt-8
+bg-[#F1BF00]
+text-[#8B0000]
+font-black
+px-10
+py-4
+rounded-2xl
+shadow-lg
+hover:scale-105
+hover:shadow-xl
+transition-all
+duration-300
 "
 
 >
 
 Ver todas las provincias →
 
-</a>
-
-
-</div>
-
-
+</button>
 
 </div>
 
-
+</div>
+</div>
 </section>
 
 

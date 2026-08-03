@@ -1,443 +1,460 @@
-import FAQ from "@/components/FAQ";
+import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FAQ from "@/components/FAQ";
 import { services } from "@/data/services";
-import Link from "next/link";
-
 
 type ServiceSlug = keyof typeof services;
 
-
-export default async function Page({
-  params
+export async function generateMetadata({
+  params,
 }: {
-  params: Promise<{ slug: ServiceSlug }>
-}) {
-
-
+  params: Promise<{ slug: ServiceSlug }>;
+}): Promise<Metadata> {
   const { slug } = await params;
-
 
   const service = services[slug];
 
+  if (!service) {
+    return {
+      title: "Servicio",
+    };
+  }
 
-  const faqs = [
-    {
-      q: "How long does it take?",
-      a: "The time depends on the province and immigration procedure. We monitor availability 24/7."
+  return {
+    title: `${service.title} | CitaEspaña`,
+    description: service.description,
+    alternates: {
+      canonical: `/services/${slug}`,
     },
-    {
-      q: "Do I pay before appointment?",
-      a: "No. You only pay after we find and confirm your appointment."
+    openGraph: {
+      title: service.title,
+      description: service.description,
+      url: `https://www.citaespana.com/services/${slug}`,
+      type: "website",
     },
-    {
-      q: "Is it available in my province?",
-      a: "Yes. We cover all 52 provinces of Spain."
-    },
-    {
-      q: "Are you connected with Spanish Government?",
-      a: "No. Citaes is an independent private appointment assistance service."
-    }
-  ];
+  };
+}
 
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: ServiceSlug }>;
+}) {
+  const { slug } = await params;
+
+  const service = services[slug];
 
   if (!service) {
     return (
-      <h1 className="text-3xl text-center mt-20">
-        Service not found
-      </h1>
+      <main className="py-32 text-center">
+        <h1 className="text-5xl font-bold">
+          Servicio no encontrado
+        </h1>
+      </main>
     );
   }
 
-
   return (
     <>
+      
 
+      {/* Breadcrumb */}
 
-      <Navbar />
+      <div className="max-w-7xl mx-auto px-6 py-5 text-sm text-gray-500">
 
+        <Link href="/" className="hover:text-blue-600">
+          Inicio
+        </Link>
+
+        <span className="mx-2">/</span>
+
+        <Link
+          href="/services"
+          className="hover:text-blue-600"
+        >
+          Servicios
+        </Link>
+
+        <span className="mx-2">/</span>
+
+        <span className="font-semibold text-gray-700">
+          {service.title}
+        </span>
+
+      </div>
 
       {/* HERO */}
 
-      <section className="bg-[#0046d8] text-white py-24">
+      <section className="bg-[#0A4ABF] text-white py-24">
 
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
           <div>
 
-
-            <span className="bg-blue-500 px-5 py-2 rounded-full">
+            <span className="inline-block bg-blue-500 rounded-full px-5 py-2 font-semibold">
 
               {service.badge}
 
             </span>
 
-
-            <h1 className="text-6xl font-bold mt-8 leading-tight">
+            <h1 className="text-5xl lg:text-6xl font-bold mt-8 leading-tight">
 
               {service.title}
 
             </h1>
 
-
-            <p className="text-xl text-blue-100 mt-6 leading-8">
+            <p className="text-xl text-blue-100 mt-8 leading-9">
 
               {service.description}
 
             </p>
 
-
-
-            <div className="flex gap-5 mt-10">
-
+            <div className="flex flex-wrap gap-5 mt-10">
 
               <a
                 href="https://wa.me/34672399181"
-                className="
-                bg-green-500
-                px-10
-                py-4
-                rounded-xl
-                font-bold
-                "
+                target="_blank"
+                className="bg-green-500 hover:bg-green-600 transition px-8 py-4 rounded-xl font-bold"
               >
-
-                💬 Contact via WhatsApp
-
+                Contactar por WhatsApp
               </a>
-
-
 
               <Link
                 href="/appointment"
-                className="
-                bg-white
-                text-blue-700
-                px-10
-                py-4
-                rounded-xl
-                font-bold
-                "
+                className="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold"
               >
-
-                Request appointment
-
+                Solicitar cita
               </Link>
 
-
             </div>
-
 
           </div>
 
-
-
-
-
-          <div className="
-          bg-white/10
-          rounded-3xl
-          p-10
-          border
-          border-white/20
-          ">
-
+          <div className="bg-white/10 rounded-3xl border border-white/20 p-10">
 
             <h2 className="text-3xl font-bold">
-
-              Need an appointment?
-
+              ¿Por qué elegir CitaEspaña?
             </h2>
 
-
-            <p className="mt-5 text-blue-100">
-
-              We monitor availability 24/7 and notify you when an appointment appears.
-
+            <p className="mt-6 text-blue-100 leading-8">
+              Nuestro sistema monitoriza automáticamente las citas
+              disponibles durante las 24 horas del día para ayudarte
+              a conseguir una cita lo antes posible.
             </p>
 
+            <div className="space-y-4 mt-8 text-lg">
 
-            <div className="mt-8 space-y-4">
+              <div>✅ Monitorización 24/7</div>
 
-              <div>✓ All Spain provinces</div>
-              <div>✓ WhatsApp alerts</div>
-              <div>✓ No upfront payment</div>
+              <div>✅ Avisos inmediatos por WhatsApp</div>
+
+              <div>✅ Cobertura en toda España</div>
+
+              <div>✅ Atención personalizada</div>
 
             </div>
-
 
           </div>
 
+        </div>
 
+      </section>
+            {/* STATS */}
+
+      <section className="py-20 bg-white">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+
+            {[
+              {
+                number: "5000+",
+                text: "Citas gestionadas",
+              },
+              {
+                number: "52",
+                text: "Provincias",
+              },
+              {
+                number: "24/7",
+                text: "Monitorización",
+              },
+              {
+                number: "98%",
+                text: "Clientes satisfechos",
+              },
+            ].map((item) => (
+              <div
+                key={item.text}
+                className="bg-gray-50 rounded-3xl p-8 text-center shadow-sm"
+              >
+                <h3 className="text-5xl font-bold text-blue-700">
+                  {item.number}
+                </h3>
+
+                <p className="mt-4 text-gray-600 font-medium">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+
+          </div>
 
         </div>
 
-
       </section>
 
-
-
-
-
-
-
-      {/* STATS */}
-
-      <section className="py-20">
-
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-6">
-
-
-          {[
-            ["5000+", "Appointments"],
-            ["24/7", "Monitoring"],
-            ["52", "Provinces"],
-            ["98%", "Success"]
-
-          ].map((x) => (
-
-            <div
-              key={x[1]}
-              className="
-              bg-gray-50
-              rounded-3xl
-              p-8
-              text-center
-              "
-            >
-
-              <h2 className="text-4xl font-bold">
-
-                {x[0]}
-
-              </h2>
-
-
-              <p className="text-gray-600 mt-3">
-
-                {x[1]}
-
-              </p>
-
-
-            </div>
-
-
-          ))}
-
-
-        </div>
-
-
-      </section>
-
-
-
-
-
-
-
-
-      {/* HOW WORK */}
-
+      {/* HOW IT WORKS */}
 
       <section className="bg-gray-50 py-24">
 
-
         <div className="max-w-7xl mx-auto px-6">
-
 
           <h2 className="text-5xl font-bold text-center">
 
-            How does it work?
+            ¿Cómo funciona?
 
           </h2>
 
+          <p className="text-center text-gray-600 mt-5">
 
+            Solo tienes que seguir estos sencillos pasos.
 
-          <div className="grid md:grid-cols-4 gap-6 mt-14">
+          </p>
 
+          <div className="grid lg:grid-cols-4 gap-8 mt-16">
 
             {[
-              "Send your information",
-              "We activate monitoring",
-              "We find availability",
-              "You receive confirmation"
-
-            ].map((x,i)=>(
-
+              {
+                title: "Contacta",
+                text: "Nos envías tu provincia y trámite.",
+              },
+              {
+                title: "Monitorizamos",
+                text: "Buscamos citas automáticamente las 24 horas.",
+              },
+              {
+                title: "Encontramos",
+                text: "Detectamos una cita disponible.",
+              },
+              {
+                title: "Te avisamos",
+                text: "Recibes un mensaje por WhatsApp.",
+              },
+            ].map((step, index) => (
 
               <div
-                key={x}
-                className="
-                bg-white
-                rounded-3xl
-                p-8
-                shadow-sm
-                "
+                key={step.title}
+                className="bg-white rounded-3xl p-8 shadow-sm"
               >
 
+                <div className="w-14 h-14 rounded-full bg-blue-700 text-white flex items-center justify-center text-xl font-bold">
 
-                <div className="
-                w-14
-                h-14
-                rounded-full
-                bg-blue-600
-                text-white
-                flex
-                items-center
-                justify-center
-                font-bold
-                text-xl
-                ">
-
-
-                  0{i+1}
-
+                  {index + 1}
 
                 </div>
 
+                <h3 className="text-2xl font-bold mt-8">
 
-                <h3 className="font-bold text-xl mt-6">
-
-                  {x}
+                  {step.title}
 
                 </h3>
 
+                <p className="mt-5 text-gray-600 leading-8">
+
+                  {step.text}
+
+                </p>
 
               </div>
 
-
             ))}
-
 
           </div>
 
-
         </div>
 
-
       </section>
-
-
-
-
-
-
-
 
       {/* FEATURES */}
 
-
       <section className="py-24">
-
 
         <div className="max-w-7xl mx-auto px-6">
 
+          <h2 className="text-5xl font-bold text-center">
 
-          <h2 className="text-5xl font-bold">
-
-            What we manage
+            ¿Qué incluye este servicio?
 
           </h2>
 
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 
-
-          <div className="grid md:grid-cols-3 gap-6 mt-12">
-
-
-            {service.features.map((x)=>(
-
+            {service.features.map((feature) => (
 
               <div
-                key={x}
-                className="
-                border
-                rounded-3xl
-                p-8
-                "
+                key={feature}
+                className="border rounded-3xl p-8 hover:shadow-lg transition"
               >
 
-                <h3 className="text-xl font-bold">
+                <div className="text-green-500 text-3xl">
 
-                  ✓ {x}
+                  ✓
+
+                </div>
+
+                <h3 className="text-xl font-bold mt-5">
+
+                  {feature}
 
                 </h3>
 
-
               </div>
-
 
             ))}
 
-
           </div>
-
 
         </div>
 
-
       </section>
+            {/* SEO CONTENT */}
 
+      <section className="bg-gray-50 py-24">
 
-
-
-
-
-
-      <FAQ />
-
-
-
-
-
-
-
-
-      <section className="bg-yellow-50 py-20">
-
-
-        <div className="text-center">
-
+        <div className="max-w-5xl mx-auto px-6">
 
           <h2 className="text-5xl font-bold">
 
-            Do you need your appointment?
+            ¿Por qué elegir CitaEspaña?
 
           </h2>
 
+          <p className="mt-8 text-lg text-gray-600 leading-9">
 
-          <a
-            href="https://wa.me/34672399181"
-            className="
-            inline-block
-            mt-8
-            bg-red-600
-            text-white
-            px-10
-            py-4
-            rounded-xl
-            font-bold
-            "
-          >
+            En CitaEspaña ayudamos a personas de toda España a conseguir
+            citas para procedimientos de extranjería de forma rápida,
+            segura y sencilla. Nuestro sistema monitoriza continuamente
+            las citas disponibles para NIE, TIE, Huellas, Arraigo,
+            Reagrupación Familiar, Nacionalidad Española, Asilo,
+            Residencia y muchos otros procedimientos.
 
-            Contact via WhatsApp
+          </p>
 
-          </a>
+          <p className="mt-6 text-lg text-gray-600 leading-9">
 
+            Trabajamos con todas las provincias españolas y ofrecemos un
+            seguimiento personalizado mediante WhatsApp para que no tengas
+            que revisar constantemente la página oficial.
+
+          </p>
 
         </div>
 
+      </section>
+
+      {/* FAQ */}
+
+      <FAQ />
+
+      {/* RELATED SERVICES */}
+
+      <section className="py-24">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <h2 className="text-4xl font-bold text-center">
+
+            Servicios relacionados
+
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+
+            {Object.entries(services)
+              .filter(([key]) => key !== slug)
+              .slice(0, 6)
+              .map(([key, item]) => (
+
+                <Link
+                  key={key}
+                  href={`/services/${key}`}
+                  className="border rounded-2xl p-6 hover:border-blue-600 hover:shadow-lg transition"
+                >
+
+                  <h3 className="text-xl font-bold">
+
+                    {item.title}
+
+                  </h3>
+
+                  <p className="mt-3 text-gray-600">
+
+                    {item.description}
+
+                  </p>
+
+                  <span className="inline-block mt-6 text-blue-600 font-semibold">
+
+                    Más información →
+
+                  </span>
+
+                </Link>
+
+              ))}
+
+          </div>
+
+        </div>
+
+      </section>
+            {/* FINAL CTA */}
+
+      <section className="bg-[#0A4ABF] text-white py-24">
+
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <h2 className="text-5xl font-bold">
+
+            ¿Necesitas ayuda con tu cita?
+
+          </h2>
+
+          <p className="mt-8 text-xl text-blue-100 leading-9">
+
+            Nuestro equipo está preparado para ayudarte a conseguir tu
+            cita de extranjería lo antes posible.
+
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-5 mt-12">
+
+            <a
+              href="https://wa.me/34672399181"
+              target="_blank"
+              className="bg-green-500 hover:bg-green-600 transition px-10 py-4 rounded-xl font-bold"
+            >
+              Contactar por WhatsApp
+            </a>
+
+            <Link
+              href="/appointment"
+              className="bg-white text-blue-700 px-10 py-4 rounded-xl font-bold"
+            >
+              Solicitar cita
+            </Link>
+
+          </div>
+
+        </div>
 
       </section>
 
-
-
-
-
-      <Footer />
-
+      
 
     </>
   );

@@ -4,7 +4,7 @@ export default function FinalCTA(){
 return (
 
 
-<section className="py-24 bg-white">
+<section className="py-24 bg-gradient-to-b from-white via-[#fff8f8] to-white">
 
 
 
@@ -15,19 +15,24 @@ return (
 
 
 <div className="
-bg-[#063d73]
-rounded-3xl
+relative
+bg-[#C60B1E]
+rounded-[32px]
 px-8
 py-16
 md:px-16
 text-center
 text-white
 overflow-hidden
+shadow-2xl
+border
+border-red-400
 ">
 
 
 
-
+<div className="absolute -top-24 -right-24 w-72 h-72 bg-white/10 rounded-full blur-3xl" />
+<div className="absolute -bottom-24 -left-24 w-72 h-72 bg-yellow-300/10 rounded-full blur-3xl" />
 
 
 <div className="max-w-3xl mx-auto">
@@ -39,9 +44,14 @@ overflow-hidden
 
 
 <p className="
-text-yellow-400
+inline-block
+bg-white/15
+backdrop-blur
+px-5
+py-2
+rounded-full
+text-yellow-300
 font-bold
-uppercase
 tracking-widest
 text-sm
 ">
@@ -61,10 +71,10 @@ text-sm
 
 
 <h2 className="
-mt-5
+mt-6
 text-4xl
-md:text-5xl
-font-bold
+md:text-6xl
+font-black
 leading-tight
 ">
 
@@ -85,9 +95,12 @@ leading-tight
 
 
 <p className="
-mt-5
-text-blue-100
+mt-6
+text-red-100
 text-lg
+leading-8
+max-w-2xl
+mx-auto
 ">
 
 
@@ -130,15 +143,21 @@ mt-10
 <a
 
 className="
-bg-[#d90429]
+bg-[#25D366]
 text-white
 px-10
 py-4
-rounded-xl
+rounded-2xl
 font-bold
-hover:bg-red-700
-transition
+shadow-xl
+hover:shadow-2xl
+hover:-translate-y-1
+transition-all
+duration-300
 "
+href="https://wa.me/34672399181"
+target="_blank"
+rel="noopener noreferrer"
 
 >
 
@@ -160,14 +179,18 @@ transition
 
 className="
 bg-white
-text-[#063d73]
+text-[#C60B1E]
 px-10
 py-4
-rounded-xl
+rounded-2xl
 font-bold
+shadow-xl
 hover:bg-gray-100
-transition
+hover:-translate-y-1
+transition-all
+duration-300
 "
+href="/appointment"
 
 >
 
@@ -205,7 +228,7 @@ justify-center
 gap-4
 flex-wrap
 text-sm
-text-blue-100
+text-red-100
 ">
 
 

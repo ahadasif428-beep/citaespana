@@ -20,7 +20,7 @@ import AppointmentAlert from "@/components/AppointmentAlert";
 import LegalNotice from "@/components/LegalNotice";
 import FAQSchema from "@/components/FAQSchema";
 import type { Metadata } from "next";
-
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 export const metadata: Metadata = {
   verification: {
   google: "GkYEU7xgWOj6Pa46XjiwoAcPcgm45oHN7n_MahUohwE",
@@ -42,7 +42,7 @@ export default function Home() {
         
        <FAQSchema />
 
-
+<FloatingWhatsApp />
         <Hero />
         <Stats />
         <HowItWorks />
@@ -60,7 +60,7 @@ export default function Home() {
         <AppointmentAlert />
         <LegalNotice />
         <CTA />
-        <Footer />
+        
       </div>
     </main>
   );

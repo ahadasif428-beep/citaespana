@@ -544,7 +544,7 @@ View Guides
 
 
 
-<Footer/>
+
 
 </>
 

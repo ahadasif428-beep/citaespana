@@ -1,18 +1,20 @@
 export const procedures = [
-
-{
-name:"Residence Permit",
-slug:"residence"
-},
-
-{
-name:"Passport",
-slug:"passport"
-},
-
-{
-name:"Immigration Appointment",
-slug:"immigration"
-}
-
-]
+  { name: "NIE Appointment", slug: "nie" },
+  { name: "TIE Appointment", slug: "tie" },
+  { name: "Fingerprint Appointment", slug: "huellas" },
+  { name: "Residence Permit", slug: "residence-permit" },
+  { name: "Residence Renewal", slug: "residence-renewal" },
+  { name: "Arraigo Social", slug: "arraigo-social" },
+  { name: "Arraigo Laboral", slug: "arraigo-laboral" },
+  { name: "Family Reunification", slug: "family-reunification" },
+  { name: "Asylum Appointment", slug: "asylum" },
+  { name: "International Protection", slug: "international-protection" },
+  { name: "Student Visa", slug: "student-visa" },
+  { name: "Work Permit", slug: "work-permit" },
+  { name: "EU Citizen Registration", slug: "eu-registration" },
+  { name: "Return Authorization", slug: "return-authorization" },
+  { name: "Invitation Letter", slug: "invitation-letter" },
+  { name: "Spanish Nationality", slug: "spanish-nationality" },
+  { name: "Certificate Collection", slug: "certificate-collection" },
+  { name: "Long Term Residence", slug: "long-term-residence" },
+];

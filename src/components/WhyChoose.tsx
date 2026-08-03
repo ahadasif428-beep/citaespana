@@ -44,231 +44,197 @@ text:"Si no encontramos una cita adecuada para ti, no pagas nada."
 
 return (
 
-<section className="bg-white py-24">
-
-
-<div className="max-w-[1200px] mx-auto px-6">
-
-
-
-
-
-{/* heading */}
-
-<div className="text-center">
-
-
-
-<div className="
-inline-flex
-items-center
-gap-2
-bg-red-50
-text-red-600
-px-5
-py-2
-rounded-full
-font-semibold
-text-sm
-">
-
-⭐ ¿POR QUÉ ELEGIR CITAES?
-
-</div>
-
-
-
-
-
-
-
-<h2 className="
-mt-6
-text-5xl
-font-bold
-text-[#111827]
-">
-
-¿Por qué elegir CitaEs?
-
-</h2>
-
-
-
-
-
-
-
-<p className="
-mt-5
-text-xl
-text-gray-500
-">
-
-Sin pago inicial. Sin letra pequeña. Sin costes de gestoría elevados.
-
-</p>
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-{/* cards */}
-
-
-<div className="
-mt-14
-grid
-md:grid-cols-6
-gap-6
-justify-center
-">
-
-
-
-
-
-
-
-{features.map((item,index)=>(
-
-
-<div
-
-key={index}
-
-className={`
-
-bg-white
-border
-border-gray-100
-rounded-2xl
-shadow-sm
-p-8
-text-center
-min-h-[360px]
-flex
-flex-col
-items-center
-justify-center
-
-${index < 3 ? "md:col-span-2" : "md:col-span-2 md:mx-12"}
-
-`}
-
->
-
-
-
-
-
-
-
-
-<div className="
-w-28
-h-28
-rounded-full
-bg-red-50
-flex
-items-center
-justify-center
-text-red-600
-text-5xl
-font-bold
-">
-
-{item.icon}
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<h3 className="
-mt-7
-text-2xl
-font-bold
-text-[#111827]
-">
-
-{item.title}
-
-</h3>
-
-
-
-
-
-
-
-
-
-
-<p className="
-mt-4
-text-gray-500
-leading-8
-text-lg
-">
-
-{item.text}
-
-</p>
-
-
-
-
-
-
-
-
-
-</div>
-
-
-))}
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-</div>
-
-
-
+<section className="py-28 bg-gradient-to-b from-white via-[#FFF8F6] to-[#FFF2F2]">
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* Heading */}
+
+    <div className="text-center">
+
+      <div
+        className="
+        inline-flex
+        items-center
+        gap-2
+        bg-[#F1BF00]
+        text-[#8B0000]
+        px-6
+        py-3
+        rounded-full
+        font-bold
+        shadow-md
+        text-sm
+      "
+      >
+        ⭐ ¿POR QUÉ ELEGIR CITAES?
+      </div>
+
+      <h2
+        className="
+        mt-6
+        text-4xl
+        md:text-6xl
+        font-black
+        text-gray-900
+        leading-tight
+      "
+      >
+        ¿Por qué miles de personas eligen CitaEs?
+      </h2>
+
+      <p
+        className="
+        mt-6
+        text-lg
+        md:text-xl
+        text-gray-600
+        leading-8
+        max-w-3xl
+        mx-auto
+      "
+      >
+        Combinamos tecnología, monitorización automática y atención humana
+        para ayudarte a conseguir tu cita de extranjería sin perder tiempo.
+      </p>
+
+    </div>
+
+    {/* Cards */}
+
+    <div
+      className="
+      mt-16
+      grid
+      grid-cols-1
+      md:grid-cols-2
+      xl:grid-cols-3
+      gap-8
+    "
+    >
+
+      {features.map((item, index) => (
+
+        <div
+          key={index}
+          className="
+          group
+          bg-white
+          rounded-3xl
+          border
+          border-red-100
+          p-8
+          shadow-lg
+          hover:shadow-2xl
+          hover:-translate-y-3
+          hover:border-[#C60B1E]/20
+          transition-all
+          duration-500
+        "
+        >
+
+          {/* Icon */}
+
+          <div
+            className="
+            w-24
+            h-24
+            mx-auto
+            rounded-full
+            bg-gradient-to-br
+            from-[#C60B1E]
+            to-[#8B0000]
+            flex
+            items-center
+            justify-center
+            text-5xl
+            text-white
+            shadow-xl
+            group-hover:scale-110
+            transition-all
+            duration-500
+          "
+          >
+            {item.icon}
+          </div>
+
+          {/* Title */}
+
+          <h3
+            className="
+            mt-8
+            text-2xl
+            font-bold
+            text-gray-900
+            text-center
+            group-hover:text-[#C60B1E]
+            transition-colors
+            duration-300
+          "
+          >
+            {item.title}
+          </h3>
+
+          {/* Text */}
+
+          <p
+            className="
+            mt-5
+            text-gray-600
+            leading-8
+            text-center
+            text-lg
+          "
+          >
+            {item.text}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+    {/* Bottom CTA */}
+
+    <div className="mt-20 text-center">
+
+      <a
+        href="https://wa.me/34672399181"
+        target="_blank"
+        className="
+        inline-flex
+        items-center
+        gap-3
+        bg-[#C60B1E]
+        hover:bg-[#A40818]
+        text-white
+        px-10
+        py-5
+        rounded-2xl
+        font-bold
+        text-lg
+        shadow-xl
+        hover:shadow-2xl
+        hover:-translate-y-1
+        transition-all
+        duration-300
+      "
+      >
+        💬 Solicitar mi cita por WhatsApp
+      </a>
+
+      <p
+        className="
+        mt-5
+        text-gray-500
+        text-sm
+      "
+      >
+        Sin pago por adelantado • Sin compromiso • Respuesta en minutos
+      </p>
+
+    </div>
+
+  </div>
 </section>
-
-)
-
-
-}
+)}

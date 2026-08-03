@@ -1,6 +1,6 @@
-export default function Procedures(){
+export default function Procedures() {
 
-const services=[
+const services = [
 
 {
 title:"NIE (Número de Identidad de Extranjero)",
@@ -46,145 +46,154 @@ benefit:"Puedes concentrarte en tus estudios mientras buscamos tu cita."
 
 ];
 
-
 return(
 
-<section className="py-24 bg-white">
+<section className="relative overflow-hidden py-24 bg-gradient-to-b from-white via-[#fff9f8] to-[#fff5f2]">
 
+<div className="absolute top-0 left-0 w-96 h-96 bg-[#F1BF00]/10 rounded-full blur-[150px]" />
 
-<div className="max-w-[1350px] mx-auto px-6">
+<div className="absolute bottom-0 right-0 w-96 h-96 bg-[#C60B1E]/10 rounded-full blur-[170px]" />
 
-
+<div className="max-w-7xl mx-auto px-6">
 
 <div className="text-center">
 
+<span
+className="
+inline-block
+bg-red-50
+text-[#C60B1E]
+font-bold
+uppercase
+tracking-widest
+text-sm
+px-6
+py-2
+rounded-full
+"
+>
 
-<h2 className="text-5xl font-bold text-gray-900">
+Nuestros Servicios
 
-Trámites de extranjería en los que podemos ayudarte
+</span>
+
+<h2
+className="
+mt-6
+text-4xl
+md:text-6xl
+font-black
+text-gray-900
+leading-tight
+"
+>
+
+Trámites de extranjería
+
+<span className="text-[#C60B1E]">
+{" "}en toda España
+</span>
 
 </h2>
 
+<p
+className="
+mt-6
+text-lg
+text-gray-600
+max-w-3xl
+mx-auto
+leading-8
+"
+>
 
-<p className="mt-5 text-xl text-gray-600">
-
-NIE, TIE, arraigo, asilo, huellas, nacionalidad — en toda España.
+NIE, TIE, Arraigo, Nacionalidad, Asilo y mucho más.
+Nos encargamos de encontrar tu cita para que tú solo tengas que presentarte.
 
 </p>
 
-
 </div>
 
+<div className="grid lg:grid-cols-3 gap-8 mt-16"></div>
 
+{/* Bottom CTA */}
 
-
-
-<div className="grid md:grid-cols-3 gap-8 mt-14">
-
-
-
-{
-
-services.map((service)=>(
-
+<div className="mt-20 text-center">
 
 <div
-
-key={service.title}
-
 className="
-border
-rounded-3xl
-p-8
-min-h-[330px]
-hover:shadow-xl
-transition
+inline-flex
+flex-col
+items-center
+bg-gradient-to-r
+from-[#C60B1E]
+to-[#A40818]
+rounded-[30px]
+px-12
+py-10
+text-white
+shadow-2xl
+hover:shadow-[0_25px_60px_rgba(198,11,30,0.35)]
+hover:-translate-y-2
+transition-all
+duration-500
 "
-
-
 >
 
+<h3
+className="
+text-3xl
+font-black
+"
+>
 
-
-<div className="
-w-12
-h-12
-rounded-full
-bg-blue-100
-flex
-items-center
-justify-center
-text-blue-600
-font-bold
-text-xl
-">
-
-✓
-
-</div>
-
-
-
-<h3 className="text-2xl font-bold mt-6 text-gray-900">
-
-{service.title}
+¿No encuentras tu trámite?
 
 </h3>
 
+<p
+className="
+mt-4
+max-w-xl
+text-red-100
+leading-8
+"
+>
 
-
-<p className="mt-4 text-gray-600 leading-relaxed">
-
-{service.text}
-
-</p>
-
-
-
-<p className="mt-5 font-semibold text-blue-700">
-
-{service.benefit}
+Trabajamos con decenas de procedimientos de extranjería en toda España.
+Nuestro equipo monitoriza las citas las 24 horas para ayudarte lo antes posible.
 
 </p>
 
-
-
-</div>
-
-
-
-))
-
-
-}
-
-
-
-</div>
-
-
-
-<div className="text-center mt-14">
-
-
-<button className="text-blue-600 font-bold text-lg">
+<button
+className="
+mt-8
+bg-[#F1BF00]
+text-[#7A0815]
+font-black
+px-10
+py-4
+rounded-2xl
+shadow-lg
+hover:scale-105
+hover:shadow-xl
+transition-all
+duration-300
+"
+>
 
 Ver todos los servicios →
 
 </button>
 
+</div>
 
 </div>
 
-
-
 </div>
-
 
 </section>
 
-
 )
-
 
 }

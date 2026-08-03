@@ -83,7 +83,7 @@ return(
 
 
 
-<section className="py-16 md:py-24 bg-white">
+<section className="py-20 md:py-28 bg-gradient-to-b from-white via-[#fff8f8] to-white">
 
 
 
@@ -94,7 +94,7 @@ return(
 
 
 
-<p className="text-red-600 text-center font-bold tracking-wide text-sm">
+<p className="inline-block mx-auto bg-red-50 text-[#C60B1E] font-bold tracking-widest text-sm px-5 py-2 rounded-full">
 
 
 COMPARA ANTES DE DECIDIR
@@ -107,8 +107,7 @@ COMPARA ANTES DE DECIDIR
 
 
 
-<h2 className="text-3xl md:text-4xl font-bold text-center mt-3">
-
+<h2 className="text-4xl md:text-5xl font-black text-center mt-6 text-gray-900">
 
 CitaEs vs. Gestoría vs. Hacerlo solo
 
@@ -120,8 +119,7 @@ CitaEs vs. Gestoría vs. Hacerlo solo
 
 
 
-<p className="text-center text-gray-600 mt-4">
-
+<p className="text-center text-lg text-gray-600 mt-6 max-w-3xl mx-auto">
 
 La misma cita, tres experiencias completamente diferentes.
 
@@ -141,7 +139,16 @@ La misma cita, tres experiencias completamente diferentes.
 
 
 
-<div className="hidden md:block mt-12 rounded-2xl overflow-hidden border shadow-sm">
+<div className="
+hidden
+md:block
+mt-16
+rounded-3xl
+overflow-hidden
+border
+border-gray-100
+shadow-xl
+">
 
 
 
@@ -176,7 +183,7 @@ CARACTERÍSTICA
 
 
 
-<th className="bg-red-600 text-white">
+<th className="bg-[#C60B1E] text-white">
 
 
 <div className="font-bold">
@@ -202,7 +209,7 @@ Desde 69€
 
 
 
-<th className="bg-gray-700 text-white">
+<th className="bg-gray-800 text-white">
 
 
 <div className="font-bold">
@@ -278,17 +285,15 @@ rows.map((row)=>(
 
 
 
-
 <tr
-
-
 key={row.feature}
-
-
-className="border-t h-[90px]"
-
-
-
+className="
+border-t
+h-[90px]
+hover:bg-red-50
+transition-all
+duration-300
+"
 >
 
 
@@ -309,7 +314,14 @@ className="border-t h-[90px]"
 
 
 
-<td className="px-5 text-center text-sm whitespace-pre-line text-red-600">
+<td className="
+px-5
+text-center
+text-sm
+font-semibold
+whitespace-pre-line
+text-[#C60B1E]
+">
 
 
 {row.cita}
@@ -424,7 +436,16 @@ key={row.feature}
 
 
 
-className="border rounded-2xl p-5 shadow-sm"
+className="
+border
+border-gray-100
+rounded-3xl
+p-6
+shadow-lg
+hover:shadow-2xl
+transition-all
+duration-300
+"
 
 
 
@@ -567,7 +588,13 @@ mt-10
 
 mx-auto
 
-bg-red-600
+bg-[#C60B1E]
+hover:bg-[#A40818]
+hover:-translate-y-1
+transition-all
+duration-300
+shadow-xl
+hover:shadow-2xl
 
 text-white
 
@@ -604,8 +631,7 @@ md:w-fit
 
 
 
-<FaWhatsapp className="text-2xl"/>
-
+<FaWhatsapp className="text-3xl animate-pulse"/>
 
 
 

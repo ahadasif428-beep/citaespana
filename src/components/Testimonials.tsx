@@ -58,8 +58,7 @@ text:"Me ayudaron cuando ya había perdido la esperanza. Proceso claro y sin sor
 
 return(
 
-<section className="py-16 md:py-24 bg-gray-50">
-
+<section className="py-20 md:py-28 bg-gradient-to-b from-white via-[#FFF8F6] to-[#FFF1F1]">
 
 <div className="max-w-6xl mx-auto px-4 md:px-6">
 
@@ -72,32 +71,35 @@ return(
 <div className="text-center">
 
 
-<span className="
-inline-block
-bg-yellow-100
-text-yellow-700
-px-5
-py-2
+<span
+className="
+inline-flex
+items-center
+gap-2
+bg-[#F1BF00]
+text-[#8B0000]
+font-bold
+px-6
+py-3
 rounded-full
-text-sm
-font-semibold
+shadow-md
 ">
-
 ⭐ Opiniones verificadas
-
 </span>
 
 
 
 
-
-<h2 className="
-text-3xl
-md:text-5xl
-font-bold
+<h2
+className="
 mt-6
+text-4xl
+md:text-6xl
+font-black
+leading-tight
 text-gray-900
-">
+"
+>
 
 Lo que dicen nuestros clientes
 
@@ -138,7 +140,7 @@ text-center
 
 <div>
 
-<h3 className="text-4xl font-bold text-red-600">
+<h3 className="text-4xl font-bold text-[#C60B1E]">
 
 15.000+
 
@@ -161,7 +163,7 @@ Citas conseguidas
 
 <div>
 
-<h3 className="text-4xl font-bold text-red-600">
+<h3 className="text-4xl font-bold text-[#C60B1E]">
 
 5.0 /5
 
@@ -184,7 +186,7 @@ Valoración media
 
 <div>
 
-<h3 className="text-4xl font-bold text-red-600">
+<h3 className="text-4xl font-bold text-[#C60B1E]">
 
 52
 
@@ -235,12 +237,17 @@ reviews.map((review,index)=>(
 key={index}
 
 className="
+group
 bg-white
-rounded-2xl
+rounded-3xl
 border
-border-gray-200
-p-6
-shadow-sm
+border-red-100
+p-7
+shadow-lg
+hover:shadow-2xl
+hover:-translate-y-2
+transition-all
+duration-500
 "
 
 >
@@ -267,8 +274,9 @@ shadow-sm
 w-12
 h-12
 rounded-full
-bg-red-500
-text-white
+bg-gradient-to-br from-[#C60B1E] to-[#8B0000]
+text-[#C60B1E]
+
 flex
 items-center
 justify-center
@@ -320,7 +328,7 @@ shrink-0
 
 
 
-<div className="text-yellow-500 text-sm">
+<div className="text-[#F1BF00] text-lg text-sm">
 
 ★★★★★
 
@@ -340,11 +348,13 @@ shrink-0
 
 
 
-<p className="
+<p
+className="
 mt-6
 text-gray-600
-leading-7
-text-sm
+leading-8
+italic
+text-[15px]
 md:text-base
 ">
 
@@ -377,8 +387,9 @@ mt-8
 
 
 <span className="
-bg-red-50
-text-red-600
+bg-[#FFF3F3]
+text-[#C60B1E]
+font-bold
 px-4
 py-2
 rounded-full
@@ -449,16 +460,19 @@ Abril 2026
 
 
 <button
-
 className="
-bg-red-600
+bg-[#C60B1E]
+hover:bg-[#A40818]
 text-white
-px-8
-md:px-10
+px-10
 py-4
-rounded-xl
+rounded-2xl
 font-bold
-hover:bg-red-700
+shadow-xl
+hover:shadow-2xl
+hover:-translate-y-1
+transition-all
+duration-300
 "
 
 >
