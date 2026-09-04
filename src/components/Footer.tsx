@@ -20,11 +20,19 @@ export default function Footer() {
           <div>
 
             <h2 className="text-5xl font-black">
+<<<<<<< HEAD
               CitaEspaña
             </h2>
 
             <p className="mt-6 text-red-100 leading-8">
               Información y asistencia privada para localizar y gestionar citas de extranjería en España.
+=======
+              CitaEs
+            </h2>
+
+            <p className="mt-6 text-red-100 leading-8">
+              Tu servicio profesional para conseguir citas de extranjería en España de forma rápida, segura y sin estrés.
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
             </p>
 
             <div className="mt-8 space-y-4">
@@ -36,7 +44,11 @@ export default function Footer() {
 
               <div className="flex items-center gap-3 text-red-100">
                 <FaEnvelope />
+<<<<<<< HEAD
                 citaespana001@gmail.com
+=======
+                soporte@citaes.com
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
               </div>
 
             </div>
@@ -86,11 +98,19 @@ export default function Footer() {
               </Link>
 
               <Link
+<<<<<<< HEAD
                 href="/cita-previa-extranjeria"
                 className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
               >
                 <FaArrowRight className="text-xs" />
                 Cita previa extranjería
+=======
+                href="/regularization"
+                className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
+              >
+                <FaArrowRight className="text-xs" />
+                Regularización 2026
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
               </Link>
 
               <Link
@@ -203,7 +223,11 @@ export default function Footer() {
         <div className="mt-20 pt-8 border-t border-white/15 flex flex-col md:flex-row justify-between items-center gap-5">
 
           <p className="text-red-100 text-sm">
+<<<<<<< HEAD
             © {new Date().getFullYear()} CitaEspaña. Todos los derechos reservados.
+=======
+            © {new Date().getFullYear()} CitaEs. Todos los derechos reservados.
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
           </p>
 
           <div className="flex gap-6 text-red-100 text-sm">

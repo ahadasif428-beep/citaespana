@@ -1,7 +1,10 @@
 "use client";
 
+<<<<<<< HEAD
 import SpainFlagWaving from "@/components/SpainFlagWaving";
 
+=======
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 export default function PageHero({
   title,
   text,
@@ -11,7 +14,11 @@ export default function PageHero({
 }) {
   function handleWhatsApp() {
     const message = `
+<<<<<<< HEAD
 Hola CitaEspaña,
+=======
+Hola CitaEs,
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 Quiero solicitar información sobre una cita de extranjería.
 
@@ -29,15 +36,22 @@ Gracias.
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#C60B1E] via-[#B20A1B] to-[#920815] text-white py-28">
 
+<<<<<<< HEAD
       <SpainFlagWaving className="right-[-12%] top-[-8%] w-[920px] max-w-[85vw] opacity-[0.26]" />
 
+=======
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
       {/* Background */}
 
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#F1BF00]/10 rounded-full blur-[140px]" />
 
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[180px]" />
 
+<<<<<<< HEAD
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+=======
+      <div className="relative max-w-6xl mx-auto px-6 text-center">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
         <span
           className="
@@ -57,7 +71,11 @@ Gracias.
           text-sm
           "
         >
+<<<<<<< HEAD
           🇪🇸 CitaEspaña
+=======
+          🇪🇸 CitaEs España
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
         </span>
 
         <h1

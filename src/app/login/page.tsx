@@ -85,7 +85,11 @@ onChange={(e)=>setPassword(e.target.value)}
 
 onClick={login}
 
+<<<<<<< HEAD
 className="bg-[#C60B1E] text-white w-full p-3 rounded"
+=======
+className="bg-blue-600 text-white w-full p-3 rounded"
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 >
 

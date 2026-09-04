@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "dev": "next dev --webpack",
+=======
+    "dev": "next dev",
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.15.12",
+<<<<<<< HEAD
     "@next/third-parties": "16.3.3",
     "@supabase/supabase-js": "^2.108.2",
     "libphonenumber-js": "^1.13.9",
@@ -19,6 +24,17 @@
     "react-icons": "^5.6.0",
     "react-phone-number-input": "^3.4.17",
     "stripe": "^18.4.0"
+=======
+    "@next/third-parties": "^16.2.10",
+    "@supabase/supabase-js": "^2.108.2",
+    "framer-motion": "^12.43.0",
+    "libphonenumber-js": "^1.13.9",
+    "next": "^16.2.9",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-icons": "^5.6.0",
+    "react-phone-number-input": "^3.4.17"
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -26,7 +42,11 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
+<<<<<<< HEAD
     "eslint-config-next": "16.3.3",
+=======
+    "eslint-config-next": "16.2.9",
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
     "tailwindcss": "^4",
     "typescript": "^5"
   },

@@ -84,14 +84,22 @@ export default function LegalNotice() {
 
       <div className="p-10 md:p-14 space-y-8 text-gray-600 leading-8 text-[17px]">        <p>
           <strong className="text-[#C60B1E] text-lg">
+<<<<<<< HEAD
             CitaEspaña
+=======
+            CitaEs
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
           </strong>{" "}
           es un servicio profesional e independiente especializado en la búsqueda
           y gestión de citas de extranjería en toda España.
         </p>
 
         <p>
+<<<<<<< HEAD
           CitaEspaña no es un despacho de abogados ni una agencia registrada.
+=======
+          CitaEs no es un despacho de abogados ni una agencia registrada.
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
           No ofrecemos asesoramiento jurídico. Para cualquier procedimiento
           legal recomendamos consultar con un abogado especializado en
           extranjería.

@@ -7,7 +7,11 @@ const reviews=[
 letter:"M",
 name:"María González",
 location:"Venezuela - Madrid",
+<<<<<<< HEAD
 text:"No sabía qué hacer durante meses. CitaEspaña consiguió mi cita para el proceso de regularización en 4 días. Sin pago por adelantado, tal como prometieron. Imprescindible."
+=======
+text:"No sabía qué hacer durante meses. CitaEs consiguió mi cita para el proceso de regularización en 4 días. Sin pago por adelantado, tal como prometieron. Imprescindible."
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 },
 
 
@@ -15,7 +19,11 @@ text:"No sabía qué hacer durante meses. CitaEspaña consiguió mi cita para el
 letter:"A",
 name:"Ahmed Hassan",
 location:"Marruecos - Barcelona",
+<<<<<<< HEAD
 text:"Pensé que sería imposible conseguir una cita antes del 30 de junio. CitaEspaña lo consiguió en menos de una semana. Muy recomendable."
+=======
+text:"Pensé que sería imposible conseguir una cita antes del 30 de junio. CitaEs lo consiguió en menos de una semana. Muy recomendable."
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 },
 
 
@@ -23,7 +31,11 @@ text:"Pensé que sería imposible conseguir una cita antes del 30 de junio. Cita
 letter:"F",
 name:"Farida Boukhari",
 location:"Argelia - Valencia",
+<<<<<<< HEAD
 text:"Tenía miedo de perder el plazo. El equipo de CitaEspaña me guió con todo: documentos, Cl@ve y todo el proceso. Mi cita quedó confirmada."
+=======
+text:"Tenía miedo de perder el plazo. El equipo de CitaEs me guió con todo: documentos, Cl@ve y todo el proceso. Mi cita quedó confirmada."
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 },
 
 

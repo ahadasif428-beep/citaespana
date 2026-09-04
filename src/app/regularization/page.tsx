@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import EligibilityCTA from "@/components/EligibilityCTA";
@@ -19,3 +20,36 @@ export default function Regularization() {
     </main>
   );
 }
+=======
+import PageHero from "@/components/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Regularization 2026",
+
+  description:
+    "Information about Regularization 2026 and immigration support in Spain.",
+
+  alternates: {
+    canonical: "/regularization",
+  },
+};
+
+export default function Regularization(){
+
+
+return(
+
+<PageHero
+
+title="Regularization Spain 2026"
+
+text="Check your eligibility and get help with your immigration process."
+
+/>
+
+)
+
+
+}
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823

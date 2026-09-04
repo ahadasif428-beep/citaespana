@@ -14,7 +14,11 @@ export default function AboutPage() {
   return (
     <main className="bg-white">
 
+<<<<<<< HEAD
       <section className="bg-[#C60B1E] text-white py-24">
+=======
+      <section className="bg-[#27439b] text-white py-24">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h1 className="text-5xl md:text-6xl font-bold">
@@ -113,7 +117,11 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8 mt-14">
 
             <div className="border rounded-3xl p-8">
+<<<<<<< HEAD
               <div className="w-14 h-14 rounded-full bg-[#C60B1E] text-white flex items-center justify-center font-bold">
+=======
+              <div className="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
                 1
               </div>
 
@@ -128,7 +136,11 @@ export default function AboutPage() {
             </div>
 
             <div className="border rounded-3xl p-8">
+<<<<<<< HEAD
               <div className="w-14 h-14 rounded-full bg-[#C60B1E] text-white flex items-center justify-center font-bold">
+=======
+              <div className="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
                 2
               </div>
 
@@ -143,7 +155,11 @@ export default function AboutPage() {
             </div>
 
             <div className="border rounded-3xl p-8">
+<<<<<<< HEAD
               <div className="w-14 h-14 rounded-full bg-[#C60B1E] text-white flex items-center justify-center font-bold">
+=======
+              <div className="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
                 3
               </div>
 
@@ -162,7 +178,11 @@ export default function AboutPage() {
         </div>
       </section>
 
+<<<<<<< HEAD
       <section className="bg-[#C60B1E] text-white py-20">
+=======
+      <section className="bg-[#27439b] text-white py-20">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
         <div className="max-w-6xl mx-auto px-6">
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">

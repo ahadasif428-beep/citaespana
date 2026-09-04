@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 import AppointmentHero from "@/components/appointment/AppointmentHero";
 
@@ -9,10 +14,17 @@ import FAQ from "@/components/appointment/FAQ";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Solicitar cita previa de extranjería en España",
 
   description:
     "Solicita tu cita previa de extranjería en España. Selecciona provincia y trámite, elige fecha, consulta la tarifa y completa tus datos de contacto.",
+=======
+  title: "Book Appointment",
+
+  description:
+    "Request your immigration appointment anywhere in Spain through CitaEspaña.",
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
   alternates: {
     canonical: "/appointment",

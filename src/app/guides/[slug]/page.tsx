@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+<<<<<<< HEAD
+=======
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 const guides = {
   "arraigo-social": {
@@ -116,7 +121,11 @@ export default async function GuidePage({
         <span>{guide.title}</span>
       </div>
 
+<<<<<<< HEAD
       <section className="bg-[#C60B1E] text-white py-24">
+=======
+      <section className="bg-[#0A4ABF] text-white py-24">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
         <div className="max-w-6xl mx-auto px-6">
 
@@ -361,7 +370,11 @@ export default async function GuidePage({
 
                   </p>
 
+<<<<<<< HEAD
                   <span className="inline-block mt-6 text-[#C60B1E] font-bold">
+=======
+                  <span className="inline-block mt-6 text-blue-600 font-bold">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
                     Leer guía →
 
@@ -379,7 +392,11 @@ export default async function GuidePage({
 
       {/* CTA */}
 
+<<<<<<< HEAD
       <section className="bg-[#C60B1E] text-white py-24">
+=======
+      <section className="bg-[#0A4ABF] text-white py-24">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
         <div className="max-w-5xl mx-auto text-center px-6">
 
@@ -410,7 +427,11 @@ export default async function GuidePage({
 
             <Link
               href="/appointment"
+<<<<<<< HEAD
               className="bg-white text-[#C60B1E] px-10 py-4 rounded-xl font-bold"
+=======
+              className="bg-white text-blue-700 px-10 py-4 rounded-xl font-bold"
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
             >
 
               Solicitar cita

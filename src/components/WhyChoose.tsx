@@ -79,7 +79,11 @@ return (
         leading-tight
       "
       >
+<<<<<<< HEAD
         ¿Por qué miles de personas eligen CitaEspaña?
+=======
+        ¿Por qué miles de personas eligen CitaEs?
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
       </h2>
 
       <p

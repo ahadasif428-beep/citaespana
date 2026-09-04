@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+<<<<<<< HEAD
+=======
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 export const metadata: Metadata = {
   title: "Guías de Extranjería en España",
@@ -92,7 +97,11 @@ export default function GuidesPage() {
 
       {/* HERO */}
 
+<<<<<<< HEAD
       <section className="bg-[#C60B1E] text-white py-24">
+=======
+      <section className="bg-[#0A4ABF] text-white py-24">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
         <div className="max-w-7xl mx-auto px-6 text-center">
 
@@ -182,7 +191,11 @@ export default function GuidesPage() {
 
                 </p>
 
+<<<<<<< HEAD
                 <span className="inline-block mt-8 text-[#C60B1E] font-bold">
+=======
+                <span className="inline-block mt-8 text-blue-600 font-bold">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
                   Leer guía →
 
@@ -350,7 +363,11 @@ export default function GuidesPage() {
 
       {/* CTA */}
 
+<<<<<<< HEAD
       <section className="bg-[#C60B1E] text-white py-24">
+=======
+      <section className="bg-[#0A4ABF] text-white py-24">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
         <div className="max-w-5xl mx-auto text-center px-6">
 
@@ -379,7 +396,11 @@ export default function GuidesPage() {
 
             <Link
               href="/appointment"
+<<<<<<< HEAD
               className="bg-white text-[#C60B1E] px-10 py-4 rounded-xl font-bold"
+=======
+              className="bg-white text-blue-700 px-10 py-4 rounded-xl font-bold"
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
             >
               Solicitar cita
             </Link>

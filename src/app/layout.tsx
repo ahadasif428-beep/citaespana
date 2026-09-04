@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
@@ -11,27 +11,24 @@ verification: {
   google: "GkYEU7xgWOj6Pa46XjiwoAcPcgm45oHN7n_MahUohwE",
 },
   title: {
-    default: "CitaEspaña | Cita previa extranjería en España",
+    default: "CitaEspaña | Immigration Appointments in Spain",
     template: "%s | CitaEspaña",
   },
 
   description:
-    "Cita previa de extranjería en España: NIE, TIE, toma de huellas, asilo, arraigo, residencia, trabajo y reagrupación familiar por provincia.",
+    "Book immigration appointments across Spain including NIE, TIE, Fingerprints, Asylum, Family Reunification, Residence Permits and more.",
 
   keywords: [
     "Cita España",
-    "cita previa extranjería",
-    "cita previa extranjeria",
-    "cita extranjería España",
-    "cita previa España",
-    "cita previa NIE",
-    "cita previa TIE",
-    "cita huellas extranjería",
-    "cita asilo España",
-    "cita arraigo",
-    "cita reagrupación familiar",
-    "cita residencia España",
-    "cita previa policía extranjería",
+    "Immigration Spain",
+    "NIE Appointment",
+    "TIE Appointment",
+    "Cita Previa Extranjería",
+    "Residence Permit Spain",
+    "Asylum Spain",
+    "Fingerprint Appointment",
+    "Foreign Office Spain",
+    "Spanish Immigration",
   ],
 
   authors: [
@@ -64,15 +61,15 @@ verification: {
 
   openGraph: {
     type: "website",
-    locale: "es_ES",
+    locale: "en_US",
     url: "https://www.citaespana.com",
-    title: "CitaEspaña | Cita previa extranjería España",
+    title: "CitaEspaña | Immigration Appointments",
     description:
-      "Cita previa de extranjería en España: NIE, TIE, huellas, residencia, asilo, arraigo y más.",
+      "Fast immigration appointments across Spain. NIE, TIE, Residence, Asylum, Fingerprints and more.",
     siteName: "CitaEspaña",
     images: [
       {
-        url: "/logo.jpeg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "CitaEspaña",
@@ -84,8 +81,8 @@ verification: {
     card: "summary_large_image",
     title: "CitaEspaña",
     description:
-      "Cita previa de extranjería en España: NIE, TIE, huellas, asilo y más.",
-    images: ["/logo.jpeg"],
+      "Immigration appointments across Spain.",
+    images: ["/og-image.jpg"],
   },
 
   icons: {

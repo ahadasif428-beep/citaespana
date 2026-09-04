@@ -70,7 +70,11 @@ className="bg-white rounded-3xl p-8"
 
 
 
+<<<<<<< HEAD
 <div className="mt-5 text-[#C60B1E] font-bold">
+=======
+<div className="mt-5 text-blue-600 font-bold">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 Step 0{index+1}
 

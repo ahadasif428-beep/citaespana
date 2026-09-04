@@ -72,7 +72,11 @@ export default function Guarantee() {
         tracking-widest
         text-sm
         ">
+<<<<<<< HEAD
           Garantía CitaEspaña
+=======
+          Garantía CitaEs
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
         </span>
 
         <h2 className="

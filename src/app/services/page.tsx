@@ -1,4 +1,5 @@
 import Link from "next/link";
+<<<<<<< HEAD
 import PageHero from "@/components/PageHero";
 import type { Metadata } from "next";
 
@@ -7,6 +8,17 @@ export const metadata: Metadata = {
 
   description:
     "Servicios de extranjería en España: citas NIE, TIE, huellas, residencia, arraigo, asilo, reagrupación familiar y asistencia informativa por provincia.",
+=======
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Immigration Services",
+
+  description:
+    "Explore our immigration appointment services including NIE, TIE, Residence, Family Reunification, Fingerprints and more.",
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
   alternates: {
     canonical: "/services",
@@ -172,7 +184,59 @@ return(
 
 
 
+<<<<<<< HEAD
 <PageHero title="Servicios de extranjería" text="Soluciones para citas de NIE, TIE, huellas, arraigo, asilo, nacionalidad y otros trámites en toda España." />
+=======
+<section className="bg-blue-700 text-white py-24">
+
+
+<div className="max-w-6xl mx-auto text-center px-6">
+
+
+<h1 className="text-5xl font-bold">
+
+Our Immigration Services
+
+</h1>
+
+
+<p className="text-xl mt-6 text-blue-100">
+
+Complete solutions for all your immigration procedures in Spain.
+24/7 automated monitoring and personalized support.
+
+</p>
+
+
+
+<a
+
+href="https://wa.me/34672399181"
+
+target="_blank"
+
+className="
+inline-block
+mt-10
+bg-green-500
+px-10
+py-4
+rounded-xl
+font-bold
+"
+
+>
+
+💬 Contact via WhatsApp
+
+</a>
+
+
+</div>
+
+
+</section>
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 
 
@@ -202,7 +266,11 @@ From scheduling appointments to complete document processing
 
 
 
+<<<<<<< HEAD
 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-14">
+=======
+<div className="grid md:grid-cols-3 gap-8 mt-14">
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 
 {

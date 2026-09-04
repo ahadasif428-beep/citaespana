@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
+<<<<<<< HEAD
+=======
+import { motion } from "framer-motion";
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 export default function EligibilityCTA() {
   const [phone, setPhone] = useState("");
@@ -18,7 +22,15 @@ export default function EligibilityCTA() {
 
       <div className="max-w-5xl mx-auto px-6">
 
+<<<<<<< HEAD
         <div
+=======
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: .7 }}
+          viewport={{ once: true }}
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
           className="
           relative
           overflow-hidden
@@ -132,7 +144,19 @@ export default function EligibilityCTA() {
           </div>
                     <div className="mt-10 flex justify-center">
 
+<<<<<<< HEAD
             <a href={`https://wa.me/34672399181?text=${encodeURIComponent(
+=======
+            <motion.a
+              whileHover={{
+                scale: 1.04,
+                y: -3,
+              }}
+              whileTap={{
+                scale: .97,
+              }}
+              href={`https://wa.me/34672399181?text=${encodeURIComponent(
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
                 `Hola, quiero comprobar mi elegibilidad.
 
 WhatsApp: ${phone}
@@ -160,7 +184,11 @@ Provincia: ${province}`
               <FaWhatsapp className="text-2xl animate-pulse" />
 
               Comprobar mi elegibilidad GRATIS →
+<<<<<<< HEAD
             </a>
+=======
+            </motion.a>
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
           </div>
 
@@ -209,7 +237,11 @@ Provincia: ${province}`
 
           </div>
 
+<<<<<<< HEAD
         </div>
+=======
+        </motion.div>
+>>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
       </div>
 
