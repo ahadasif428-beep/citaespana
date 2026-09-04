@@ -1,0 +1,55 @@
+
+@import "tailwindcss";
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  margin:0;
+  padding:0;
+}
+:root { --brand-red:#C60B1E; --brand-red-dark:#A40818; --brand-yellow:#F1BF00; }
+html { scroll-behavior:smooth; }
+body { background:#fff; color:#111827; }
+button, a, select, input { -webkit-tap-highlight-color: transparent; }
+@keyframes slideDown { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
+@keyframes floatSoft { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+.float-soft { animation:floatSoft 4s ease-in-out infinite; }
+@media (max-width: 640px) {
+  h1 { overflow-wrap:anywhere; }
+  section { scroll-margin-top:80px; }
+}
+
+@keyframes spainFlagWave {
+  0%, 100% { transform: perspective(900px) rotateY(-8deg) skewY(-1deg) translate3d(0,0,0); border-radius: 10px 38px 16px 28px; }
+  50% { transform: perspective(900px) rotateY(9deg) skewY(2deg) translate3d(-10px,5px,0); border-radius: 28px 12px 34px 18px; }
+}
+@keyframes spainFlagFloat {
+  0%, 100% { transform: translate3d(0,0,0) rotate(-2deg); }
+  50% { transform: translate3d(18px,-12px,0) rotate(2deg); }
+}
+.spain-flag-wrap { animation: spainFlagFloat 8s ease-in-out infinite; transform-origin: center; }
+.spain-flag {
+  position: absolute;
+  inset: 0;
+  height: 330px;
+  border-radius: 10px 38px 16px 28px;
+  transform-origin: left center;
+  background: linear-gradient(to bottom, #c60b1e 0 25%, #f1bf00 25% 75%, #c60b1e 75% 100%);
+  box-shadow: 0 28px 65px rgba(198, 11, 30, 0.16);
+}
+.spain-flag-1 { animation: spainFlagWave 5.8s ease-in-out infinite; }
+.spain-flag-2 { transform: translate(24px,12px) scale(.98); opacity: .5; filter: blur(2px); animation: spainFlagWave 6.6s ease-in-out infinite reverse; }
+.spain-flag-3 { transform: translate(48px,24px) scale(.96); opacity: .25; filter: blur(4px); animation: spainFlagWave 7.4s ease-in-out infinite; }
+.spain-flag-shine { position:absolute; inset:0; background: linear-gradient(100deg, rgba(255,255,255,.35), transparent 35%, rgba(255,255,255,.12) 58%, transparent 80%); mix-blend-mode:screen; animation: flagShine 4.2s ease-in-out infinite; }
+@keyframes flagShine { 0%,100% { transform: translateX(-12%); } 50% { transform: translateX(12%); } }
+@media (prefers-reduced-motion: reduce) {
+  .spain-flag-wrap, .spain-flag, .spain-flag-shine { animation: none !important; }
+}
+.input{margin-top:.5rem;width:100%;height:3.5rem;border:1px solid #d1d5db;border-radius:.85rem;padding:0 1rem;outline:none;background:white}.input:focus{border-color:#C60B1E;box-shadow:0 0 0 4px rgba(198,11,30,.08)}.label{display:block;font-size:.875rem;font-weight:700;color:#374151}
+.input{margin-top:.5rem;width:100%;height:3.5rem;border:1px solid #d1d5db;border-radius:.85rem;padding:0 1rem;outline:none;background:white}.input:focus{border-color:#C60B1E;box-shadow:0 0 0 4px rgba(198,11,30,.08)}.label{display:block;font-size:.875rem;font-weight:700;color:#374151}

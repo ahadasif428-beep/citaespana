@@ -1,0 +1,10 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import PageHero from "@/components/PageHero";
+
+export const metadata: Metadata = { title: "Contacto", description: "Contacta con CitaEspaña para obtener ayuda con citas de extranjería.", alternates: { canonical: "/contact" } };
+
+export default function ContactPage() {
+  const cards = [['💬','WhatsApp','Habla directamente con nuestro equipo y cuéntanos qué cita necesitas.'],['✉️','Correo electrónico','citaespana001@gmail.com\nRespondemos lo antes posible.'],['🕐','Atención','Monitorización y seguimiento de citas durante todo el día.']];
+  return <main><PageHero title="Estamos aquí para ayudarte" text="Cuéntanos qué trámite necesitas y te orientaremos sobre el siguiente paso." /><section className="py-20 bg-[#fffdf9]"><div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">{cards.map(([icon,title,text])=><div key={title} className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 hover:-translate-y-1 hover:shadow-xl transition-all"><div className="text-3xl">{icon}</div><h2 className="mt-5 text-2xl font-bold text-gray-900">{title}</h2><p className="mt-4 text-gray-600 whitespace-pre-line leading-7">{text}</p>{title==='WhatsApp'&&<Link href="https://wa.me/34672399181" target="_blank" className="inline-flex mt-7 bg-[#25D366] text-white px-6 py-3 rounded-xl font-bold">Abrir WhatsApp</Link>}</div>)}</div></section><section className="py-20 bg-white"><div className="max-w-4xl mx-auto px-6 text-center"><h2 className="text-4xl font-black text-gray-900">¿Necesitas una cita?</h2><p className="mt-5 text-lg text-gray-600">Puedes solicitarla online o escribirnos directamente por WhatsApp.</p><div className="flex flex-col sm:flex-row justify-center gap-4 mt-8"><Link href="/appointment" className="bg-[#C60B1E] text-white px-8 py-4 rounded-xl font-bold">Solicitar cita →</Link><Link href="https://wa.me/34672399181" target="_blank" className="bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold">WhatsApp</Link></div></div></section></main>;
+}
