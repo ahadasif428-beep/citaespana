@@ -1,5 +1,4 @@
 import type { MetadataRoute } from "next";
-<<<<<<< HEAD
 import { provinces } from "@/data/provinces";
 import { seoProcedures } from "@/data/seo";
 import { services } from "@/data/services";
@@ -9,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const staticRoutes = [
     "",
+    "/appointment",
     "/cita-previa-extranjeria",
     "/cita-previa-espana",
     "/cita-urgente",
@@ -45,60 +45,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/cookies",
     "/legal",
   ];
-
   const serviceRoutes = Object.keys(services).map((slug) => `/services/${slug}`);
   const guideSlugs = [
-    "arraigo-social", "arraigo-laboral", "arraigo-familiar", "renovar-nie", "renovar-tie",
-    "nacionalidad-espanola", "asilo", "reagrupacion-familiar", "residencia-no-lucrativa",
-    "permiso-de-trabajo", "visado-estudiante", "proteccion-internacional",
+    "arraigo-social",
+    "arraigo-laboral",
+    "arraigo-familiar",
+    "renovar-nie",
+    "renovar-tie",
+    "nacionalidad-espanola",
+    "asilo",
+    "reagrupacion-familiar",
+    "residencia-no-lucrativa",
+    "permiso-de-trabajo",
+    "visado-estudiante",
+    "proteccion-internacional",
   ];
-
-  const provinceRoutes = provinces.map((province) => `/cita-previa-extranjeria/${province.slug}`);
-  const procedureRoutes = provinces.flatMap((province) =>
-    seoProcedures.map((procedure) => `/cita-previa-extranjeria/${province.slug}/${procedure.slug}`),
+  const provinceRoutes = provinces.map(
+    (province) => `/cita-previa-extranjeria/${province.slug}`,
   );
-
-  return [
+  const procedureRoutes = provinces.flatMap((province) =>
+    seoProcedures.map(
+      (procedure) =>
+        `/cita-previa-extranjeria/${province.slug}/${procedure.slug}`,
+    ),
+  );
+  const routes = [
     ...staticRoutes,
     ...serviceRoutes,
     ...guideSlugs.map((slug) => `/guides/${slug}`),
     ...provinceRoutes,
     ...procedureRoutes,
-  ].map((route) => {
-    const changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] =
-      route === "" ? "daily" : "weekly";
-    return {
-      url: `${baseUrl}${route}`,
-      lastModified: now,
-      changeFrequency,
-      priority: route === "" ? 1 : route.split("/").length >= 4 ? 0.7 : 0.85,
-    };
-  });
-}
-=======
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.citaespana.com";
-
-  const routes = [
-    "",
-    "/about",
-    "/appointment",
-    "/prices",
-    "/services",
-    "/faq",
-    "/contact",
-    "/eligibility-checker",
-    "/privacy-policy",
-    "/terms",
-    "/regularization",
   ];
 
-  return routes.map((route) => ({
+  return [...new Set(routes)].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: route === "" ? 1 : 0.8,
+    lastModified: now,
+    changeFrequency: route === "" ? "daily" : "weekly",
+    priority: route === "" ? 1 : route.split("/").length >= 4 ? 0.7 : 0.85,
   }));
 }
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823

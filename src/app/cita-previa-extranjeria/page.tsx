@@ -6,24 +6,32 @@ import { SITE_URL } from "@/lib/seo";
 import SpainFlagWaving from "@/components/SpainFlagWaving";
 
 export const metadata: Metadata = {
-  title: "Cita previa extranjería en España 2026 | NIE, TIE, huellas y asilo",
+  title: "Cita previa extranjería en España | NIE, TIE y huellas",
   description:
-    "Cita previa de extranjería en España por provincia: NIE, TIE, toma de huellas, asilo, residencia, arraigo, trabajo y reagrupación familiar. Guías locales y fuentes oficiales.",
+    "Consulta información de cita previa de extranjería en España por provincia: NIE, TIE, huellas, asilo, residencia, arraigo y otros trámites.",
   keywords: [
     "cita previa extranjería",
+    "cita previa extranjeria",
     "cita extranjería España",
     "cita previa NIE",
     "cita previa TIE",
     "cita huellas extranjería",
-    "cita asilo España",
   ],
   alternates: { canonical: "/cita-previa-extranjeria" },
   openGraph: {
     title: "Cita previa extranjería en España | CitaEspaña",
     description:
-      "Información por provincia y procedimiento para citas de extranjería en España.",
+      "Consulta información por provincia y procedimiento para citas de extranjería en España.",
     url: `${SITE_URL}/cita-previa-extranjeria`,
+    siteName: "CitaEspaña",
+    locale: "es_ES",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cita previa extranjería en España | CitaEspaña",
+    description:
+      "Información por provincia para citas NIE, TIE, huellas y otros trámites de extranjería.",
   },
 };
 

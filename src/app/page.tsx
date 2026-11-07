@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
@@ -27,28 +26,26 @@ export const metadata: Metadata = {
   verification: {
     google: "GkYEU7xgWOj6Pa46XjiwoAcPcgm45oHN7n_MahUohwE",
   },
-
-  title: "Cita Previa Extranjería en España | NIE, TIE y Huellas",
-
+  title: "Cita España: Extranjería, NIE, TIE y huellas | CitaEspaña",
   description:
-    "Cita previa de extranjería en España. Información y asistencia para NIE, TIE, toma de huellas, asilo, arraigo, residencia, reagrupación familiar y otros trámites.",
-
+    "Cita previa de extranjería en España: consulta información y asistencia para citas NIE, TIE y huellas por provincia. CitaEspaña, también buscada como citaespana.",
   keywords: [
+    "Cita España",
+    "Cita Espana",
+    "Citaespana",
+    "citaespana",
     "cita previa extranjería",
     "cita previa extranjeria",
-    "cita previa extranjería España",
-    "cita previa extranjeria España",
-    "cita extranjería",
     "cita extranjería España",
-    "cita previa NIE",
+    "cita extranjeria España",
     "cita NIE",
-    "cita previa TIE",
     "cita TIE",
+    "cita huellas",
     "cita huellas extranjería",
     "cita toma de huellas",
-    "cita previa huellas",
+    "cita previa NIE",
+    "cita previa TIE",
     "cita asilo España",
-    "cita protección internacional",
     "cita arraigo",
     "cita residencia España",
     "cita reagrupación familiar",
@@ -59,28 +56,26 @@ export const metadata: Metadata = {
     "cita urgente extranjería",
     "citas extranjería por provincia",
   ],
-
   alternates: {
     canonical: "https://www.citaespana.com/",
   },
-
   openGraph: {
-    title: "Cita Previa Extranjería en España | CitaEspaña",
+    title: "Cita España: Extranjería, NIE, TIE y huellas | CitaEspaña",
     description:
-      "Encuentra información y asistencia para tu cita previa de extranjería en España: NIE, TIE, huellas, asilo, residencia y otros trámites.",
+      "Información y asistencia para cita previa de extranjería en España: NIE, TIE, huellas, asilo y otros trámites por provincia.",
     url: "https://www.citaespana.com/",
     siteName: "CitaEspaña",
     locale: "es_ES",
     type: "website",
+    images: [{ url: "/logo.jpeg", alt: "CitaEspaña" }],
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Cita Previa Extranjería en España | CitaEspaña",
+    title: "Cita España: Extranjería, NIE, TIE y huellas | CitaEspaña",
     description:
-      "Información y asistencia para citas de extranjería, NIE, TIE, huellas y otros trámites en España.",
+      "Información y asistencia para cita previa de extranjería en España: NIE, TIE, huellas y otros trámites.",
+    images: ["/logo.jpeg"],
   },
-
   robots: {
     index: true,
     follow: true,
@@ -100,11 +95,8 @@ export default function Home() {
       <div className="w-full">
         <FAQSchema />
         <FloatingWhatsApp />
-
         <Hero />
-
         <AppointmentSearch />
-
         <Stats />
         <HowItWorks />
         <Procedures />
