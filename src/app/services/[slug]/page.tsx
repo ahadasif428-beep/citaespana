@@ -1,10 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-<<<<<<< HEAD
-=======
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 import FAQ from "@/components/FAQ";
 import { services } from "@/data/services";
 
@@ -26,7 +21,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${service.title} | CitaEspaña`,
+    title: `${service.title} | CitaEspana`,
     description: service.description,
     alternates: {
       canonical: `/services/${slug}`,
@@ -67,11 +62,7 @@ export default async function Page({
 
       <div className="max-w-7xl mx-auto px-6 py-5 text-sm text-gray-500">
 
-<<<<<<< HEAD
         <Link href="/" className="hover:text-[#C60B1E]">
-=======
-        <Link href="/" className="hover:text-blue-600">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
           Inicio
         </Link>
 
@@ -79,11 +70,7 @@ export default async function Page({
 
         <Link
           href="/services"
-<<<<<<< HEAD
           className="hover:text-[#C60B1E]"
-=======
-          className="hover:text-blue-600"
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
         >
           Servicios
         </Link>
@@ -98,21 +85,13 @@ export default async function Page({
 
       {/* HERO */}
 
-<<<<<<< HEAD
       <section className="bg-[#C60B1E] text-white py-24">
-=======
-      <section className="bg-[#0A4ABF] text-white py-24">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
           <div>
 
-<<<<<<< HEAD
             <span className="inline-block bg-[#C60B1E] rounded-full px-5 py-2 font-semibold">
-=======
-            <span className="inline-block bg-blue-500 rounded-full px-5 py-2 font-semibold">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
               {service.badge}
 
@@ -142,11 +121,7 @@ export default async function Page({
 
               <Link
                 href="/appointment"
-<<<<<<< HEAD
                 className="bg-white text-[#C60B1E] px-8 py-4 rounded-xl font-bold"
-=======
-                className="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold"
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
               >
                 Solicitar cita
               </Link>
@@ -158,7 +133,7 @@ export default async function Page({
           <div className="bg-white/10 rounded-3xl border border-white/20 p-10">
 
             <h2 className="text-3xl font-bold">
-              ¿Por qué elegir CitaEspaña?
+              ¿Por qué elegir CitaEspana?
             </h2>
 
             <p className="mt-6 text-blue-100 leading-8">
@@ -214,11 +189,7 @@ export default async function Page({
                 key={item.text}
                 className="bg-gray-50 rounded-3xl p-8 text-center shadow-sm"
               >
-<<<<<<< HEAD
                 <h3 className="text-5xl font-bold text-[#C60B1E]">
-=======
-                <h3 className="text-5xl font-bold text-blue-700">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
                   {item.number}
                 </h3>
 
@@ -278,11 +249,7 @@ export default async function Page({
                 className="bg-white rounded-3xl p-8 shadow-sm"
               >
 
-<<<<<<< HEAD
                 <div className="w-14 h-14 rounded-full bg-[#C60B1E] text-white flex items-center justify-center text-xl font-bold">
-=======
-                <div className="w-14 h-14 rounded-full bg-blue-700 text-white flex items-center justify-center text-xl font-bold">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
                   {index + 1}
 
@@ -360,13 +327,13 @@ export default async function Page({
 
           <h2 className="text-5xl font-bold">
 
-            ¿Por qué elegir CitaEspaña?
+            ¿Por qué elegir CitaEspana?
 
           </h2>
 
           <p className="mt-8 text-lg text-gray-600 leading-9">
 
-            En CitaEspaña ayudamos a personas de toda España a conseguir
+            En CitaEspana ayudamos a personas de toda España a conseguir
             citas para procedimientos de extranjería de forma rápida,
             segura y sencilla. Nuestro sistema monitoriza continuamente
             las citas disponibles para NIE, TIE, Huellas, Arraigo,
@@ -413,11 +380,7 @@ export default async function Page({
                 <Link
                   key={key}
                   href={`/services/${key}`}
-<<<<<<< HEAD
                   className="border rounded-2xl p-6 hover:border-[#C60B1E] hover:shadow-lg transition"
-=======
-                  className="border rounded-2xl p-6 hover:border-blue-600 hover:shadow-lg transition"
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
                 >
 
                   <h3 className="text-xl font-bold">
@@ -432,11 +395,7 @@ export default async function Page({
 
                   </p>
 
-<<<<<<< HEAD
                   <span className="inline-block mt-6 text-[#C60B1E] font-semibold">
-=======
-                  <span className="inline-block mt-6 text-blue-600 font-semibold">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
                     Más información →
 
@@ -453,11 +412,7 @@ export default async function Page({
       </section>
             {/* FINAL CTA */}
 
-<<<<<<< HEAD
       <section className="bg-[#C60B1E] text-white py-24">
-=======
-      <section className="bg-[#0A4ABF] text-white py-24">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
         <div className="max-w-5xl mx-auto px-6 text-center">
 
@@ -486,11 +441,7 @@ export default async function Page({
 
             <Link
               href="/appointment"
-<<<<<<< HEAD
               className="bg-white text-[#C60B1E] px-10 py-4 rounded-xl font-bold"
-=======
-              className="bg-white text-blue-700 px-10 py-4 rounded-xl font-bold"
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
             >
               Solicitar cita
             </Link>

@@ -1,94 +1,93 @@
+
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-<<<<<<< HEAD
-=======
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 const guides = {
   "arraigo-social": {
     title: "Arraigo Social",
     description:
-      "Guía completa sobre el procedimiento de Arraigo Social en España.",
+      "Guía sobre los requisitos y el procedimiento de Arraigo Social en España.",
   },
   "arraigo-laboral": {
     title: "Arraigo Laboral",
     description:
-      "Todo lo que necesitas saber sobre el Arraigo Laboral.",
+      "Información sobre las opciones de residencia por circunstancias laborales.",
   },
   "arraigo-familiar": {
     title: "Arraigo Familiar",
     description:
-      "Requisitos y proceso para solicitar Arraigo Familiar.",
+      "Información sobre requisitos y procedimientos de Arraigo Familiar.",
   },
   "renovar-nie": {
     title: "Renovar NIE",
-    description:
-      "Cómo renovar tu NIE paso a paso.",
+    description: "Información sobre cómo renovar tu documentación NIE.",
   },
   "renovar-tie": {
     title: "Renovar TIE",
     description:
-      "Guía para renovar la Tarjeta de Identidad de Extranjero.",
+      "Guía informativa para renovar la Tarjeta de Identidad de Extranjero.",
   },
   "nacionalidad-espanola": {
     title: "Nacionalidad Española",
     description:
-      "Cómo obtener la nacionalidad española.",
+      "Información sobre los requisitos y el proceso de nacionalidad española.",
   },
-  "asilo": {
+  asilo: {
     title: "Asilo",
     description:
-      "Solicitud de protección internacional en España.",
+      "Información sobre solicitudes de protección internacional en España.",
   },
   "reagrupacion-familiar": {
     title: "Reagrupación Familiar",
     description:
-      "Proceso completo para reagrupar a tu familia.",
+      "Información sobre el procedimiento de reagrupación familiar.",
   },
   "residencia-no-lucrativa": {
     title: "Residencia No Lucrativa",
     description:
-      "Todo sobre la residencia no lucrativa.",
+      "Información sobre los requisitos de residencia no lucrativa.",
   },
   "permiso-de-trabajo": {
     title: "Permiso de Trabajo",
     description:
-      "Información sobre permisos de trabajo en España.",
+      "Información sobre autorizaciones y permisos de trabajo en España.",
   },
   "visado-estudiante": {
     title: "Visado de Estudiante",
     description:
-      "Guía para estudiantes internacionales.",
+      "Guía informativa para estudiantes internacionales en España.",
   },
   "proteccion-internacional": {
     title: "Protección Internacional",
     description:
-      "Información sobre protección internacional.",
+      "Información sobre protección internacional y sus procedimientos.",
   },
 };
 
 type GuideSlug = keyof typeof guides;
 
+export function generateStaticParams() {
+  return Object.keys(guides).map((slug) => ({ slug }));
+}
+
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: GuideSlug }>;
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
 
-  const guide = guides[slug];
-
-  if (!guide) {
+  if (!(slug in guides)) {
     return {
-      title: "Guía",
+      title: "Guía no encontrada | CitaEs",
     };
   }
 
+  const guide = guides[slug as GuideSlug];
+
   return {
-    title: `${guide.title} | CitaEspaña`,
+    title: `${guide.title} | CitaEs`,
     description: guide.description,
     alternates: {
       canonical: `/guides/${slug}`,
@@ -99,354 +98,258 @@ export async function generateMetadata({
 export default async function GuidePage({
   params,
 }: {
-  params: Promise<{ slug: GuideSlug }>;
+  params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
 
-  const guide = guides[slug];
-
-  if (!guide) {
+  if (!(slug in guides)) {
     notFound();
   }
 
-  return (
-    <>
-      
+  const guide = guides[slug as GuideSlug];
 
-      <div className="max-w-7xl mx-auto px-6 py-5 text-sm text-gray-500">
-        <Link href="/">Inicio</Link>
+  const faqs = [
+    {
+      q: "¿Cuánto tarda el procedimiento?",
+      a: "El plazo depende del tipo de trámite, de las circunstancias personales y de la administración competente.",
+    },
+    {
+      q: "¿Necesito cita previa?",
+      a: "Muchos procedimientos requieren cita previa. Comprueba las instrucciones oficiales correspondientes a tu trámite.",
+    },
+    {
+      q: "¿Puedo solicitar la cita desde cualquier provincia?",
+      a: "Depende del procedimiento y de las oficinas habilitadas para realizarlo.",
+    },
+    {
+      q: "¿CitaEs pertenece al Gobierno?",
+      a: "No. CitaEs es un servicio privado e independiente de información y asistencia.",
+    },
+  ];
+
+  return (
+    <main className="bg-white">
+      {/* BREADCRUMB */}
+      <div className="mx-auto max-w-7xl px-6 py-5 text-sm text-gray-500">
+        <Link href="/" className="hover:text-[#C60B1E]">
+          Inicio
+        </Link>
         <span className="mx-2">/</span>
-        <Link href="/guides">Guías</Link>
+        <Link href="/guides" className="hover:text-[#C60B1E]">
+          Guías
+        </Link>
         <span className="mx-2">/</span>
         <span>{guide.title}</span>
       </div>
 
-<<<<<<< HEAD
-      <section className="bg-[#C60B1E] text-white py-24">
-=======
-      <section className="bg-[#0A4ABF] text-white py-24">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
+      {/* HERO */}
+      <section className="bg-gradient-to-br from-[#C60B1E] to-[#920815] py-24 text-white">
+        <div className="mx-auto max-w-6xl px-6">
+          <span className="font-bold uppercase tracking-widest text-yellow-300">
+            Guía de extranjería
+          </span>
 
-        <div className="max-w-6xl mx-auto px-6">
-
-          <h1 className="text-5xl font-bold">
+          <h1 className="mt-6 text-4xl font-bold md:text-6xl">
             {guide.title}
           </h1>
 
-          <p className="text-xl text-blue-100 mt-8">
+          <p className="mt-8 max-w-3xl text-xl leading-9 text-red-100">
             {guide.description}
           </p>
-
         </div>
-
       </section>
-            {/* ARTICLE */}
 
+      {/* ARTICLE */}
       <section className="py-24">
-
-        <div className="max-w-5xl mx-auto px-6">
-
-          <h2 className="text-4xl font-bold">
-
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">
             Información sobre {guide.title}
-
           </h2>
 
           <p className="mt-8 text-lg leading-9 text-gray-700">
-
-            {guide.title} es uno de los procedimientos más solicitados por
-            ciudadanos extranjeros que residen en España. Antes de iniciar
-            cualquier trámite es importante revisar los requisitos,
-            preparar correctamente la documentación y solicitar una cita
-            previa en la oficina de extranjería correspondiente.
-
+            {guide.title} es un procedimiento relacionado con los trámites
+            de extranjería en España. Antes de iniciar cualquier solicitud,
+            es importante revisar los requisitos aplicables, preparar la
+            documentación necesaria y consultar las instrucciones de la
+            administración competente.
           </p>
 
           <p className="mt-6 text-lg leading-9 text-gray-700">
-
-            Dependiendo de la provincia, la disponibilidad de citas puede
-            variar considerablemente. En muchas ocasiones las citas se
-            agotan en pocos minutos, por lo que recomendamos realizar un
-            seguimiento constante o utilizar un servicio de monitorización.
-
+            Los requisitos y documentos pueden variar según la situación
+            personal del solicitante y el tipo de autorización. Por eso,
+            conviene comprobar siempre la información oficial y asegurarse
+            de utilizar los formularios correspondientes.
           </p>
 
           <p className="mt-6 text-lg leading-9 text-gray-700">
-
-            En CitaEspaña ayudamos diariamente a personas que necesitan
-            conseguir una cita para NIE, TIE, Arraigo, Nacionalidad,
-            Reagrupación Familiar, Asilo y otros procedimientos de
-            extranjería en cualquier provincia de España.
-
+            En CitaEs ofrecemos información y asistencia privada relacionada
+            con citas para NIE, TIE, huellas, arraigo, nacionalidad,
+            reagrupación familiar, asilo y otros procedimientos de
+            extranjería.
           </p>
 
-          <h2 className="text-4xl font-bold mt-20">
-
-            Documentación habitual
-
+          <h2 className="mt-20 text-3xl font-bold text-gray-900">
+            Documentación que puede ser necesaria
           </h2>
 
-          <ul className="space-y-4 mt-8">
+          <p className="mt-5 leading-8 text-gray-600">
+            Según el procedimiento, pueden solicitarse algunos de los
+            siguientes documentos:
+          </p>
 
-            <li>✅ Pasaporte en vigor</li>
-
-            <li>✅ Formulario oficial</li>
-
-            <li>✅ Fotografías recientes</li>
-
-            <li>✅ Justificante del pago de tasas</li>
-
-            <li>✅ Documentación específica del procedimiento</li>
-
+          <ul className="mt-8 space-y-4 text-gray-700">
+            <li>✓ Pasaporte en vigor o documento de identidad válido.</li>
+            <li>✓ Formulario oficial correspondiente al procedimiento.</li>
+            <li>✓ Justificante del pago de las tasas, cuando corresponda.</li>
+            <li>✓ Fotografías recientes, si son necesarias.</li>
+            <li>✓ Documentación específica que acredite los requisitos.</li>
           </ul>
 
-          <h2 className="text-4xl font-bold mt-20">
+          <p className="mt-6 text-sm leading-7 text-gray-500">
+            Esta lista es orientativa y no sustituye los requisitos oficiales
+            de cada procedimiento.
+          </p>
 
-            Consejos
-
+          {/* TIPS */}
+          <h2 className="mt-20 text-3xl font-bold text-gray-900">
+            Consejos importantes
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6 mt-10">
-
-            <div className="border rounded-2xl p-6">
-
-              <h3 className="font-bold text-xl">
-
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-gray-900">
                 Revisa la documentación
-
               </h3>
-
-              <p className="mt-4 text-gray-600">
-
-                Asegúrate de llevar todos los documentos originales y copias.
-
+              <p className="mt-4 leading-7 text-gray-600">
+                Comprueba que los documentos estén actualizados y que
+                cumplan las instrucciones del trámite.
               </p>
-
             </div>
 
-            <div className="border rounded-2xl p-6">
-
-              <h3 className="font-bold text-xl">
-
-                Solicita cita con antelación
-
+            <div className="rounded-2xl border border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-gray-900">
+                Consulta los plazos
               </h3>
-
-              <p className="mt-4 text-gray-600">
-
-                Las citas suelen agotarse rápidamente.
-
+              <p className="mt-4 leading-7 text-gray-600">
+                Revisa los plazos y las condiciones aplicables antes de
+                presentar tu solicitud.
               </p>
-
             </div>
 
-            <div className="border rounded-2xl p-6">
-
-              <h3 className="font-bold text-xl">
-
-                Consulta información oficial
-
+            <div className="rounded-2xl border border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-gray-900">
+                Consulta fuentes oficiales
               </h3>
-
-              <p className="mt-4 text-gray-600">
-
-                Comprueba siempre los requisitos actualizados.
-
+              <p className="mt-4 leading-7 text-gray-600">
+                Verifica los requisitos actualizados en los organismos
+                oficiales correspondientes.
               </p>
-
             </div>
 
-            <div className="border rounded-2xl p-6">
-
-              <h3 className="font-bold text-xl">
-
-                Recibe ayuda
-
+            <div className="rounded-2xl border border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-gray-900">
+                Solicita información
               </h3>
-
-              <p className="mt-4 text-gray-600">
-
-                Nuestro equipo puede ayudarte a encontrar una cita disponible.
-
+              <p className="mt-4 leading-7 text-gray-600">
+                Contacta con nuestro equipo si necesitas información
+                sobre nuestros servicios de asistencia.
               </p>
-
             </div>
-
           </div>
-                {/* FAQ */}
+        </div>
+      </section>
 
+      {/* FAQ */}
       <section className="bg-gray-50 py-24">
-
-        <div className="max-w-5xl mx-auto px-6">
-
-          <h2 className="text-5xl font-bold text-center">
-
-            Preguntas Frecuentes
-
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="text-center text-3xl font-bold text-gray-900 md:text-5xl">
+            Preguntas frecuentes
           </h2>
 
-          <div className="space-y-6 mt-16">
-
-            {[
-              {
-                q: "¿Cuánto tarda el procedimiento?",
-                a: "Depende de la provincia y del tipo de trámite solicitado.",
-              },
-              {
-                q: "¿Necesito cita previa?",
-                a: "Sí. La mayoría de los procedimientos de extranjería requieren cita previa.",
-              },
-              {
-                q: "¿Puedo solicitar la cita desde cualquier provincia?",
-                a: "Sí, siempre que el procedimiento esté disponible en esa provincia.",
-              },
-              {
-                q: "¿CitaEspaña pertenece al Gobierno?",
-                a: "No. Somos un servicio privado de ayuda para conseguir citas de extranjería.",
-              },
-            ].map((faq) => (
-
+          <div className="mt-16 space-y-6">
+            {faqs.map((faq) => (
               <div
                 key={faq.q}
-                className="bg-white rounded-2xl border p-8"
+                className="rounded-2xl border border-gray-200 bg-white p-8"
               >
-
-                <h3 className="text-xl font-bold">
-
+                <h3 className="text-xl font-bold text-gray-900">
                   {faq.q}
-
                 </h3>
 
-                <p className="mt-4 text-gray-600 leading-8">
-
+                <p className="mt-4 leading-8 text-gray-600">
                   {faq.a}
-
                 </p>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
-
       </section>
 
       {/* RELATED GUIDES */}
-
       <section className="py-24">
-
-        <div className="max-w-7xl mx-auto px-6">
-
-          <h2 className="text-5xl font-bold text-center">
-
-            Otras Guías
-
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-center text-3xl font-bold text-gray-900 md:text-5xl">
+            Otras guías
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {Object.entries(guides)
               .filter(([key]) => key !== slug)
               .slice(0, 6)
               .map(([key, item]) => (
-
                 <Link
                   key={key}
                   href={`/guides/${key}`}
-                  className="border rounded-3xl p-8 hover:shadow-lg transition"
+                  className="rounded-3xl border border-gray-200 p-8 transition hover:-translate-y-1 hover:shadow-lg"
                 >
-
-                  <h3 className="text-2xl font-bold">
-
+                  <h3 className="text-2xl font-bold text-gray-900">
                     {item.title}
-
                   </h3>
 
-                  <p className="mt-4 text-gray-600">
-
+                  <p className="mt-4 leading-7 text-gray-600">
                     {item.description}
-
                   </p>
 
-<<<<<<< HEAD
-                  <span className="inline-block mt-6 text-[#C60B1E] font-bold">
-=======
-                  <span className="inline-block mt-6 text-blue-600 font-bold">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
-
+                  <span className="mt-6 inline-block font-bold text-[#C60B1E]">
                     Leer guía →
-
                   </span>
-
                 </Link>
-
               ))}
-
           </div>
-
         </div>
-
       </section>
 
       {/* CTA */}
-
-<<<<<<< HEAD
-      <section className="bg-[#C60B1E] text-white py-24">
-=======
-      <section className="bg-[#0A4ABF] text-white py-24">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
-
-        <div className="max-w-5xl mx-auto text-center px-6">
-
-          <h2 className="text-5xl font-bold">
-
-            ¿Necesitas una cita de extranjería?
-
+      <section className="bg-[#C60B1E] py-24 text-white">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <h2 className="text-3xl font-bold md:text-5xl">
+            ¿Necesitas asistencia con tu cita de extranjería?
           </h2>
 
-          <p className="text-xl text-blue-100 mt-8 leading-9">
-
-            Nuestro equipo monitoriza las citas disponibles las 24 horas
-            para ayudarte a conseguir tu cita rápidamente.
-
+          <p className="mt-8 text-lg leading-9 text-red-100">
+            Contacta con nuestro equipo para consultar información sobre
+            tu procedimiento y nuestros servicios.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-5 mt-12">
-
+          <div className="mt-12 flex flex-wrap justify-center gap-5">
             <a
               href="https://wa.me/34672399181"
               target="_blank"
-              className="bg-green-500 hover:bg-green-600 transition px-10 py-4 rounded-xl font-bold"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-green-500 px-10 py-4 font-bold text-white transition hover:bg-green-600"
             >
-
               Contactar por WhatsApp
-
             </a>
 
             <Link
               href="/appointment"
-<<<<<<< HEAD
-              className="bg-white text-[#C60B1E] px-10 py-4 rounded-xl font-bold"
-=======
-              className="bg-white text-blue-700 px-10 py-4 rounded-xl font-bold"
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
+              className="rounded-xl bg-white px-10 py-4 font-bold text-[#C60B1E] transition hover:bg-gray-100"
             >
-
               Solicitar cita
-
             </Link>
-
           </div>
-
         </div>
-
       </section>
-      </div>
-      </section>
-      
-
-    </>
+    </main>
   );
 }

@@ -1,239 +1,183 @@
+
 import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sobre CitaEspaña",
+  title: "Sobre CitaEs | Servicios de extranjería en España",
   description:
-    "Conoce CitaEspaña y cómo ayudamos a conseguir citas de extranjería en toda España.",
+    "Conoce CitaEs y nuestros servicios de información y asistencia para trámites de extranjería en España.",
   alternates: {
     canonical: "/about",
   },
 };
 
 export default function AboutPage() {
+  const benefits = [
+    {
+      title: "Atención por WhatsApp",
+      description:
+        "Contacta con nuestro equipo para consultar información sobre tu trámite.",
+    },
+    {
+      title: "Información de trámites",
+      description:
+        "Consulta información sobre citas NIE, TIE, huellas y otros procedimientos.",
+    },
+    {
+      title: "Servicios en España",
+      description:
+        "Consulta la disponibilidad de asistencia según tu provincia y procedimiento.",
+    },
+    {
+      title: "Precios transparentes",
+      description:
+        "Consulta las tarifas y las condiciones del servicio antes de contratar.",
+    },
+  ];
+
+  const steps = [
+    {
+      number: "1",
+      title: "Elige tu trámite",
+      description:
+        "Indícanos la provincia y el procedimiento para el que necesitas asistencia.",
+    },
+    {
+      number: "2",
+      title: "Consulta la información",
+      description:
+        "Revisamos tu solicitud y te informamos sobre las opciones disponibles.",
+    },
+    {
+      number: "3",
+      title: "Recibe asistencia",
+      description:
+        "Contacta con nuestro equipo por WhatsApp para continuar con tu solicitud.",
+    },
+  ];
+
   return (
     <main className="bg-white">
+      {/* HERO */}
+      <section className="bg-gradient-to-br from-[#C60B1E] to-[#920815] py-24 text-white">
+        <div className="mx-auto max-w-7xl px-6 text-center">
+          <span className="font-bold uppercase tracking-widest text-yellow-300">
+            CitaEs España
+          </span>
 
-<<<<<<< HEAD
-      <section className="bg-[#C60B1E] text-white py-24">
-=======
-      <section className="bg-[#27439b] text-white py-24">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
-        <div className="max-w-7xl mx-auto px-6 text-center">
-
-          <h1 className="text-5xl md:text-6xl font-bold">
-            Sobre CitaEspaña
+          <h1 className="mt-6 text-5xl font-bold md:text-6xl">
+            Sobre CitaEs
           </h1>
 
-          <p className="mt-6 text-xl max-w-3xl mx-auto">
-            Ayudamos a personas de toda España a conseguir citas de
-            extranjería de forma rápida mediante un sistema de monitorización
-            continua y asistencia por WhatsApp.
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-red-100 md:text-xl">
+            Ayudamos a las personas a encontrar información y asistencia
+            relacionada con citas y trámites de extranjería en España.
           </p>
-
         </div>
       </section>
 
+      {/* ABOUT */}
       <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
-
-          <h2 className="text-4xl font-bold">
-            Quiénes Somos
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-4xl font-bold text-gray-900">
+            Quiénes somos
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-gray-600">
-            CitaEspaña nace con el objetivo de facilitar la obtención de
-            citas para trámites de extranjería en toda España.
-            Nuestro equipo supervisa constantemente la disponibilidad de
-            citas para ayudarte a conseguir una lo antes posible.
+            CitaEs nace con el objetivo de facilitar el acceso a información
+            sobre citas y procedimientos de extranjería en España. Queremos
+            que las personas puedan conocer mejor los pasos necesarios para
+            sus trámites.
           </p>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Gestionamos citas para NIE, TIE, huellas, arraigo,
-            autorizaciones de residencia, reagrupación familiar,
-            asilo, estudiantes y muchos otros procedimientos.
+            Ofrecemos información y asistencia relacionada con NIE, TIE,
+            toma de huellas, arraigo, autorizaciones de residencia,
+            reagrupación familiar, asilo y procedimientos para estudiantes
+            extranjeros.
           </p>
-
         </div>
       </section>
 
+      {/* BENEFITS */}
       <section className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-6">
-
-          <h2 className="text-4xl font-bold text-center">
-            ¿Por qué elegir CitaEspaña?
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-center text-4xl font-bold text-gray-900">
+            ¿Por qué elegir CitaEs?
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+          <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {benefits.map((benefit) => (
+              <div
+                key={benefit.title}
+                className="rounded-2xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              >
+                <div className="mb-5 h-1 w-12 rounded-full bg-[#C60B1E]" />
 
-            <div className="bg-white rounded-2xl shadow p-8">
-              <h3 className="font-bold text-xl">
-                Monitorización 24/7
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Buscamos citas de forma continua todos los días.
-              </p>
-            </div>
+                <h3 className="text-xl font-bold text-gray-900">
+                  {benefit.title}
+                </h3>
 
-            <div className="bg-white rounded-2xl shadow p-8">
-              <h3 className="font-bold text-xl">
-                Avisos por WhatsApp
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Recibe la información inmediatamente.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow p-8">
-              <h3 className="font-bold text-xl">
-                Toda España
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Trabajamos con oficinas de las 52 provincias.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow p-8">
-              <h3 className="font-bold text-xl">
-                Sin costes ocultos
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Servicio transparente y atención personalizada.
-              </p>
-            </div>
-
+                <p className="mt-4 leading-7 text-gray-600">
+                  {benefit.description}
+                </p>
+              </div>
+            ))}
           </div>
-
         </div>
       </section>
 
+      {/* PROCESS */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
-
-          <h2 className="text-4xl font-bold text-center">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-center text-4xl font-bold text-gray-900">
             ¿Cómo funciona?
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mt-14">
+          <div className="mt-14 grid gap-8 md:grid-cols-3">
+            {steps.map((step) => (
+              <div
+                key={step.number}
+                className="rounded-3xl border border-gray-200 p-8"
+              >
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#C60B1E] text-xl font-bold text-white">
+                  {step.number}
+                </div>
 
-            <div className="border rounded-3xl p-8">
-<<<<<<< HEAD
-              <div className="w-14 h-14 rounded-full bg-[#C60B1E] text-white flex items-center justify-center font-bold">
-=======
-              <div className="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
-                1
+                <h3 className="mt-6 text-2xl font-bold text-gray-900">
+                  {step.title}
+                </h3>
+
+                <p className="mt-4 leading-7 text-gray-600">
+                  {step.description}
+                </p>
               </div>
-
-              <h3 className="text-2xl font-bold mt-6">
-                Elige tu trámite
-              </h3>
-
-              <p className="mt-4 text-gray-600">
-                Indícanos la provincia y el procedimiento.
-              </p>
-
-            </div>
-
-            <div className="border rounded-3xl p-8">
-<<<<<<< HEAD
-              <div className="w-14 h-14 rounded-full bg-[#C60B1E] text-white flex items-center justify-center font-bold">
-=======
-              <div className="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
-                2
-              </div>
-
-              <h3 className="text-2xl font-bold mt-6">
-                Buscamos tu cita
-              </h3>
-
-              <p className="mt-4 text-gray-600">
-                Nuestro sistema monitoriza las citas disponibles.
-              </p>
-
-            </div>
-
-            <div className="border rounded-3xl p-8">
-<<<<<<< HEAD
-              <div className="w-14 h-14 rounded-full bg-[#C60B1E] text-white flex items-center justify-center font-bold">
-=======
-              <div className="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
-                3
-              </div>
-
-              <h3 className="text-2xl font-bold mt-6">
-                Te avisamos
-              </h3>
-
-              <p className="mt-4 text-gray-600">
-                Recibirás la información por WhatsApp.
-              </p>
-
-            </div>
-
+            ))}
           </div>
-
         </div>
       </section>
 
-<<<<<<< HEAD
-      <section className="bg-[#C60B1E] text-white py-20">
-=======
-      <section className="bg-[#27439b] text-white py-20">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
-        <div className="max-w-6xl mx-auto px-6">
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-
-            <div>
-              <div className="text-5xl font-bold">52</div>
-              <p>Provincias</p>
-            </div>
-
-            <div>
-              <div className="text-5xl font-bold">14+</div>
-              <p>Procedimientos</p>
-            </div>
-
-            <div>
-              <div className="text-5xl font-bold">24/7</div>
-              <p>Monitorización</p>
-            </div>
-
-            <div>
-              <div className="text-5xl font-bold">100%</div>
-              <p>Soporte WhatsApp</p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <section className="py-24">
-        <div className="max-w-4xl mx-auto text-center px-6">
-
+      {/* CTA */}
+      <section className="bg-[#C60B1E] py-24 text-white">
+        <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-4xl font-bold">
-            ¿Necesitas una cita?
+            ¿Necesitas asistencia con tu cita?
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600">
-            Contacta con nosotros y comienza hoy mismo.
+          <p className="mt-6 text-lg text-red-100">
+            Contacta con nosotros para consultar tu trámite de extranjería.
           </p>
 
           <Link
             href="https://wa.me/34672399181"
             target="_blank"
-            className="inline-block mt-10 bg-green-500 hover:bg-green-600 text-white px-10 py-4 rounded-xl font-bold"
+            rel="noopener noreferrer"
+            className="mt-10 inline-block rounded-xl bg-white px-10 py-4 font-bold text-[#C60B1E] transition hover:bg-gray-100"
           >
             Contactar por WhatsApp
           </Link>
-
         </div>
       </section>
-
     </main>
   );
 }

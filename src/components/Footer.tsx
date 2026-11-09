@@ -1,42 +1,39 @@
+
 import Link from "next/link";
-import { FaWhatsapp, FaMapMarkerAlt, FaEnvelope, FaArrowRight } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaArrowRight,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#C60B1E] text-white">
-
       {/* Background */}
-
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#F1BF00]/10 rounded-full blur-[140px]" />
-
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[160px]" />
 
       <div className="max-w-7xl mx-auto px-6 py-20 relative">
-
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
 
           {/* BRAND */}
-
           <div>
-
             <h2 className="text-5xl font-black">
-<<<<<<< HEAD
-              CitaEspaña
-            </h2>
-
-            <p className="mt-6 text-red-100 leading-8">
-              Información y asistencia privada para localizar y gestionar citas de extranjería en España.
-=======
               CitaEs
             </h2>
 
             <p className="mt-6 text-red-100 leading-8">
-              Tu servicio profesional para conseguir citas de extranjería en España de forma rápida, segura y sin estrés.
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
+              Información y asistencia privada para localizar y gestionar
+              citas de extranjería en España.
+            </p>
+
+            <p className="mt-6 text-red-100 leading-8">
+              Tu servicio profesional para encontrar citas de extranjería
+              en España de forma rápida, segura y sin estrés.
             </p>
 
             <div className="mt-8 space-y-4">
-
               <div className="flex items-center gap-3 text-red-100">
                 <FaMapMarkerAlt />
                 Madrid, España
@@ -44,194 +41,112 @@ export default function Footer() {
 
               <div className="flex items-center gap-3 text-red-100">
                 <FaEnvelope />
-<<<<<<< HEAD
                 citaespana001@gmail.com
-=======
-                soporte@citaes.com
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
               </div>
-
             </div>
 
             <a
               href="https://wa.me/34672399181"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-              mt-8
-              inline-flex
-              items-center
-              gap-3
-              bg-[#25D366]
-              px-6
-              py-4
-              rounded-2xl
-              font-bold
-              shadow-xl
-              hover:shadow-2xl
-              hover:-translate-y-1
-              transition-all
-              duration-300
-              "
+              className="mt-8 inline-flex items-center gap-3 bg-[#25D366] px-6 py-4 rounded-2xl font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
             >
               <FaWhatsapp className="text-2xl animate-pulse" />
               WhatsApp
             </a>
-
           </div>
-                    {/* SERVICES */}
 
+          {/* SERVICES */}
           <div>
-
             <h3 className="text-2xl font-bold mb-6">
               Servicios
             </h3>
 
             <div className="space-y-4">
-
-              <Link
-                href="/services"
-                className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
-              >
+              <Link href="/services" className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition">
                 <FaArrowRight className="text-xs" />
                 Servicios de extranjería
               </Link>
 
-              <Link
-<<<<<<< HEAD
-                href="/cita-previa-extranjeria"
-                className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
-              >
+              <Link href="/cita-previa-extranjeria" className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition">
                 <FaArrowRight className="text-xs" />
                 Cita previa extranjería
-=======
-                href="/regularization"
-                className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
-              >
-                <FaArrowRight className="text-xs" />
-                Regularización 2026
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
               </Link>
 
-              <Link
-                href="/provinces"
-                className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
-              >
+              <Link href="/regularization" className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition">
+                <FaArrowRight className="text-xs" />
+                Regularización 2026
+              </Link>
+
+              <Link href="/provinces" className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition">
                 <FaArrowRight className="text-xs" />
                 Provincias
               </Link>
 
-              <Link
-                href="/guides"
-                className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
-              >
+              <Link href="/guides" className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition">
                 <FaArrowRight className="text-xs" />
                 Guías
               </Link>
-
             </div>
-
           </div>
 
           {/* COMPANY */}
-
           <div>
-
             <h3 className="text-2xl font-bold mb-6">
               Empresa
             </h3>
 
             <div className="space-y-4">
-
-              <Link
-                href="/about"
-                className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
-              >
+              <Link href="/about" className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition">
                 <FaArrowRight className="text-xs" />
                 Sobre nosotros
               </Link>
 
-              <Link
-                href="/contact"
-                className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
-              >
+              <Link href="/contact" className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition">
                 <FaArrowRight className="text-xs" />
                 Contacto
               </Link>
 
-              <Link
-                href="/faq"
-                className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
-              >
+              <Link href="/faq" className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition">
                 <FaArrowRight className="text-xs" />
                 Preguntas frecuentes
               </Link>
 
-              <Link
-                href="/privacy"
-                className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition"
-              >
+              <Link href="/privacy" className="flex items-center gap-2 text-red-100 hover:text-[#F1BF00] transition">
                 <FaArrowRight className="text-xs" />
                 Política de privacidad
               </Link>
-
             </div>
-
           </div>
 
           {/* CTA */}
-
           <div>
-
             <h3 className="text-2xl font-bold mb-6">
               ¿Necesitas una cita?
             </h3>
 
             <p className="text-red-100 leading-8 mb-8">
-              Empieza hoy mismo y deja que encontremos tu cita mientras tú te olvidas de buscar.
+              Empieza hoy mismo y deja que te ayudemos a encontrar tu cita
+              mientras tú te olvidas de buscar.
             </p>
 
             <Link
               href="/appointment"
-              className="
-              flex
-              justify-center
-              items-center
-              gap-3
-              bg-[#F1BF00]
-              text-[#C60B1E]
-              font-black
-              rounded-2xl
-              py-4
-              shadow-xl
-              hover:shadow-2xl
-              hover:scale-105
-              transition-all
-              duration-300
-              "
+              className="flex justify-center items-center gap-3 bg-[#F1BF00] text-[#C60B1E] font-black rounded-2xl py-4 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               Solicitar cita
               <FaArrowRight />
             </Link>
-
           </div>
-
         </div>
 
         {/* Bottom */}
-
         <div className="mt-20 pt-8 border-t border-white/15 flex flex-col md:flex-row justify-between items-center gap-5">
-
           <p className="text-red-100 text-sm">
-<<<<<<< HEAD
-            © {new Date().getFullYear()} CitaEspaña. Todos los derechos reservados.
-=======
             © {new Date().getFullYear()} CitaEs. Todos los derechos reservados.
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
           </p>
 
           <div className="flex gap-6 text-red-100 text-sm">
-
             <Link href="/cookies" className="hover:text-[#F1BF00] transition">
               Cookies
             </Link>
@@ -243,13 +158,9 @@ export default function Footer() {
             <Link href="/legal" className="hover:text-[#F1BF00] transition">
               Aviso legal
             </Link>
-
           </div>
-
         </div>
-
       </div>
-
     </footer>
   );
 }

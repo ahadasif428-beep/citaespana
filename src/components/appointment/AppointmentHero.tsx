@@ -14,7 +14,7 @@ export default function AppointmentHero() {
 
   function sendWhatsapp() {
     if (!province || !procedure || !office) return;
-    const message = `Hola CitaEspaña, quiero solicitar una cita.\n\nProvincia: ${province}\nTrámite: ${procedure}\nOficina: ${office}`;
+    const message = `Hola CitaEspana, quiero solicitar una cita.\n\nProvincia: ${province}\nTrámite: ${procedure}\nOficina: ${office}`;
     window.open(`https://api.whatsapp.com/send?phone=34672399181&text=${encodeURIComponent(message)}`, "_blank");
   }
 
@@ -25,7 +25,7 @@ export default function AppointmentHero() {
       <div className="absolute -bottom-40 -right-40 w-[480px] h-[480px] rounded-full bg-yellow-200/50 blur-3xl" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div className="animate-[slideDown_.6s_ease-out]"><div className="-translate-x-0">
-          <span className="inline-flex bg-white shadow-lg px-5 py-2 rounded-full text-[#C60B1E] font-bold">🇪🇸 CitaEspaña</span>
+          <span className="inline-flex bg-white shadow-lg px-5 py-2 rounded-full text-[#C60B1E] font-bold">🇪🇸 CitaEspana</span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mt-7 text-gray-900">Solicita tu <span className="block text-[#C60B1E]">cita de extranjería</span> sin estrés</h1>
           <p className="text-lg md:text-xl text-gray-600 mt-6 leading-8">Selecciona provincia, trámite y oficina. Te ayudamos a gestionar tu solicitud y continuar por WhatsApp.</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-9">

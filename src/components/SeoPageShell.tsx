@@ -64,7 +64,7 @@ export default function SeoPageShell({
               <a href={secondaryHref} target="_blank" rel="noopener noreferrer" className="rounded-2xl bg-white border px-7 py-4 font-black text-gray-800 hover:bg-gray-50 transition">
                 Información oficial
               </a>
-              <a href={`https://wa.me/${wa}?text=${encodeURIComponent(`Hola CitaEspaña, necesito ayuda con una cita. Tema: ${title}`)}`} target="_blank" rel="noopener noreferrer" className="rounded-2xl border border-green-600 bg-green-50 px-7 py-4 font-black text-green-700 hover:bg-green-100 transition">
+              <a href={`https://wa.me/${wa}?text=${encodeURIComponent(`Hola CitaEspana, necesito ayuda con una cita. Tema: ${title}`)}`} target="_blank" rel="noopener noreferrer" className="rounded-2xl border border-green-600 bg-green-50 px-7 py-4 font-black text-green-700 hover:bg-green-100 transition">
                 WhatsApp
               </a>
             </div>
@@ -75,7 +75,7 @@ export default function SeoPageShell({
             </div>
           </div>
           <div className="rounded-[2rem] border bg-white/90 p-6 md:p-8 shadow-2xl backdrop-blur-sm">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#C60B1E]">CitaEspaña</p>
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#C60B1E]">CitaEspana</p>
             <h2 className="mt-3 text-2xl md:text-3xl font-black text-gray-900">Encuentra el procedimiento correcto</h2>
             <p className="mt-3 text-gray-600 leading-7">Selecciona provincia y trámite para continuar con el mismo flujo de solicitud de la página principal.</p>
             <Link href="/appointment" className="mt-6 block rounded-2xl bg-gray-900 px-5 py-4 text-center font-black text-white hover:bg-black transition">Abrir formulario de cita</Link>

@@ -61,11 +61,8 @@ text-[#101c34]
 ">
 
 
-<<<<<<< HEAD
-¿Por qué elegir CitaEspaña?
-=======
+¿Por qué elegir CitaEspana?
 ¿Por qué elegir CitaEs?
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 
 </h2>

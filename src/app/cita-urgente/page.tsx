@@ -3,20 +3,20 @@ import Link from "next/link";
 import SeoPageShell from "@/components/SeoPageShell";
 
 export const metadata: Metadata = {
-  title: "Cita urgente extranjería en España 2026 | CitaEspaña",
+  title: "Cita urgente extranjería en España 2026 | CitaEspana",
   description: "Información y asistencia para buscar una cita urgente de extranjería en España. Consulta provincia, trámite, fecha preferida y tarifa antes de enviar la solicitud.",
   keywords: ["cita urgente extranjería", "cita extranjería urgente", "cita NIE urgente", "cita TIE urgente", "cita huellas urgente", "cita asilo urgente"],
   alternates: { canonical: "/cita-urgente" },
 };
 
 const faqs = [
-  { q: "¿Qué significa cita urgente?", a: "En CitaEspaña usamos 'urgente' para solicitudes con una fecha dentro de los próximos 3 días. La tarifa se calcula en el formulario según el servicio y la provincia." },
+  { q: "¿Qué significa cita urgente?", a: "En CitaEspana usamos 'urgente' para solicitudes con una fecha dentro de los próximos 3 días. La tarifa se calcula en el formulario según el servicio y la provincia." },
   { q: "¿La cita urgente está garantizada?", a: "No. La disponibilidad depende de las citas que publique la Administración. Mostramos el precio correspondiente, pero no prometemos una plaza que todavía no exista." },
   { q: "¿Puedo pedir una cita urgente en cualquier provincia?", a: "Puedes enviar una solicitud para cualquiera de las 52 provincias. Algunos servicios tienen tarifas específicas según provincia." },
 ];
 
 export default function Page() {
-  return <SeoPageShell eyebrow="Cita urgente" title="Cita urgente de extranjería en España" description="Cuando necesitas una cita de extranjería para los próximos días, el primer paso es seleccionar correctamente provincia y trámite. CitaEspaña organiza esa solicitud y calcula la tarifa según la fecha elegida." faqs={faqs} related={[
+  return <SeoPageShell eyebrow="Cita urgente" title="Cita urgente de extranjería en España" description="Cuando necesitas una cita de extranjería para los próximos días, el primer paso es seleccionar correctamente provincia y trámite. CitaEspana organiza esa solicitud y calcula la tarifa según la fecha elegida." faqs={faqs} related={[
     { href: "/cita-previa-nie", label: "Cita previa NIE" },
     { href: "/cita-previa-tie", label: "Cita previa TIE" },
     { href: "/cita-huellas", label: "Cita de huellas" },
@@ -33,7 +33,7 @@ export default function Page() {
       <div className="rounded-3xl bg-[#C60B1E] text-white p-8 shadow-xl">
         <p className="text-sm font-bold uppercase tracking-[0.18em] text-red-100">Empieza ahora</p>
         <h2 className="mt-3 text-3xl font-black">Calcula tu precio</h2>
-        <p className="mt-4 text-red-50 leading-7">El formulario de CitaEspaña muestra el precio según tu provincia, trámite y fecha.</p>
+        <p className="mt-4 text-red-50 leading-7">El formulario de CitaEspana muestra el precio según tu provincia, trámite y fecha.</p>
         <Link href="/appointment" className="mt-7 block rounded-2xl bg-white px-5 py-4 text-center font-black text-[#C60B1E]">Solicitar cita</Link>
       </div>
     </div>

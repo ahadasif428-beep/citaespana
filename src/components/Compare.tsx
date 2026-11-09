@@ -109,11 +109,8 @@ COMPARA ANTES DE DECIDIR
 
 <h2 className="text-4xl md:text-5xl font-black text-center mt-6 text-gray-900">
 
-<<<<<<< HEAD
-CitaEspaña vs. Gestoría vs. Hacerlo solo
-=======
+CitaEspana vs. Gestoría vs. Hacerlo solo
 CitaEs vs. Gestoría vs. Hacerlo solo
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 
 </h2>
@@ -192,11 +189,8 @@ CARACTERÍSTICA
 
 <div className="font-bold">
 
-<<<<<<< HEAD
-CitaEspaña
-=======
+CitaEspana
 CitaEs
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 </div>
 
@@ -489,11 +483,8 @@ duration-300
 <div className="bg-red-50 text-red-600 p-3 rounded-xl whitespace-pre-line">
 
 
-<<<<<<< HEAD
-<b>CitaEspaña</b>
-=======
+<b>CitaEspana</b>
 <b>CitaEs</b>
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 
 {"\n"}
@@ -648,11 +639,8 @@ md:w-fit
 
 
 
-<<<<<<< HEAD
-Empezar con CitaEspaña — Gratis hasta confirmar la cita
-=======
+Empezar con CitaEspana — Gratis hasta confirmar la cita
 Empezar con CitaEs — Gratis hasta confirmar la cita
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 
 

@@ -67,11 +67,8 @@ export default function EligibilityChecker() {
 
       {/* HERO */}
 
-<<<<<<< HEAD
-      <section className="bg-[#C60B1E] text-white py-24">
-=======
+      <section className="bg-[#C60B1E] text-white py-24"/>
       <section className="bg-blue-700 text-white py-24">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
         <div className="max-w-5xl mx-auto text-center px-6">
 
@@ -114,14 +111,8 @@ export default function EligibilityChecker() {
         <div className="w-full bg-gray-200 rounded-full h-3">
 
           <div
-<<<<<<< HEAD
             className="bg-[#C60B1E] h-3 rounded-full transition-all"
-=======
-            className="bg-blue-600 h-3 rounded-full transition-all"
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
-            style={{
-              width: `${(step / 8) * 100}%`,
-            }}
+            style={{ width: `${(step / 8) * 100}%` }}
           />
 
         </div>
@@ -435,11 +426,8 @@ export default function EligibilityChecker() {
 
                 <div className="bg-blue-50 rounded-2xl p-8 mt-10">
 
-<<<<<<< HEAD
-                  <h3 className="text-3xl font-bold text-[#C60B1E]">
-=======
+                  <h3 className="text-3xl font-bold text-[#C60B1E]"/>
                   <h3 className="text-3xl font-bold text-blue-700">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
                     {form.procedure || "Immigration Appointment"}
 
@@ -461,7 +449,7 @@ export default function EligibilityChecker() {
 
                 <a
                   href={`https://wa.me/34672399181?text=${encodeURIComponent(
-`Hello CitaEspaña
+`Hello CitaEspana
 
 Name: ${form.name}
 
@@ -506,11 +494,8 @@ Urgency: ${form.urgency}`
 
             <button
               onClick={next}
-<<<<<<< HEAD
               className="bg-[#C60B1E] hover:bg-[#C60B1E] text-white px-10 py-4 rounded-xl font-bold"
-=======
-              className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold"
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
+             
             >
 
               {step === 8 ? "Finish" : "Next →"}

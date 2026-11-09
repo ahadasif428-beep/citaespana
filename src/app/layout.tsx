@@ -11,8 +11,8 @@ verification: {
   google: "GkYEU7xgWOj6Pa46XjiwoAcPcgm45oHN7n_MahUohwE",
 },
   title: {
-    default: "CitaEspaña | Immigration Appointments in Spain",
-    template: "%s | CitaEspaña",
+    default: "CitaEspana | Immigration Appointments in Spain",
+    template: "%s | CitaEspana",
   },
 
   description:
@@ -33,14 +33,14 @@ verification: {
 
   authors: [
     {
-      name: "CitaEspaña",
+      name: "CitaEspana",
       url: "https://www.citaespana.com",
     },
   ],
 
-  creator: "CitaEspaña",
+  creator: "CitaEspana",
 
-  publisher: "CitaEspaña",
+  publisher: "CitaEspana",
 
   robots: {
     index: true,
@@ -63,23 +63,23 @@ verification: {
     type: "website",
     locale: "en_US",
     url: "https://www.citaespana.com",
-    title: "CitaEspaña | Immigration Appointments",
+    title: "CitaEspana | Immigration Appointments",
     description:
       "Fast immigration appointments across Spain. NIE, TIE, Residence, Asylum, Fingerprints and more.",
-    siteName: "CitaEspaña",
+    siteName: "CitaEspana",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "CitaEspaña",
+        alt: "CitaEspana",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "CitaEspaña",
+    title: "CitaEspana",
     description:
       "Immigration appointments across Spain.",
     images: ["/og-image.jpg"],
@@ -98,7 +98,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+   <html lang="es" translate="no" className="notranslate">
       <body>
         <script
           type="application/ld+json"

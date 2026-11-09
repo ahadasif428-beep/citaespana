@@ -29,7 +29,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 
   const faqs = [
     { q: `¿Cómo pedir cita previa de extranjería en ${province.name}?`, a: `El procedimiento depende del trámite y del organismo competente. Selecciona el trámite en esta página, revisa la información oficial y continúa con la solicitud si necesitas asistencia.` },
-    { q: `¿Qué trámites puedo consultar en ${province.name}?`, a: `CitaEspaña organiza páginas para NIE, TIE, huellas, asilo, arraigo, residencia, trabajo, estudios, reagrupación y otros trámites. La disponibilidad exacta depende del sistema oficial.` },
+    { q: `¿Qué trámites puedo consultar en ${province.name}?`, a: `CitaEspana organiza páginas para NIE, TIE, huellas, asilo, arraigo, residencia, trabajo, estudios, reagrupación y otros trámites. La disponibilidad exacta depende del sistema oficial.` },
     { q: `¿La disponibilidad es igual todos los días?`, a: "No. Las plazas publicadas por la Administración pueden cambiar por provincia, oficina, trámite y momento." },
   ];
 
@@ -86,7 +86,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
           <aside className="rounded-3xl bg-[#C60B1E] text-white p-7 shadow-xl h-fit lg:sticky lg:top-28">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-red-100">Solicitar cita</p>
             <h2 className="mt-3 text-3xl font-black">{province.name}</h2>
-            <p className="mt-4 text-red-50 leading-7">Completa el formulario de CitaEspaña y el precio se calcula según trámite, provincia y fecha elegida.</p>
+            <p className="mt-4 text-red-50 leading-7">Completa el formulario de CitaEspana y el precio se calcula según trámite, provincia y fecha elegida.</p>
             <Link href={`/appointment?province=${encodeURIComponent(province.name)}`} className="mt-7 block rounded-2xl bg-white text-[#C60B1E] px-5 py-4 text-center font-black">Solicitar cita en {province.name} →</Link>
             <a href="https://sede.administracionespublicas.gob.es/pagina/index/directorio/ayuda_cita_previa" target="_blank" rel="noopener noreferrer" className="mt-3 block rounded-2xl border border-white/30 px-5 py-4 text-center font-bold hover:bg-white/10">Fuente oficial</a>
           </aside>
@@ -94,7 +94,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 
         <div className="mt-10 rounded-3xl border border-yellow-200 bg-yellow-50 p-7 md:p-8">
           <h2 className="text-2xl font-black">Importante antes de acudir</h2>
-          <p className="mt-3 text-gray-700 leading-8">CitaEspaña es un servicio privado e independiente. No pertenece al Gobierno de España, la Policía Nacional ni las Oficinas de Extranjería. Los requisitos, tasas, oficinas, canales de presentación y disponibilidad deben confirmarse siempre en la fuente oficial.</p>
+          <p className="mt-3 text-gray-700 leading-8">CitaEspana es un servicio privado e independiente. No pertenece al Gobierno de España, la Policía Nacional ni las Oficinas de Extranjería. Los requisitos, tasas, oficinas, canales de presentación y disponibilidad deben confirmarse siempre en la fuente oficial.</p>
         </div>
       </SeoPageShell>
     </>

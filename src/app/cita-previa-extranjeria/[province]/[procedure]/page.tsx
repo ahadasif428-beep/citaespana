@@ -38,7 +38,7 @@ export default async function ProcedurePage({ params }: { params: Promise<{ prov
     name: `${procedure.name} en ${province.name}`,
     serviceType: procedure.intent,
     description: `Guía de ${procedure.name.toLowerCase()} en ${province.name}. Información de procedimiento, pasos básicos y acceso a fuentes oficiales.`,
-    provider: { "@type": "Organization", name: "CitaEspaña", url: SITE_URL },
+    provider: { "@type": "Organization", name: "CitaEspana", url: SITE_URL },
     areaServed: { "@type": "AdministrativeArea", name: province.name },
   };
 
@@ -88,7 +88,7 @@ export default async function ProcedurePage({ params }: { params: Promise<{ prov
 
             <section className="rounded-3xl border border-yellow-200 bg-yellow-50 p-7 md:p-8">
               <h2 className="text-2xl font-black">Aviso importante</h2>
-              <p className="mt-3 text-gray-700 leading-8">CitaEspaña es un servicio privado e independiente. No somos la Policía Nacional ni la Oficina de Extranjería. La fuente oficial prevalece sobre cualquier información resumida en esta página.</p>
+              <p className="mt-3 text-gray-700 leading-8">CitaEspana es un servicio privado e independiente. No somos la Policía Nacional ni la Oficina de Extranjería. La fuente oficial prevalece sobre cualquier información resumida en esta página.</p>
             </section>
           </div>
 

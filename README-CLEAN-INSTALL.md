@@ -1,4 +1,4 @@
-# CitaEspaña — Clean Local Install
+# CitaEspana — Clean Local Install
 
 This package intentionally does not contain `node_modules`, `.next`, `.env.local`, or a lockfile generated on another machine.
 

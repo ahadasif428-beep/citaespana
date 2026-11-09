@@ -11,22 +11,16 @@ return(
 
 <h2 className="text-5xl font-bold text-center">
 
-<<<<<<< HEAD
-CitaEspaña vs Traditional Management Services
-=======
+CitaEspana vs Traditional Management Services
 CitaEs vs Traditional Management Services
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 </h2>
 
 
 <p className="text-center text-gray-500 mt-4">
 
-<<<<<<< HEAD
-Why more people choose CitaEspaña
-=======
+Why more people choose CitaEspana
 Why more people choose CitaEs
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 </p>
 
@@ -47,11 +41,8 @@ overflow-hidden
 ">
 
 
-<<<<<<< HEAD
-<thead className="bg-[#C60B1E] text-white">
-=======
+<thead className="bg-[#C60B1E] text-white"/>
 <thead className="bg-blue-700 text-white">
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 
 <tr>
@@ -62,11 +53,8 @@ Feature
 
 
 <th className="p-5">
-<<<<<<< HEAD
-CitaEspaña
-=======
+CitaEspana
 CitaEs
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 </th>
 
 
@@ -88,11 +76,8 @@ Management services
 
 {[
 
-<<<<<<< HEAD
 ["Appointment service price","From €45","€100-200"],
-=======
 ["Standard appointment price","€69","€100-200"],
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 ["No upfront payment","✅","❌"],
 
@@ -154,11 +139,8 @@ className="border-b"
 
 <p className="text-gray-500 text-sm mt-5">
 
-<<<<<<< HEAD
-CitaEspaña is not a law firm. Prices are indicative of administrative services.
-=======
+CitaEspana is not a law firm. Prices are indicative of administrative services.
 CitaEs is not a law firm. Prices are indicative of administrative services.
->>>>>>> 67d67fc9d08bddbcbb307629d4f3a363edcd4823
 
 </p>
 

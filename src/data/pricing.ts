@@ -27,12 +27,12 @@ const SPECIAL_PROVINCE_FOOTPRINT: Record<string, number> = {
 };
 
 export const PRICE_LIST = [
-  { service: "TIE / Footprints", scope: "España", price: 45, urgentPrice: 45 },
-  { service: "TIE / Footprints", scope: "Castellón", price: 55, urgentPrice: 65 },
-  { service: "TIE / Footprints", scope: "Valencia", price: 45, urgentPrice: 55 },
-  { service: "TIE / Footprints", scope: "Almería", price: 45, urgentPrice: 55 },
-  { service: "TIE / Footprints", scope: "Palencia", price: 45, urgentPrice: 55 },
-  { service: "NIE Assignment", scope: "España", price: 45, urgentPrice: 45 },
+  { service: "TIE / Footprints", scope: "España", price: 65, urgentPrice: 65 },
+  { service: "TIE / Footprints", scope: "Castellón", price: 65, urgentPrice: 65 },
+  { service: "TIE / Footprints", scope: "Valencia", price: 65, urgentPrice: 65 },
+  { service: "TIE / Footprints", scope: "Almería", price: 65, urgentPrice: 65 },
+  { service: "TIE / Footprints", scope: "Palencia", price: 65, urgentPrice: 65 },
+  { service: "NIE Assignment", scope: "España", price: 45, urgentPrice: 55 },
   { service: "Carta de invitación", scope: "España", price: 45, urgentPrice: 45 },
   { service: "Authorization de regreso", scope: "España", price: 45, urgentPrice: 45 },
   { service: "Certificado de residencia / no residencia / concordancia", scope: "España", price: 45, urgentPrice: 45 },

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/cita-previa-extranjeria" },
   openGraph: {
-    title: "Cita previa extranjería en España | CitaEspaña",
+    title: "Cita previa extranjería en España | CitaEspana",
     description:
       "Información por provincia y procedimiento para citas de extranjería en España.",
     url: `${SITE_URL}/cita-previa-extranjeria`,
@@ -50,7 +50,7 @@ export default function CitaPreviaPage() {
       <section className="relative overflow-hidden bg-[#C60B1E] text-white py-20">
         <SpainFlagWaving className="right-[-10%] top-[-16%] w-[900px] max-w-[84vw] opacity-[0.2]" />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <p className="font-bold uppercase tracking-wider text-red-100">CitaEspaña</p>
+          <p className="font-bold uppercase tracking-wider text-red-100">CitaEspana</p>
           <h1 className="text-4xl md:text-6xl font-black mt-4">Cita previa extranjería en España</h1>
           <p className="text-lg md:text-xl text-red-50 max-w-4xl mt-6 leading-8">
             Consulta las principales citas y trámites de extranjería por provincia. Incluimos NIE, TIE, toma de huellas,

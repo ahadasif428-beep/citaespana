@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SeoPageShell from "@/components/SeoPageShell";
 
 export const metadata: Metadata = {
-  title: "Cita previa Oficina de Extranjería 2026 | CitaEspaña",
+  title: "Cita previa Oficina de Extranjería 2026 | CitaEspana",
   description: "Guía de cita previa en la Oficina de Extranjería para residencia, arraigo, trabajo, reagrupación y otros procedimientos según provincia.",
   keywords: ["cita previa oficina extranjería", "cita oficina extranjería España", "cita arraigo extranjería", "cita residencia extranjería", "cita reagrupación familiar"],
   alternates: { canonical: "/cita-previa-oficina-extranjeria" },

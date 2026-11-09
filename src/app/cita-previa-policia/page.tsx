@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SeoPageShell from "@/components/SeoPageShell";
 
 export const metadata: Metadata = {
-  title: "Cita previa Policía Nacional extranjería 2026 | CitaEspaña",
+  title: "Cita previa Policía Nacional extranjería 2026 | CitaEspana",
   description: "Guía para identificar citas de Policía Nacional relacionadas con NIE, TIE, toma de huellas, autorización de regreso, carta de invitación y certificado UE.",
   keywords: ["cita previa policía extranjería", "cita policía NIE", "cita policía TIE", "cita huellas policía", "cita carta invitación policía"],
   alternates: { canonical: "/cita-previa-policia" },
