@@ -1,4 +1,4 @@
-# CitaEspana — Production Project
+# CitaEspaña — Production Project
 
 ## Local setup
 

@@ -8,7 +8,7 @@ export function createWhatsAppLink(
 
 
 const message = 
-`Hola CitaEspana,
+`Hola CitaEspaña,
 
 Quiero solicitar una cita de extranjería.
 

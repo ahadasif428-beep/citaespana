@@ -65,18 +65,18 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Cita Previa Extranjería en España | CitaEspana",
+    title: "Cita Previa Extranjería en España | CitaEspaña",
     description:
       "Encuentra información y asistencia para tu cita previa de extranjería en España: NIE, TIE, huellas, asilo, residencia y otros trámites.",
     url: "https://www.citaespana.com/",
-    siteName: "CitaEspana",
+    siteName: "CitaEspaña",
     locale: "es_ES",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Cita Previa Extranjería en España | CitaEspana",
+    title: "Cita Previa Extranjería en España | CitaEspaña",
     description:
       "Información y asistencia para citas de extranjería, NIE, TIE, huellas y otros trámites en España.",
   },

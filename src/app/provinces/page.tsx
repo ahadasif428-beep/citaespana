@@ -3,7 +3,7 @@ import { appointmentData } from "@/data/appointmentOptions";
 import PageHero from "@/components/PageHero";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Provincias", description: "CitaEspana trabaja con citas de extranjería en las provincias de España.", alternates: { canonical: "/provinces" } };
+export const metadata: Metadata = { title: "Provincias", description: "CitaEspaña trabaja con citas de extranjería en las provincias de España.", alternates: { canonical: "/provinces" } };
 
 
 

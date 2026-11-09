@@ -55,7 +55,7 @@ export default function SeoLandingPage({ page }: { page: SeoLandingPage }) {
             <section className="rounded-3xl border border-yellow-200 bg-yellow-50 p-7">
               <h2 className="text-xl font-black">Importante</h2>
               <p className="mt-3 text-gray-700 leading-7">
-                CitaEspana es un servicio privado de asistencia y no pertenece a la Administración General del Estado, la Policía Nacional ni las Oficinas de Extranjería. Los requisitos, tasas, oficinas y disponibilidad deben confirmarse en la fuente oficial.
+                CitaEspaña es un servicio privado de asistencia y no pertenece a la Administración General del Estado, la Policía Nacional ni las Oficinas de Extranjería. Los requisitos, tasas, oficinas y disponibilidad deben confirmarse en la fuente oficial.
               </p>
             </section>
           </article>

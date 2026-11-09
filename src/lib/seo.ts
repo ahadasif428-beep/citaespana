@@ -91,7 +91,7 @@ export function serviceSchema(name: string, description: string, url: string) {
     url: `${SITE_URL}${url}`,
     provider: {
       "@type": "Organization",
-      name: "CitaEspana",
+      name: "CitaEspaña",
       url: SITE_URL,
     },
     areaServed: {

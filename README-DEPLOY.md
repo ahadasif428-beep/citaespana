@@ -1,4 +1,4 @@
-# CitaEspana — Vercel + Stripe
+# CitaEspaña — Vercel + Stripe
 
 ## Vercel
 1. Push this folder to GitHub.

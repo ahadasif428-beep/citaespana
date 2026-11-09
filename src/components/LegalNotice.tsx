@@ -84,7 +84,7 @@ export default function LegalNotice() {
 
       <div className="p-10 md:p-14 space-y-8 text-gray-600 leading-8 text-[17px]">        <p>
           <strong className="text-[#C60B1E] text-lg">
-            CitaEspana
+            CitaEspaña
             CitaEs
           </strong>{" "}
           es un servicio profesional e independiente especializado en la búsqueda
@@ -92,7 +92,7 @@ export default function LegalNotice() {
         </p>
 
         <p>
-          CitaEspana no es un despacho de abogados ni una agencia registrada.
+          CitaEspaña no es un despacho de abogados ni una agencia registrada.
           CitaEs no es un despacho de abogados ni una agencia registrada.
           No ofrecemos asesoramiento jurídico. Para cualquier procedimiento
           legal recomendamos consultar con un abogado especializado en

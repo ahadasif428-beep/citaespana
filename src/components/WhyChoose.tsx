@@ -79,7 +79,7 @@ return (
         leading-tight
       "
       >
-        ¿Por qué miles de personas eligen CitaEspana?
+        ¿Por qué miles de personas eligen CitaEspaña?
         ¿Por qué miles de personas eligen CitaEs?
       </h2>
 

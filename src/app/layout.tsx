@@ -11,8 +11,8 @@ verification: {
   google: "GkYEU7xgWOj6Pa46XjiwoAcPcgm45oHN7n_MahUohwE",
 },
   title: {
-    default: "CitaEspana | Immigration Appointments in Spain",
-    template: "%s | CitaEspana",
+    default: "CitaEspaña | Immigration Appointments in Spain",
+    template: "%s | CitaEspaña",
   },
 
   description:
@@ -33,14 +33,14 @@ verification: {
 
   authors: [
     {
-      name: "CitaEspana",
+      name: "CitaEspaña",
       url: "https://www.citaespana.com",
     },
   ],
 
-  creator: "CitaEspana",
+  creator: "CitaEspaña",
 
-  publisher: "CitaEspana",
+  publisher: "CitaEspaña",
 
   robots: {
     index: true,
@@ -63,23 +63,23 @@ verification: {
     type: "website",
     locale: "en_US",
     url: "https://www.citaespana.com",
-    title: "CitaEspana | Immigration Appointments",
+    title: "CitaEspaña | Immigration Appointments",
     description:
       "Fast immigration appointments across Spain. NIE, TIE, Residence, Asylum, Fingerprints and more.",
-    siteName: "CitaEspana",
+    siteName: "CitaEspaña",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "CitaEspana",
+        alt: "CitaEspaña",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "CitaEspana",
+    title: "CitaEspaña",
     description:
       "Immigration appointments across Spain.",
     images: ["/og-image.jpg"],

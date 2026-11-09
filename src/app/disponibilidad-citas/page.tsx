@@ -4,8 +4,8 @@ import { provinces } from "@/data/provinces";
 import SeoPageShell from "@/components/SeoPageShell";
 
 export const metadata: Metadata = {
-  title: "Disponibilidad de citas de extranjería por provincia 2026 | CitaEspana",
-  description: "Consulta la disponibilidad y dificultad de las citas de extranjería por provincia. Accede a la guía local y solicita seguimiento de tu cita con CitaEspana.",
+  title: "Disponibilidad de citas de extranjería por provincia 2026 | CitaEspaña",
+  description: "Consulta la disponibilidad y dificultad de las citas de extranjería por provincia. Accede a la guía local y solicita seguimiento de tu cita con CitaEspaña.",
   keywords: ["disponibilidad citas extranjería", "citas extranjería por provincia", "cita previa extranjería hoy", "citas NIE disponibilidad", "citas TIE disponibilidad"],
   alternates: { canonical: "/disponibilidad-citas" },
 };
@@ -21,7 +21,7 @@ export default function Page() {
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
         {provinces.map((p) => <Link key={p.slug} href={`/cita-previa-extranjeria/${p.slug}`} className="rounded-xl border p-4 font-bold hover:border-red-200 hover:bg-red-50 transition">{p.name} →</Link>)}
       </div>
-      <p className="mt-8 text-sm text-gray-500">La disponibilidad real depende de las plazas que publique la Administración. CitaEspana no controla ni garantiza la oferta oficial.</p>
+      <p className="mt-8 text-sm text-gray-500">La disponibilidad real depende de las plazas que publique la Administración. CitaEspaña no controla ni garantiza la oferta oficial.</p>
     </div>
   </SeoPageShell>;
 }

@@ -72,7 +72,7 @@ export default function Guarantee() {
         tracking-widest
         text-sm
         ">
-          Garantía CitaEspana
+          Garantía CitaEspaña
           Garantía CitaEs
         </span>
 

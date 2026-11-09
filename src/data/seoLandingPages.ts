@@ -22,7 +22,7 @@ export const seoLandingPages: SeoLandingPage[] = [
     intro: "El NIE es el Número de Identidad de Extranjero. Esta guía te ayuda a identificar el trámite que necesitas y a localizar la información de cita previa correspondiente en España.",
     sections: [
       { title: "Qué debes comprobar antes de pedir la cita", paragraphs: ["Primero identifica si necesitas una asignación de NIE, un trámite de documentación de extranjero u otro procedimiento relacionado. El tipo de cita disponible puede variar según la provincia y el organismo competente."], bullets: ["Provincia donde realizarás el trámite", "Tipo exacto de procedimiento", "Documentación y tasas indicadas por la Administración"] },
-      { title: "Cita NIE por provincia", paragraphs: ["CitaEspana organiza información por las 52 provincias y ciudades autónomas para que puedas pasar de esta guía general a una página local del trámite que buscas."] },
+      { title: "Cita NIE por provincia", paragraphs: ["CitaEspaña organiza información por las 52 provincias y ciudades autónomas para que puedas pasar de esta guía general a una página local del trámite que buscas."] },
     ],
     keywords: ["cita previa NIE", "cita NIE España", "NIE cita previa", "pedir cita NIE"],
     related: ["/cita-previa-tie", "/cita-huellas", "/provinces", "/cita-previa-extranjeria"],
@@ -106,7 +106,7 @@ export const seoLandingPages: SeoLandingPage[] = [
     intro: "La renovación de la TIE requiere comprobar el procedimiento concreto, los plazos y la documentación antes de acudir a una oficina.",
     sections: [
       { title: "Qué revisar antes de renovar", paragraphs: ["Comprueba la fecha de vigencia de tu autorización, la documentación requerida y el procedimiento que corresponde a tu caso. Las instrucciones pueden variar según el trámite."], bullets: ["Autorización o resolución vigente", "Documentación personal", "Tasa y requisitos indicados oficialmente"] },
-      { title: "Cita TIE por provincia", paragraphs: ["Utiliza el buscador de CitaEspana para pasar directamente a la provincia y procedimiento que necesitas."] },
+      { title: "Cita TIE por provincia", paragraphs: ["Utiliza el buscador de CitaEspaña para pasar directamente a la provincia y procedimiento que necesitas."] },
     ],
     keywords: ["cita renovar TIE", "cita renovación TIE", "renovar TIE España", "TIE renovación cita previa"],
     related: ["/cita-previa-tie", "/cita-huellas", "/cita-previa-extranjeria"],
@@ -120,7 +120,7 @@ export const seoLandingPages: SeoLandingPage[] = [
     intro: "La reagrupación familiar tiene requisitos y documentación específicos. Antes de pedir cita, identifica el procedimiento y comprueba qué canal de presentación corresponde.",
     sections: [
       { title: "Preparación del trámite", paragraphs: ["Consulta los requisitos y modelos oficiales, prepara la documentación y comprueba si tu procedimiento se presenta ante una oficina de extranjería o por vía electrónica."], bullets: ["Requisitos del reagrupante", "Documentación del familiar", "Lugar y modalidad de presentación"] },
-      { title: "Información por provincia", paragraphs: ["CitaEspana enlaza la estructura de provincias para ayudarte a localizar el contexto territorial del procedimiento."] },
+      { title: "Información por provincia", paragraphs: ["CitaEspaña enlaza la estructura de provincias para ayudarte a localizar el contexto territorial del procedimiento."] },
     ],
     keywords: ["cita reagrupación familiar", "cita previa reagrupación familiar", "reagrupación familiar cita España"],
     related: ["/guides/reagrupacion-familiar", "/cita-previa-extranjeria", "/provinces"],

@@ -449,7 +449,7 @@ export default function EligibilityChecker() {
 
                 <a
                   href={`https://wa.me/34672399181?text=${encodeURIComponent(
-`Hello CitaEspana
+`Hello CitaEspaña
 
 Name: ${form.name}
 

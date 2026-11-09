@@ -5,9 +5,9 @@ import PageHero from "@/components/PageHero";
 
 
 export const metadata: Metadata = {
-  title: "Contacto | CitaEspana",
+  title: "Contacto | CitaEspaña",
   description:
-    "Contacta con CitaEspana para obtener ayuda con citas de extranjería en cualquier provincia de España.",
+    "Contacta con CitaEspaña para obtener ayuda con citas de extranjería en cualquier provincia de España.",
   alternates: {
     canonical: "/contact",
   },

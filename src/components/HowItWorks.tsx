@@ -31,7 +31,7 @@ export default function HowItWorks() {
           </span>
 
           <h2 className="mt-6 text-4xl md:text-5xl font-black text-gray-900">
-            ¿Cómo funciona CitaEspana?
+            ¿Cómo funciona CitaEspaña?
             ¿Cómo funciona CitaEs?
           </h2>
 

@@ -109,7 +109,7 @@ COMPARA ANTES DE DECIDIR
 
 <h2 className="text-4xl md:text-5xl font-black text-center mt-6 text-gray-900">
 
-CitaEspana vs. Gestoría vs. Hacerlo solo
+CitaEspaña vs. Gestoría vs. Hacerlo solo
 CitaEs vs. Gestoría vs. Hacerlo solo
 
 
@@ -189,7 +189,7 @@ CARACTERÍSTICA
 
 <div className="font-bold">
 
-CitaEspana
+CitaEspaña
 CitaEs
 
 </div>
@@ -483,7 +483,7 @@ duration-300
 <div className="bg-red-50 text-red-600 p-3 rounded-xl whitespace-pre-line">
 
 
-<b>CitaEspana</b>
+<b>CitaEspaña</b>
 <b>CitaEs</b>
 
 
@@ -639,7 +639,7 @@ md:w-fit
 
 
 
-Empezar con CitaEspana — Gratis hasta confirmar la cita
+Empezar con CitaEspaña — Gratis hasta confirmar la cita
 Empezar con CitaEs — Gratis hasta confirmar la cita
 
 

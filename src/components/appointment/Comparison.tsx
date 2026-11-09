@@ -11,7 +11,7 @@ return(
 
 <h2 className="text-5xl font-bold text-center">
 
-CitaEspana vs Traditional Management Services
+CitaEspaña vs Traditional Management Services
 CitaEs vs Traditional Management Services
 
 </h2>
@@ -19,7 +19,7 @@ CitaEs vs Traditional Management Services
 
 <p className="text-center text-gray-500 mt-4">
 
-Why more people choose CitaEspana
+Why more people choose CitaEspaña
 Why more people choose CitaEs
 
 </p>
@@ -53,7 +53,7 @@ Feature
 
 
 <th className="p-5">
-CitaEspana
+CitaEspaña
 CitaEs
 </th>
 
@@ -139,7 +139,7 @@ className="border-b"
 
 <p className="text-gray-500 text-sm mt-5">
 
-CitaEspana is not a law firm. Prices are indicative of administrative services.
+CitaEspaña is not a law firm. Prices are indicative of administrative services.
 CitaEs is not a law firm. Prices are indicative of administrative services.
 
 </p>

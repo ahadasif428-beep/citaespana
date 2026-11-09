@@ -21,7 +21,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${service.title} | CitaEspana`,
+    title: `${service.title} | CitaEspaña`,
     description: service.description,
     alternates: {
       canonical: `/services/${slug}`,
@@ -133,7 +133,7 @@ export default async function Page({
           <div className="bg-white/10 rounded-3xl border border-white/20 p-10">
 
             <h2 className="text-3xl font-bold">
-              ¿Por qué elegir CitaEspana?
+              ¿Por qué elegir CitaEspaña?
             </h2>
 
             <p className="mt-6 text-blue-100 leading-8">
@@ -327,13 +327,13 @@ export default async function Page({
 
           <h2 className="text-5xl font-bold">
 
-            ¿Por qué elegir CitaEspana?
+            ¿Por qué elegir CitaEspaña?
 
           </h2>
 
           <p className="mt-8 text-lg text-gray-600 leading-9">
 
-            En CitaEspana ayudamos a personas de toda España a conseguir
+            En CitaEspaña ayudamos a personas de toda España a conseguir
             citas para procedimientos de extranjería de forma rápida,
             segura y sencilla. Nuestro sistema monitoriza continuamente
             las citas disponibles para NIE, TIE, Huellas, Arraigo,
